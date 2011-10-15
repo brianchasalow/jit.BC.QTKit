@@ -7,7 +7,8 @@
  
  *
  * Brian Chasalow, brian@chasalow.com 2011 
- *
+ * thanks to Anton Marini for FBO draw code! www.v002.info
+ * thanks to Rob Ramirez for help with Jitter and file loading!
  */
 
 

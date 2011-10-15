@@ -281,12 +281,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
-									<integer>0</integer>
+									<integer>30</integer>
+									<integer>29</integer>
+									<integer>24</integer>
+									<integer>23</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 84}, {334, 760}}</string>
+							<string>{{0, 56}, {334, 760}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -323,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MaxQTKitMovieRenderer.h</string>
+								<string>jit.BC.QTKit.mm</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MaxQTKitMovieRenderer.h</string>
+										<string>jit.BC.QTKit.mm</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>417B853C14497FA5008DDCCE</string>
+										<string>417B85491449F9B8008DDCCE</string>
 										<key>history</key>
 										<array>
 											<string>411CC6B3124E6B0000C2E63D</string>
@@ -353,12 +355,12 @@
 											<string>417B84B414496A55008DDCCE</string>
 											<string>417B850314497800008DDCCE</string>
 											<string>417B852B14497C51008DDCCE</string>
-											<string>417B853614497FA5008DDCCE</string>
 											<string>417B853714497FA5008DDCCE</string>
-											<string>417B853814497FA5008DDCCE</string>
-											<string>417B853914497FA5008DDCCE</string>
-											<string>417B853A14497FA5008DDCCE</string>
-											<string>417B853B14497FA5008DDCCE</string>
+											<string>417B853D144992F8008DDCCE</string>
+											<string>417B853E144992F8008DDCCE</string>
+											<string>417B85431449F6FA008DDCCE</string>
+											<string>417B85471449F9B8008DDCCE</string>
+											<string>417B85481449F9B8008DDCCE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
