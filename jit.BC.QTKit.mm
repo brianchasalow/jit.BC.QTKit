@@ -30,17 +30,17 @@
 
 #ifdef MAC_VERSION
 #if !TARGET_RT_MAC_MACHO
-#define JIT_GL_MODEL_PATH_STYLE		PATH_STYLE_COLON
-#define JIT_GL_MODEL_PATH_TYPE		PATH_TYPE_ABSOLUTE
+#define JIT_BC_QTKIT_PATH_STYLE		PATH_STYLE_COLON
+#define JIT_BC_QTKIT_PATH_TYPE		PATH_TYPE_ABSOLUTE
 #else
-#define JIT_GL_MODEL_PATH_STYLE		PATH_STYLE_SLASH
-#define JIT_GL_MODEL_PATH_TYPE		PATH_TYPE_BOOT
+#define JIT_BC_QTKIT_PATH_STYLE		PATH_STYLE_SLASH
+#define JIT_BC_QTKIT_PATH_TYPE		PATH_TYPE_BOOT
 #endif
 #endif
 
 #ifdef WIN_VERSION
-#define JIT_GL_MODEL_PATH_STYLE		PATH_STYLE_NATIVE_WIN
-#define JIT_GL_MODEL_PATH_TYPE		PATH_TYPE_ABSOLUTE
+#define JIT_BC_QTKIT_PATH_STYLE		PATH_STYLE_NATIVE_WIN
+#define JIT_BC_QTKIT_PATH_TYPE		PATH_TYPE_ABSOLUTE
 #endif
 
 
@@ -614,7 +614,7 @@ void jit_BC_QTKit_read(t_jit_BC_QTKit *x, t_symbol *s, long ac, t_atom *av)
 	}
 //	
 	path_topathname(path, filename, cpath);
-	path_nameconform(cpath,filename,JIT_GL_MODEL_PATH_STYLE,JIT_GL_MODEL_PATH_TYPE);
+	path_nameconform(cpath,filename,JIT_BC_QTKIT_PATH_STYLE,JIT_BC_QTKIT_PATH_TYPE);
 	strcpy(cpath,filename);			
 	videoPlayer->loadMovie(filename, 0);
 

@@ -419,6 +419,7 @@
 			417B85471449F9B8008DDCCE /* PBXTextBookmark */ = 417B85471449F9B8008DDCCE /* PBXTextBookmark */;
 			417B85481449F9B8008DDCCE /* PBXTextBookmark */ = 417B85481449F9B8008DDCCE /* PBXTextBookmark */;
 			417B85491449F9B8008DDCCE /* PBXTextBookmark */ = 417B85491449F9B8008DDCCE /* PBXTextBookmark */;
+			417B854C1449FD09008DDCCE /* PBXTextBookmark */ = 417B854C1449FD09008DDCCE /* PBXTextBookmark */;
 			41D2CFA41220BD7100E34F85 = 41D2CFA41220BD7100E34F85 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 41D2CFAC1220BD7100E34F85 /* Source Control */;
@@ -427,9 +428,9 @@
 	};
 	22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {971, 8359}}";
-			sepNavSelRange = "{7497, 0}";
-			sepNavVisRange = "{7214, 780}";
+			sepNavIntBoundsRect = "{{0, 0}, {1041, 8281}}";
+			sepNavSelRange = "{17685, 0}";
+			sepNavVisRange = "{96, 795}";
 		};
 	};
 	22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */ = {
@@ -3383,6 +3384,16 @@
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 7214;
+	};
+	417B854C1449FD09008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 617";
+		rLen = 0;
+		rLoc = 17685;
+		rType = 0;
+		vrLen = 795;
+		vrLoc = 96;
 	};
 	41D2CFA41220BD7100E34F85 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
