@@ -150,6 +150,7 @@ t_jit_err jit_BC_QTKit_init(void)
 						(method)jit_BC_QTKit_draw, "ob3d_draw", A_CANT, 0L);
 	
 	// must register for ob3d use
+	//also, 	//NOTIFY EXAMPLE: WE NEED A "REGISTER" METHOD SO THAT CLIENTS CAN ATTACH TO US
 	jit_class_addmethod(s_jit_BC_QTKit_class, 
 						(method)jit_object_register, "register", A_CANT, 0L);
 
@@ -285,10 +286,31 @@ t_jit_err jit_BC_QTKit_dest_closing(t_jit_BC_QTKit *x)
 
 t_jit_err jit_BC_QTKit_dest_changed(t_jit_BC_QTKit *x)
 {	
+	post("dest changed!!!");
 	if (x->output)
 	{
+	
+		if(videoPlayer && videoPlayer->iAmLoaded &&  !videoPlayer->iAmLoading)
+		{
+			videoPlayer->repairContext();
+		}
 		
-		t_symbol *context = jit_attr_getsym(x,ps_drawto);
+//		t_jit_object *jitob = (t_jit_object*)max_jit_obex_jitob_get(x);
+		//	jit_object_error((t_jit_object *)jitob,"jit.BC_QTKIT: could not call draw");
+
+		//		t_jit_object* myobj  = (t_jit_object*)jit_object_findregistered(context);
+		//		if(myobj == NULL){
+		//			post("cant find context!");	
+		//		}
+		//		else{
+		//				post("found context");	
+		//		jit_object_method(myobj, gensym("bang"), gensym("bang"), 0L, 0);
+		//		}
+		
+		
+		
+		
+		t_symbol *context = jit_attr_getsym(x,ps_drawto);		
 		jit_attr_setsym(x->output,ps_drawto,context);
 		
 		// our texture has to be bound in the new context before we can use it
@@ -302,11 +324,7 @@ t_jit_err jit_BC_QTKit_dest_changed(t_jit_BC_QTKit *x)
 	
 	x->needsRedraw = YES;
 	
-	if(videoPlayer && videoPlayer->iAmLoaded &&  !videoPlayer->iAmLoading)
-	{
-		videoPlayer->repairContext();
-	}
-	
+
 	return JIT_ERR_NONE;
 }
 /************************************************************************************/
@@ -358,24 +376,26 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 
 t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 {
-	if (!x)
+	
+	if (!x){
 		return JIT_ERR_INVALID_PTR;		
+	}
+	
 
+	
+	
 	
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	
-	// if we have a client and a frame, render to our internal texture.
-//	[jit_gl_syphon_client_instance->syClient lockClient];
 	
 	if(videoPlayer != NULL){
 		videoPlayer->update();
 	}
     
-//	SyphonClient *client = [jit_gl_syphon_client_instance->syClient client];
-	if((videoPlayer != NULL && videoPlayer->iAmLoaded &&  !videoPlayer->iAmLoading) && (videoPlayer->bNewFrame|| x->needsRedraw))
+///	post("videoplayer: %i iamloaded %i iamloading %i isframenew %i needsredraw %i", (videoPlayer == NULL), videoPlayer->iAmLoaded, !videoPlayer->iAmLoading, videoPlayer->isFrameNew(), x->needsRedraw);
+	if((videoPlayer != NULL && videoPlayer->iAmLoaded &&  !videoPlayer->iAmLoading) && (videoPlayer->isFrameNew()|| x->needsRedraw))
 	{
-		// our syphon clients texture is only valid for the duration of the bind/unbind.
 		// this means we need to render into our internal texture, via an FBO.
 		// for now, we are going to do this all inline, in place.
 		
@@ -392,13 +412,8 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			// add texture to OB3D list.
 			jit_attr_setsym(x,ps_texture, jit_attr_getsym(x->output, gensym("name")));
 			
-            
-            // Bind the Syphon Texture early, so we can base the viewport on the framesize and update our internal texture
-            // ahead of rendering.
-//			SyphonImage *frame = [client newFrameImageForContext:CGLGetCurrentContext()];
-//			jit_gl_syphon_client_instance->latestBounds.size = [frame textureSize];
-            
-			// we need to update our internal texture to the latest known size of our syphonservers image.
+                        
+			// we need to update our internal texture to the latest known size of our movie's image.
             long newdim[2];			// output dim
 			
 			newdim[0] = videoPlayer->getWidth();
@@ -443,7 +458,7 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
 			if(status == GL_FRAMEBUFFER_COMPLETE)
 			{
-				//post("jit.gl.syphonclient  FBO complete");
+				//post("qtkit FBO complete");
 				
 				// save more state.
 				glClearColor(0.0, 0.0, 0.0, 0.0);
@@ -465,20 +480,13 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				glPushMatrix();
 				glLoadIdentity();
 				
-				// render our syphon texture to our jit.gl.texture's texture.
+				// render our qtkit texture to our jit.gl.texture's texture.
 				glColor4f(1.0, 1.0, 1.0, 1.0);
 				
 				glActiveTexture(GL_TEXTURE0);
 				
-                // Moved above.
-				//if ([client bindFrameTexture:cgl_ctx] != 0);
 				{
-                    // Moved above
                     
-					// our frame size is only valid when we have a bound texture. 
-					// We hope our frame size does not change every frame, since we are effectively a frame behind.
-					//jit_gl_syphon_client_instance->latestBounds.size = [client frameSize];
-					
 					// do not need blending if we use black border for alpha and replace env mode, saves a buffer wipe
 					// we can do this since our image draws over the complete surface of the FBO, no pixel goes untouched.
 //                    glEnable(GL_TEXTURE_RECTANGLE_EXT);
@@ -543,13 +551,20 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			}
 			else 
 			{
-				post("jit.gl.syphonclient could not attach to FBO");
+				post("jit.BC.QTKit could not attach to FBO");
 			}
 //			[frame release];
 //			jit_gl_set_context(ctx);
 		}
+		
+		
 	}
-//	[jit_gl_syphon_client_instance->syClient unlockClient];
+	
+	t_atom foo[1];
+	jit_atom_setlong(&foo[0],videoPlayer->isFrameNew());			
+	jit_object_notify(x,gensym("frameIsNew"), foo); //the last pointer argument could be anything.	
+	
+	
 	[pool drain];
 	
 	return JIT_ERR_NONE;
