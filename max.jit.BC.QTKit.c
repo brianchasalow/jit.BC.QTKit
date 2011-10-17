@@ -223,12 +223,14 @@ void *max_jit_BC_QTKit_new(t_symbol *s, long argc, t_atom *argv)
 
 void max_jit_BC_QTKit_free(t_max_jit_BC_QTKit *x)
 {
-//	max_jit_mop_free(x);
 	//NOTIFY EXAMPLE: DETACH FROM JIT OBJECT(SERVER)
 	jit_object_detach(x->servername,x);
 
 	max_jit_ob3d_detach(x);
+
+	if(max_jit_obex_jitob_get(x))
 	jit_object_free(max_jit_obex_jitob_get(x));
+	
 	max_jit_obex_free(x);
 }
 

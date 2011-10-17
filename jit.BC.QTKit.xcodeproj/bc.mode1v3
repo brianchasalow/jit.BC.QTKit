@@ -281,7 +281,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>31</integer>
+									<integer>30</integer>
 									<integer>29</integer>
 									<integer>24</integer>
 									<integer>23</integer>
@@ -307,7 +307,7 @@
 							<real>334</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>75 59 1316 819 0 0 1440 878 </string>
+						<string>36 59 1316 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -325,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>max.jit.BC.QTKit.c</string>
+								<string>jit.BC.QTKit.mm</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>max.jit.BC.QTKit.c</string>
+										<string>jit.BC.QTKit.mm</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>417B879D144C2B71008DDCCE</string>
+										<string>417B87C7144C3155008DDCCE</string>
 										<key>history</key>
 										<array>
 											<string>411CC6B3124E6B0000C2E63D</string>
@@ -367,8 +367,8 @@
 											<string>417B8749144C0D20008DDCCE</string>
 											<string>417B8754144C0D59008DDCCE</string>
 											<string>417B8772144C172B008DDCCE</string>
-											<string>417B8792144C291B008DDCCE</string>
-											<string>417B8793144C291B008DDCCE</string>
+											<string>417B87BC144C2F8B008DDCCE</string>
+											<string>417B87BD144C2F8B008DDCCE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -382,7 +382,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {960, 526}}</string>
 								<key>RubberWindowFrame</key>
-								<string>75 59 1316 819 0 0 1440 878 </string>
+								<string>36 59 1316 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -402,7 +402,7 @@
 								<key>Frame</key>
 								<string>{{0, 531}, {960, 247}}</string>
 								<key>RubberWindowFrame</key>
-								<string>75 59 1316 819 0 0 1440 878 </string>
+								<string>36 59 1316 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -572,7 +572,7 @@
 		<string>/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>75 59 1316 819 0 0 1440 878 </string>
+	<string>36 59 1316 819 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

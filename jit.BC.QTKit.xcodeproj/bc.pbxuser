@@ -671,6 +671,22 @@
 			417B8793144C291B008DDCCE /* PBXTextBookmark */ = 417B8793144C291B008DDCCE /* PBXTextBookmark */;
 			417B8794144C291B008DDCCE /* PBXTextBookmark */ = 417B8794144C291B008DDCCE /* PBXTextBookmark */;
 			417B879D144C2B71008DDCCE /* PBXTextBookmark */ = 417B879D144C2B71008DDCCE /* PBXTextBookmark */;
+			417B879E144C2C5D008DDCCE /* PBXTextBookmark */ = 417B879E144C2C5D008DDCCE /* PBXTextBookmark */;
+			417B879F144C2C5D008DDCCE /* PBXTextBookmark */ = 417B879F144C2C5D008DDCCE /* PBXTextBookmark */;
+			417B87A0144C2D40008DDCCE /* PBXTextBookmark */ = 417B87A0144C2D40008DDCCE /* PBXTextBookmark */;
+			417B87A1144C2D40008DDCCE /* PBXTextBookmark */ = 417B87A1144C2D40008DDCCE /* PBXTextBookmark */;
+			417B87A2144C2D40008DDCCE /* PBXTextBookmark */ = 417B87A2144C2D40008DDCCE /* PBXTextBookmark */;
+			417B87A5144C2D8A008DDCCE /* PBXTextBookmark */ = 417B87A5144C2D8A008DDCCE /* PBXTextBookmark */;
+			417B87A6144C2D8A008DDCCE /* PBXTextBookmark */ = 417B87A6144C2D8A008DDCCE /* PBXTextBookmark */;
+			417B87A7144C2D8A008DDCCE /* PBXTextBookmark */ = 417B87A7144C2D8A008DDCCE /* PBXTextBookmark */;
+			417B87B8144C2E2E008DDCCE /* PBXTextBookmark */ = 417B87B8144C2E2E008DDCCE /* PBXTextBookmark */;
+			417B87B9144C2E2E008DDCCE /* PBXTextBookmark */ = 417B87B9144C2E2E008DDCCE /* PBXTextBookmark */;
+			417B87BC144C2F8B008DDCCE /* PBXTextBookmark */ = 417B87BC144C2F8B008DDCCE /* PBXTextBookmark */;
+			417B87BD144C2F8B008DDCCE /* PBXTextBookmark */ = 417B87BD144C2F8B008DDCCE /* PBXTextBookmark */;
+			417B87BE144C2F8B008DDCCE /* PBXTextBookmark */ = 417B87BE144C2F8B008DDCCE /* PBXTextBookmark */;
+			417B87C1144C3062008DDCCE /* PBXTextBookmark */ = 417B87C1144C3062008DDCCE /* PBXTextBookmark */;
+			417B87C4144C30B1008DDCCE /* PBXTextBookmark */ = 417B87C4144C30B1008DDCCE /* PBXTextBookmark */;
+			417B87C7144C3155008DDCCE /* PBXTextBookmark */ = 417B87C7144C3155008DDCCE /* PBXTextBookmark */;
 			41D2CFA41220BD7100E34F85 = 41D2CFA41220BD7100E34F85 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 41D2CFAC1220BD7100E34F85 /* Source Control */;
@@ -679,17 +695,17 @@
 	};
 	22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1412, 7891}}";
-			sepNavSelRange = "{8576, 0}";
-			sepNavVisRange = "{11706, 1379}";
+			sepNavIntBoundsRect = "{{0, 0}, {1412, 8372}}";
+			sepNavSelRange = "{11392, 0}";
+			sepNavVisRange = "{10571, 1458}";
 			sepNavWindowFrame = "{{84, 108}, {1038, 702}}";
 		};
 	};
 	22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1083, 2964}}";
-			sepNavSelRange = "{2689, 1}";
-			sepNavVisRange = "{2530, 1164}";
+			sepNavIntBoundsRect = "{{0, 0}, {1083, 3029}}";
+			sepNavSelRange = "{6795, 0}";
+			sepNavVisRange = "{4568, 1037}";
 			sepNavWindowFrame = "{{61, 129}, {1038, 702}}";
 		};
 	};
@@ -954,7 +970,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 588";
 		rLen = 0;
-		rLoc = 16338;
+		rLoc = 16477;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 838;
@@ -964,7 +980,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 588";
 		rLen = 0;
-		rLoc = 16338;
+		rLoc = 16477;
 		rType = 0;
 		vrLen = 956;
 		vrLoc = 495;
@@ -985,7 +1001,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 583;
+		rLoc = 591;
 		rType = 1;
 	};
 	417B7D8A144918DE008DDCCE /* PBXTextBookmark */ = {
@@ -993,7 +1009,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 481";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 15985;
@@ -1023,7 +1039,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 482";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 1184;
 		vrLoc = 16804;
@@ -1044,7 +1060,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 583;
+		rLoc = 591;
 		rType = 1;
 	};
 	417B7E11144919B1008DDCCE /* PBXTextBookmark */ = {
@@ -1052,7 +1068,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 361";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 887;
 		vrLoc = 11184;
@@ -1091,7 +1107,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 496";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 14749;
@@ -1101,7 +1117,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 496";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 14838;
@@ -1416,7 +1432,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1426,7 +1442,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1436,7 +1452,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1446,7 +1462,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1456,7 +1472,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1466,7 +1482,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1495,7 +1511,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1505,7 +1521,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1515,7 +1531,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1525,7 +1541,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1535,7 +1551,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 160";
 		rLen = 0;
-		rLoc = 16156;
+		rLoc = 16295;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 3866;
@@ -1545,7 +1561,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 154";
 		rLen = 0;
-		rLoc = 15896;
+		rLoc = 16026;
 		rType = 0;
 		vrLen = 566;
 		vrLoc = 3866;
@@ -1585,7 +1601,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 162";
 		rLen = 0;
-		rLoc = 16015;
+		rLoc = 16145;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 3957;
@@ -1595,7 +1611,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 162";
 		rLen = 0;
-		rLoc = 16015;
+		rLoc = 16145;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 3957;
@@ -1605,7 +1621,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 162";
 		rLen = 0;
-		rLoc = 16015;
+		rLoc = 16145;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 3957;
@@ -1615,7 +1631,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 162";
 		rLen = 0;
-		rLoc = 16015;
+		rLoc = 16145;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 3957;
@@ -1635,7 +1651,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 162";
 		rLen = 0;
-		rLoc = 16015;
+		rLoc = 16145;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 3957;
@@ -1645,7 +1661,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 162";
 		rLen = 0;
-		rLoc = 16015;
+		rLoc = 16145;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 3957;
@@ -1655,7 +1671,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 532";
 		rLen = 0;
-		rLoc = 17268;
+		rLoc = 17407;
 		rType = 0;
 		vrLen = 891;
 		vrLoc = 16055;
@@ -1712,7 +1728,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 543";
 		rLen = 0;
-		rLoc = 17268;
+		rLoc = 17407;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 16253;
@@ -1722,7 +1738,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 543";
 		rLen = 0;
-		rLoc = 17268;
+		rLoc = 17407;
 		rType = 0;
 		vrLen = 743;
 		vrLoc = 16051;
@@ -1771,7 +1787,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 543";
 		rLen = 0;
-		rLoc = 17268;
+		rLoc = 17407;
 		rType = 0;
 		vrLen = 906;
 		vrLoc = 16057;
@@ -1851,7 +1867,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 551";
 		rLen = 0;
-		rLoc = 16812;
+		rLoc = 16951;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 16452;
@@ -1871,7 +1887,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 563";
 		rLen = 0;
-		rLoc = 16817;
+		rLoc = 16956;
 		rType = 0;
 		vrLen = 883;
 		vrLoc = 16825;
@@ -1881,7 +1897,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 551";
 		rLen = 0;
-		rLoc = 16790;
+		rLoc = 16929;
 		rType = 0;
 		vrLen = 771;
 		vrLoc = 16676;
@@ -1891,7 +1907,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 553";
 		rLen = 451;
-		rLoc = 16817;
+		rLoc = 16956;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 16637;
@@ -1917,7 +1933,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 546";
 		rLen = 16;
-		rLoc = 16658;
+		rLoc = 16797;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 16620;
@@ -1927,7 +1943,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 546";
 		rLen = 0;
-		rLoc = 16692;
+		rLoc = 16831;
 		rType = 0;
 		vrLen = 884;
 		vrLoc = 16452;
@@ -1937,7 +1953,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 568";
 		rLen = 0;
-		rLoc = 17230;
+		rLoc = 17369;
 		rType = 0;
 		vrLen = 813;
 		vrLoc = 16637;
@@ -2108,7 +2124,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.cpp: 629";
 		rLen = 0;
-		rLoc = 16543;
+		rLoc = 16682;
 		rType = 0;
 		vrLen = 1628;
 		vrLoc = 4925;
@@ -2477,7 +2493,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 583;
+		rLoc = 591;
 		rType = 1;
 	};
 	417B841414495999008DDCCE /* PBXTextBookmark */ = {
@@ -2485,7 +2501,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 430";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 13795;
@@ -2495,7 +2511,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 430";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 13810;
@@ -2505,7 +2521,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 424";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 13921;
@@ -2727,7 +2743,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 583;
+		rLoc = 591;
 		rType = 1;
 	};
 	417B849114496540008DDCCE /* PBXTextBookmark */ = {
@@ -2735,7 +2751,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 228";
 		rLen = 0;
-		rLoc = 16337;
+		rLoc = 16476;
 		rType = 0;
 		vrLen = 600;
 		vrLoc = 5701;
@@ -3012,7 +3028,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 361";
 		rLen = 0;
-		rLoc = 10910;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 9800;
@@ -3022,7 +3038,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 344";
 		rLen = 0;
-		rLoc = 10910;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 987;
 		vrLoc = 13979;
@@ -3072,7 +3088,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 538";
 		rLen = 0;
-		rLoc = 16324;
+		rLoc = 16463;
 		rType = 0;
 		vrLen = 861;
 		vrLoc = 330;
@@ -3122,7 +3138,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 368";
 		rLen = 0;
-		rLoc = 10862;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1404;
 		vrLoc = 10544;
@@ -3132,7 +3148,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 368";
 		rLen = 0;
-		rLoc = 10905;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 10287;
@@ -3142,7 +3158,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 382";
 		rLen = 0;
-		rLoc = 10910;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1468;
 		vrLoc = 10397;
@@ -3439,8 +3455,8 @@
 		isa = PBXTextBookmark;
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 376";
-		rLen = 4766;
-		rLoc = 10910;
+		rLen = 0;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1277;
 		vrLoc = 10224;
@@ -3450,7 +3466,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 547";
 		rLen = 0;
-		rLoc = 15638;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1181;
 		vrLoc = 12471;
@@ -3660,7 +3676,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 617";
 		rLen = 0;
-		rLoc = 17171;
+		rLoc = 17310;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 96;
@@ -3931,7 +3947,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 554";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 15934;
@@ -3961,7 +3977,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 554";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 15934;
@@ -4011,7 +4027,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 560";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 16267;
@@ -4021,7 +4037,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 587";
 		rLen = 0;
-		rLoc = 16063;
+		rLoc = 16193;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 17090;
@@ -4081,7 +4097,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 560";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 675;
 		vrLoc = 16267;
@@ -4101,7 +4117,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 560";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 708;
 		vrLoc = 16211;
@@ -4111,7 +4127,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 561";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 704;
 		vrLoc = 16211;
@@ -4121,7 +4137,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 558";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 740;
 		vrLoc = 16211;
@@ -4131,7 +4147,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 556";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 696;
 		vrLoc = 16304;
@@ -4181,7 +4197,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 388";
 		rLen = 0;
-		rLoc = 11158;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1356;
 		vrLoc = 10949;
@@ -4221,7 +4237,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 562";
 		rLen = 0;
-		rLoc = 15854;
+		rLoc = 15984;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 15868;
@@ -4261,7 +4277,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 556";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 765;
 		vrLoc = 16136;
@@ -4311,7 +4327,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 556";
 		rLen = 0;
-		rLoc = 15673;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 765;
 		vrLoc = 16136;
@@ -4370,8 +4386,8 @@
 		isa = PBXTextBookmark;
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 579";
-		rLen = 15;
-		rLoc = 16083;
+		rLen = 0;
+		rLoc = 16193;
 		rType = 0;
 		vrLen = 555;
 		vrLoc = 16650;
@@ -4381,7 +4397,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 582";
 		rLen = 0;
-		rLoc = 16133;
+		rLoc = 16223;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 16721;
@@ -4443,7 +4459,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 562";
 		rLen = 0;
-		rLoc = 15851;
+		rLoc = 15981;
 		rType = 0;
 		vrLen = 702;
 		vrLoc = 16187;
@@ -5560,7 +5576,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 575";
 		rLen = 170;
-		rLoc = 15681;
+		rLoc = 15811;
 		rType = 0;
 		vrLen = 705;
 		vrLoc = 16802;
@@ -5620,7 +5636,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 557";
 		rLen = 0;
-		rLoc = 15679;
+		rLoc = 15809;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 15496;
@@ -5690,7 +5706,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 557";
 		rLen = 0;
-		rLoc = 15679;
+		rLoc = 15809;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 15496;
@@ -5789,8 +5805,8 @@
 		isa = PBXTextBookmark;
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 404";
-		rLen = 48;
-		rLoc = 11191;
+		rLen = 0;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 11003;
@@ -5940,7 +5956,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 568";
 		rLen = 0;
-		rLoc = 15853;
+		rLoc = 15983;
 		rType = 0;
 		vrLen = 684;
 		vrLoc = 15951;
@@ -5980,7 +5996,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 568";
 		rLen = 0;
-		rLoc = 15853;
+		rLoc = 15983;
 		rType = 0;
 		vrLen = 684;
 		vrLoc = 15951;
@@ -5990,7 +6006,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 568";
 		rLen = 0;
-		rLoc = 15853;
+		rLoc = 15983;
 		rType = 0;
 		vrLen = 719;
 		vrLoc = 15895;
@@ -6000,7 +6016,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 569";
 		rLen = 0;
-		rLoc = 15853;
+		rLoc = 15983;
 		rType = 0;
 		vrLen = 753;
 		vrLoc = 15820;
@@ -6129,7 +6145,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 567";
 		rLen = 0;
-		rLoc = 15853;
+		rLoc = 15983;
 		rType = 0;
 		vrLen = 658;
 		vrLoc = 15820;
@@ -6179,7 +6195,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 567";
 		rLen = 0;
-		rLoc = 15853;
+		rLoc = 15983;
 		rType = 0;
 		vrLen = 1150;
 		vrLoc = 10841;
@@ -6209,7 +6225,7 @@
 		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
 		name = "jit.BC.QTKit.mm: 410";
 		rLen = 0;
-		rLoc = 11268;
+		rLoc = 10777;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 10885;
@@ -6263,6 +6279,166 @@
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 2530;
+	};
+	417B879E144C2C5D008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */;
+		name = "max.jit.BC.QTKit.c: 93";
+		rLen = 1;
+		rLoc = 2689;
+		rType = 0;
+		vrLen = 1164;
+		vrLoc = 2530;
+	};
+	417B879F144C2C5D008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */;
+		name = "max.jit.BC.QTKit.c: 92";
+		rLen = 0;
+		rLoc = 2615;
+		rType = 0;
+		vrLen = 1184;
+		vrLoc = 2457;
+	};
+	417B87A0144C2D40008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 573";
+		rLen = 0;
+		rLoc = 16244;
+		rType = 0;
+		vrLen = 593;
+		vrLoc = 15872;
+	};
+	417B87A1144C2D40008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */;
+		name = "max.jit.BC.QTKit.c: 112";
+		rLen = 0;
+		rLoc = 3325;
+		rType = 0;
+		vrLen = 1301;
+		vrLoc = 2729;
+	};
+	417B87A2144C2D40008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */;
+		name = "max.jit.BC.QTKit.c: 230";
+		rLen = 0;
+		rLoc = 6992;
+		rType = 0;
+		vrLen = 998;
+		vrLoc = 6058;
+	};
+	417B87A5144C2D8A008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */;
+		name = "max.jit.BC.QTKit.c: 211";
+		rLen = 0;
+		rLoc = 6634;
+		rType = 0;
+		vrLen = 1098;
+		vrLoc = 4425;
+	};
+	417B87A6144C2D8A008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 573";
+		rLen = 0;
+		rLoc = 16244;
+		rType = 0;
+		vrLen = 593;
+		vrLoc = 15872;
+	};
+	417B87A7144C2D8A008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 449";
+		rLen = 0;
+		rLoc = 10777;
+		rType = 0;
+		vrLen = 570;
+		vrLoc = 16725;
+	};
+	417B87B8144C2E2E008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 449";
+		rLen = 0;
+		rLoc = 10777;
+		rType = 0;
+		vrLen = 592;
+		vrLoc = 16703;
+	};
+	417B87B9144C2E2E008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */;
+		name = "max.jit.BC.QTKit.c: 223";
+		rLen = 0;
+		rLoc = 6795;
+		rType = 0;
+		vrLen = 1007;
+		vrLoc = 6058;
+	};
+	417B87BC144C2F8B008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4210D7BC4000C1989F /* max.jit.BC.QTKit.c */;
+		name = "max.jit.BC.QTKit.c: 223";
+		rLen = 0;
+		rLoc = 6795;
+		rType = 0;
+		vrLen = 1037;
+		vrLoc = 4568;
+	};
+	417B87BD144C2F8B008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 449";
+		rLen = 0;
+		rLoc = 10777;
+		rType = 0;
+		vrLen = 592;
+		vrLoc = 16703;
+	};
+	417B87BE144C2F8B008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 544";
+		rLen = 0;
+		rLoc = 10777;
+		rType = 0;
+		vrLen = 739;
+		vrLoc = 14994;
+	};
+	417B87C1144C3062008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 558";
+		rLen = 0;
+		rLoc = 15996;
+		rType = 0;
+		vrLen = 790;
+		vrLoc = 15580;
+	};
+	417B87C4144C30B1008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 398";
+		rLen = 0;
+		rLoc = 11404;
+		rType = 0;
+		vrLen = 1215;
+		vrLoc = 10983;
+	};
+	417B87C7144C3155008DDCCE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22301F4110D7BC4000C1989F /* jit.BC.QTKit.mm */;
+		name = "jit.BC.QTKit.mm: 398";
+		rLen = 0;
+		rLoc = 11392;
+		rType = 0;
+		vrLen = 1458;
+		vrLoc = 10571;
 	};
 	41D2CFA41220BD7100E34F85 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

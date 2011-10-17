@@ -395,7 +395,8 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			jit_ob3d_set_context(x);
 			
 			// add texture to OB3D list.
-			jit_attr_setsym(x,ps_texture, jit_attr_getsym(x->output, gensym("name")));
+			//COMMENTED BECAUSE THIS APPEARS TO CAUSE TEXTURE ERRORS? WTFZ VADE? Y THIS HERE? ~brian
+			//jit_attr_setsym(x,ps_texture, jit_attr_getsym(x->output, gensym("name")));
 			
                         
 			// we need to update our internal texture to the latest known size of our movie's image.
@@ -468,7 +469,7 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				// render our qtkit texture to our jit.gl.texture's texture.
 				glColor4f(1.0, 1.0, 1.0, 1.0);
 				
-				glActiveTexture(GL_TEXTURE0);
+				//glActiveTexture(GL_TEXTURE0);
 				
 				{
                     
@@ -515,29 +516,34 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				
 				glMatrixMode(GL_TEXTURE);
 				glPopMatrix();
+				glMatrixMode(previousMatrixMode);
+
 				
-				glPopAttrib();
-				glPopClientAttrib();
 				
 				[videoPlayer->moviePlayer unbindTexture];
 				QTVisualContextTask(videoPlayer->moviePlayer._visualContext);
-
-				glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, previousFBO);	
-				glBindFramebufferEXT(GL_READ_FRAMEBUFFER_EXT, previousReadFBO);
-				glBindFramebufferEXT(GL_DRAW_FRAMEBUFFER_EXT, previousDrawFBO);
 				
-				glMatrixMode(previousMatrixMode);
+				
 				
 				// clean up after ourselves
 				glDeleteFramebuffers(1, &tempFBO);
 				tempFBO = 0;
 				
-				glFlushRenderAPPLE();	
+				//mmaybeeee....
+				//glFlushRenderAPPLE();	
 			}
 			else 
 			{
 				post("jit.BC.QTKit could not attach to FBO");
 			}
+			
+			glPopAttrib();
+			glPopClientAttrib();
+			glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, previousFBO);	
+			glBindFramebufferEXT(GL_READ_FRAMEBUFFER_EXT, previousReadFBO);
+			glBindFramebufferEXT(GL_DRAW_FRAMEBUFFER_EXT, previousDrawFBO);
+			
+			
 //			[frame release];
 			jit_gl_set_context(ctx);
 		}
@@ -566,12 +572,14 @@ void jit_BC_QTKit_free(t_jit_BC_QTKit *x)
 
 		videoPlayer = NULL;
 		
-		
+				
+		// free ourselves
+		if(x)
+		jit_ob3d_free(x);
+
 		if(x->output)
 			jit_object_free(x->output);
-		
-		// free ourselves
-		jit_ob3d_free(x);
+
 		
 	}
 	
