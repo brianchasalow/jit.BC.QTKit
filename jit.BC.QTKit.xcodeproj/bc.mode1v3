@@ -307,7 +307,7 @@
 							<real>334</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>122 59 1316 819 0 0 1440 878 </string>
+						<string>75 59 1316 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -337,7 +337,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>417B8762144C10E2008DDCCE</string>
+										<string>417B8794144C291B008DDCCE</string>
 										<key>history</key>
 										<array>
 											<string>411CC6B3124E6B0000C2E63D</string>
@@ -348,12 +348,10 @@
 											<string>417B7F2414494551008DDCCE</string>
 											<string>417B7F771449497B008DDCCE</string>
 											<string>417B83E414494C29008DDCCE</string>
-											<string>417B84B414496A55008DDCCE</string>
 											<string>417B852B14497C51008DDCCE</string>
 											<string>417B853714497FA5008DDCCE</string>
 											<string>417B853D144992F8008DDCCE</string>
 											<string>417B8552144A90B4008DDCCE</string>
-											<string>417B85EA144AB5D0008DDCCE</string>
 											<string>417B8612144B4CAD008DDCCE</string>
 											<string>417B861C144B4FC3008DDCCE</string>
 											<string>417B8626144B5066008DDCCE</string>
@@ -368,8 +366,9 @@
 											<string>417B8731144C0B13008DDCCE</string>
 											<string>417B8749144C0D20008DDCCE</string>
 											<string>417B8754144C0D59008DDCCE</string>
-											<string>417B875F144C0DBE008DDCCE</string>
-											<string>417B8760144C0DBE008DDCCE</string>
+											<string>417B8772144C172B008DDCCE</string>
+											<string>417B8792144C291B008DDCCE</string>
+											<string>417B8793144C291B008DDCCE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -383,7 +382,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {960, 526}}</string>
 								<key>RubberWindowFrame</key>
-								<string>122 59 1316 819 0 0 1440 878 </string>
+								<string>75 59 1316 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -403,7 +402,7 @@
 								<key>Frame</key>
 								<string>{{0, 531}, {960, 247}}</string>
 								<key>RubberWindowFrame</key>
-								<string>122 59 1316 819 0 0 1440 878 </string>
+								<string>75 59 1316 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -573,7 +572,7 @@
 		<string>/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>122 59 1316 819 0 0 1440 878 </string>
+	<string>75 59 1316 819 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

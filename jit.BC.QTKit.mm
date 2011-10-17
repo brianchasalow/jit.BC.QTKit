@@ -295,21 +295,6 @@ t_jit_err jit_BC_QTKit_dest_changed(t_jit_BC_QTKit *x)
 			videoPlayer->repairContext();
 		}
 		
-//		t_jit_object *jitob = (t_jit_object*)max_jit_obex_jitob_get(x);
-		//	jit_object_error((t_jit_object *)jitob,"jit.BC_QTKIT: could not call draw");
-
-		//		t_jit_object* myobj  = (t_jit_object*)jit_object_findregistered(context);
-		//		if(myobj == NULL){
-		//			post("cant find context!");	
-		//		}
-		//		else{
-		//				post("found context");	
-		//		jit_object_method(myobj, gensym("bang"), gensym("bang"), 0L, 0);
-		//		}
-		
-		
-		
-		
 		t_symbol *context = jit_attr_getsym(x,ps_drawto);		
 		jit_attr_setsym(x->output,ps_drawto,context);
 		
@@ -349,7 +334,7 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 			jit_attr_setsym(x->output,_jit_sym_name, x->texturename);
 			jit_attr_setsym(x->output,gensym("defaultimage"),gensym("black"));
 			jit_attr_setlong(x->output,gensym("rectangle"), 1);
-			jit_attr_setlong(x->output, gensym("flip"), 0);
+			jit_attr_setlong(x->output, gensym("flip"), 1);
 			
 			x->dim[0] = 640;
 			x->dim[1] = 480;
@@ -405,9 +390,9 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			x->needsRedraw = NO;
 			
 			// cache/restore context in case in capture mode
-//			t_jit_gl_context ctx = jit_gl_get_context();
+			t_jit_gl_context ctx = jit_gl_get_context();
 			
-//			jit_ob3d_set_context(ctx);
+			jit_ob3d_set_context(x);
 			
 			// add texture to OB3D list.
 			jit_attr_setsym(x,ps_texture, jit_attr_getsym(x->output, gensym("name")));
@@ -554,7 +539,7 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				post("jit.BC.QTKit could not attach to FBO");
 			}
 //			[frame release];
-//			jit_gl_set_context(ctx);
+			jit_gl_set_context(ctx);
 		}
 		
 		

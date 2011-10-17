@@ -88,6 +88,10 @@ void max_jit_BC_QTKit_draw(t_max_jit_BC_QTKit *x, t_symbol *s, long argc, t_atom
 //	}
 	// call the jitter object's draw method
 	jit_object_method(jitob,s,s,0L, 0);
+
+	jit_atom_setsym(&a,jit_attr_getsym(jitob,ps_out_name));
+	outlet_anything(x->texout,ps_jit_gl_texture,1,&a);			
+	
 	
 }
 
@@ -153,12 +157,8 @@ void max_jit_BC_QTKit_notify(t_max_jit_BC_QTKit *x, t_symbol *s, t_symbol *msg, 
 		max_jit_obex_dumpout(x,msg,1,(t_atom *)data);		
 		
 		//send texture out if the frameIsNew (unique 1 is forced. should override/implement this attribute)
-		if(jit_atom_getlong(data) == 1){
-			t_jit_object *jitob = (t_jit_object*)max_jit_obex_jitob_get(x);
-			t_atom a;
-			jit_atom_setsym(&a,jit_attr_getsym(jitob,ps_out_name));
-			outlet_anything(x->texout,ps_jit_gl_texture,1,&a);			
-		}
+//		if(jit_atom_getlong(data) == 1){
+//		}
 	}		
 }
 

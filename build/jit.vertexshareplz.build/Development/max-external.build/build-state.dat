@@ -1,0 +1,1039 @@
+Tmax-external
+v7
+r0
+t340332799.696791
+cCheck dependencies
+cProcessInfoPlistFile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist
+cSymLink /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development/jit.vertexshareplz.mxo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+cCompileC build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp normal i386 c++ com.apple.compilers.gcc.4_0
+cCompileC build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c normal i386 c com.apple.compilers.gcc.4_0
+cLd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz normal i386
+cTouch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004E31DFB700000000000000EE
+t1311891383
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Aliases.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Controls.h
+c000000004A119632000000000000001B
+t1242666546
+s27
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Devices.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Files.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/MacTypes.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/MacWindows.h
+c000000004A119632000000000000001B
+t1242666546
+s27
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/QDOffscreen.h
+c000000004A1196320000000000000035
+t1242666546
+s53
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/QTML.h
+c000000004A119632000000000000002D
+t1242666546
+s45
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Quickdraw.h
+c000000004A1196320000000000000035
+t1242666546
+s53
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Types.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Windows.h
+c000000004A119632000000000000001B
+t1242666546
+s27
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004C23BF2D00000000000005FF
+t1277411117
+s1535
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QuickTime.framework/Headers/QuickTime.h
+c000000004C23C4D00000000000000659
+t1277412560
+s1625
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/assert.h
+c000000004BBD2CE90000000000000DCB
+t1270689001
+s3531
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/ctype.h
+c000000004BBD2CE90000000000002C18
+t1270689001
+s11288
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/setjmp.h
+c000000004BBD2CE90000000000000438
+t1270689001
+s1080
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/types.h
+c000000004C2399480000000000002905
+t1277401416
+s10501
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.0.1/include/stdarg.h
+c000000004C2394FB00000000000010D9
+t1277400315
+s4313
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004CE74D380000000000043820
+t1290227000
+s276512
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c000000004E288F980000000002B5C7A0
+t1311281048
+s45467552
+
+N/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000004A12050E0000000000022140
+t1242694926
+s139584
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004DD5EC60000000000051BA20
+t1305865312
+s5356064
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004D22B148000000000000A5F0
+t1294119240
+s42480
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004DEEB6D200000000002181A0
+t1307490002
+s2195872
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000004E2890120000000000781330
+t1311281170
+s7869232
+
+N/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000004C23F49F0000000000021710
+t1277424799
+s136976
+
+N/System/Library/Frameworks/IOKit.framework/IOKit
+c000000004E289034000000000017B260
+t1311281204
+s1552992
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004E288FAA0000000000043360
+t1311281066
+s275296
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004E28906D0000000000785970
+t1311281261
+s7887216
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.byteorder.h
+c000000004D3F27820000000000000E2C
+t1295984514
+s3628
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.common.h
+c000000004D3F2782000000000000338B
+t1295984514
+s13195
+i"jit.platform.h"
+i"jit.error.h"
+i"jit.file.h"
+i"jit.math.h"
+i"jit.symbols.h"
+i"jit.gworld.h"
+i"jit.qt.codec.h"
+i"jit.critical.h"
+i"jit.op.h"
+i"jit.linklist.h"
+i"jit.parallel.utils.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.critical.h
+c000000004D3F27820000000000000134
+t1295984514
+s308
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.error.h
+c000000004D3F27820000000000000521
+t1295984514
+s1313
+i"jit.byteorder.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.file.h
+c000000004D3F27820000000000000304
+t1295984514
+s772
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gworld.h
+c000000004D3F2782000000000000034C
+t1295984514
+s844
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.linklist.h
+c000000004D3F27820000000000000CDE
+t1295984514
+s3294
+i"ext_linklist.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.mac.h
+c000000004D3F27820000000000000390
+t1295984514
+s912
+i<Carbon/Carbon.h>
+i<QuickTime/QuickTime.h>
+i<MacTypes.h>
+i<devices.h>
+i<MacWindows.h>
+i<controls.h>
+i<Quickdraw.h>
+i<QDOffscreen.h>
+i<Aliases.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.math.h
+c000000004D3F27820000000000001D02
+t1295984514
+s7426
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.max.h
+c000000004D3F27820000000000000BAF
+t1295984514
+s2991
+i"ext.h"
+i"ext_proto.h"
+i"ext_strings.h"
+i"ext_critical.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.op.h
+c000000004D3F278200000000000076D3
+t1295984514
+s30419
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.parallel.utils.h
+c000000004D3F278200000000000007F5
+t1295984514
+s2037
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.platform.h
+c000000004D3F27820000000000000A2A
+t1295984514
+s2602
+i"jit.mac.h"
+i"QTML.h"
+i"jit.mac.h"
+i"jit.max.h"
+i"jit.byteorder.h"
+i"jit.critical.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.qt.codec.h
+c000000004D3F27820000000000003275
+t1295984514
+s12917
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.symbols.h
+c000000004D3F27820000000000003777
+t1295984514
+s14199
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/max.jit.mop.h
+c000000004D3F27820000000000001366
+t1295984514
+s4966
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext.h
+c000000004D3F278200000000000003FC
+t1295984514
+s1020
+i"ext_prefix.h"
+i"ext_mess.h"
+i"ext_types.h"
+i"ext_maxtypes.h"
+i"ext_byteorder.h"
+i"ext_proto.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_byteorder.h
+c000000004D3F278200000000000022DD
+t1295984514
+s8925
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_critical.h
+c000000004D3F27820000000000000AB1
+t1295984514
+s2737
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_expr.h
+c000000004D3F278200000000000012CA
+t1295984514
+s4810
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_linklist.h
+c000000004D3F278200000000000050B4
+t1295984514
+s20660
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_maxtypes.h
+c000000004D3F278200000000000009C0
+t1295984514
+s2496
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_mess.h
+c000000004D3F27820000000000002991
+t1295984514
+s10641
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_path.h
+c000000004D3F278200000000000063C7
+t1295984514
+s25543
+i<Files.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_prefix.h
+c000000004D3F27820000000000001655
+t1295984514
+s5717
+i<MacTypes.h>
+i<sys/types.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdarg.h>
+i<ctype.h>
+i<math.h>
+i<string.h>
+i<setjmp.h>
+i<assert.h>
+i<windows.h>
+i<richedit.h>
+i<commctrl.h>
+i"ext_prefix_win.h"
+i"qtml.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_proto.h
+c000000004D3F27820000000000012613
+t1295984514
+s75283
+i"ext_types.h"
+i"ext_maxtypes.h"
+i"ext_sysmem.h"
+i"ext_sysfile.h"
+i"ext_systime.h"
+i"ext_expr.h"
+i"ext_path.h"
+i"ext_qtimage.h"
+i"ext_wind.h"
+i"ext_proto_win.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_proto_win.h
+c000000004D3F27820000000000000247
+t1295984514
+s583
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_qtimage.h
+c000000004D3F278200000000000005E7
+t1295984514
+s1511
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_strings.h
+c000000004D3F27820000000000000822
+t1295984514
+s2082
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_sysfile.h
+c000000004D3F27820000000000002277
+t1295984514
+s8823
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_sysmem.h
+c000000004D3F278200000000000016E4
+t1295984514
+s5860
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_systime.h
+c000000004D3F27820000000000000C29
+t1295984514
+s3113
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_types.h
+c000000004D3F2782000000000000135F
+t1295984514
+s4959
+i<Types.h>
+i<Quickdraw.h>
+i<MacTypes.h>
+i<Quickdraw.h>
+i<Controls.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_wind.h
+c000000004D3F27820000000000000683
+t1295984514
+s1667
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes/JitterAPI.framework/JitterAPI
+c000000004D3F2782000000000035E3F4
+t1295984514
+s3531764
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes/MaxAPI.framework/MaxAPI
+c000000004D3F278200000000000FEE48
+t1295984514
+s1044040
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch
+c000000004D3F278200000000000000A4
+t1295984514
+s164
+i<Carbon/Carbon.h>
+i<QuickTime/QuickTime.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+t1318639999
+s102
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist
+t1318639987
+s841
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz
+t1318639999
+s63908
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/PkgInfo
+t1318639987
+s8
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist
+c000000004D3F278000000000000003CB
+t1295984512
+s971
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development/jit.vertexshareplz.mxo
+t3
+s101
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.LinkFileList
+c000000004E98D973000000000000014C
+t1318639987
+s332
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o
+t1318639997
+s136060
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o
+t1318639993
+s7164
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp
+c000000004D1A4F21000000000000585B
+t1293569825
+s22619
+i"jit.common.h"
+i<boost/interprocess/managed_shared_memory.hpp>
+i<boost/interprocess/ipc/message_queue.hpp>
+i<iostream>
+i<string>
+i<fstream>
+i<cstddef>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c
+c000000004C9E34D5000000000000097E
+t1285436629
+s2430
+i"jit.common.h"
+i"max.jit.mop.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.byteorder.h
+c000000004B6893E4000000000000052C
+t1265144804
+s1324
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.common.h
+c000000004B6893E400000000000032D8
+t1265144804
+s13016
+i"jit.platform.h"
+i"jit.error.h"
+i"jit.file.h"
+i"jit.math.h"
+i"jit.symbols.h"
+i"jit.gworld.h"
+i"jit.qt.codec.h"
+i"jit.critical.h"
+i"jit.op.h"
+i"jit.linklist.h"
+i"jit.parallel.utils.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.critical.h
+c000000004B6893E40000000000000134
+t1265144804
+s308
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.error.h
+c000000004B6893E40000000000000521
+t1265144804
+s1313
+i"jit.byteorder.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.file.h
+c000000004B6893E40000000000000304
+t1265144804
+s772
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.gworld.h
+c000000004B6893E4000000000000034C
+t1265144804
+s844
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.linklist.h
+c000000004B6893E40000000000000CDE
+t1265144804
+s3294
+i"ext_linklist.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.mac.h
+c000000004B6893E40000000000000390
+t1265144804
+s912
+i<Carbon/Carbon.h>
+i<QuickTime/QuickTime.h>
+i<MacTypes.h>
+i<devices.h>
+i<MacWindows.h>
+i<controls.h>
+i<Quickdraw.h>
+i<QDOffscreen.h>
+i<Aliases.h>
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.math.h
+c000000004B6893E40000000000001D02
+t1265144804
+s7426
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.max.h
+c000000004B6893E40000000000000BAF
+t1265144804
+s2991
+i"ext.h"
+i"ext_proto.h"
+i"ext_strings.h"
+i"ext_critical.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.op.h
+c000000004B6893E400000000000076D3
+t1265144804
+s30419
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.parallel.utils.h
+c000000004B6893E400000000000007F5
+t1265144804
+s2037
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.platform.h
+c000000004B6893E40000000000000A2A
+t1265144804
+s2602
+i"jit.mac.h"
+i"QTML.h"
+i"jit.mac.h"
+i"jit.max.h"
+i"jit.byteorder.h"
+i"jit.critical.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.qt.codec.h
+c000000004B6893E40000000000003275
+t1265144804
+s12917
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/jit.symbols.h
+c000000004B6893E40000000000003777
+t1265144804
+s14199
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/jit-includes/max.jit.mop.h
+c000000004B6893E40000000000001302
+t1265144804
+s4866
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext.h
+c000000004B6893E400000000000003AE
+t1265144804
+s942
+i"ext_prefix.h"
+i"ext_mess.h"
+i"ext_types.h"
+i"ext_maxtypes.h"
+i"ext_byteorder.h"
+i"ext_proto.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_byteorder.h
+c000000004B6893E400000000000016A4
+t1265144804
+s5796
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_critical.h
+c000000004B6893E40000000000000AB1
+t1265144804
+s2737
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_expr.h
+c000000004B6893E400000000000012CA
+t1265144804
+s4810
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_linklist.h
+c000000004B6893E40000000000005085
+t1265144804
+s20613
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_maxtypes.h
+c000000004B6893E400000000000009C0
+t1265144804
+s2496
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_mess.h
+c000000004B6893E40000000000002947
+t1265144804
+s10567
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_path.h
+c000000004B6893E4000000000000625D
+t1265144804
+s25181
+i<Files.h>
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_prefix.h
+c000000004B6893E40000000000001655
+t1265144804
+s5717
+i<MacTypes.h>
+i<sys/types.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdarg.h>
+i<ctype.h>
+i<math.h>
+i<string.h>
+i<setjmp.h>
+i<assert.h>
+i<windows.h>
+i<richedit.h>
+i<commctrl.h>
+i"ext_prefix_win.h"
+i"qtml.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_proto.h
+c000000004C08D8E70000000000012FC8
+t1275648231
+s77768
+i"ext_types.h"
+i"ext_maxtypes.h"
+i"ext_sysmem.h"
+i"ext_sysfile.h"
+i"ext_systime.h"
+i"ext_expr.h"
+i"ext_path.h"
+i"ext_qtimage.h"
+i"ext_wind.h"
+i"ext_proto_win.h"
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_proto_win.h
+c000000004B6893E40000000000000247
+t1265144804
+s583
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_qtimage.h
+c000000004B6893E400000000000005E7
+t1265144804
+s1511
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_strings.h
+c000000004B6893E40000000000000822
+t1265144804
+s2082
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_sysfile.h
+c000000004B6893E40000000000002277
+t1265144804
+s8823
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_sysmem.h
+c000000004B6893E400000000000016E4
+t1265144804
+s5860
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_systime.h
+c000000004B6893E40000000000000C29
+t1265144804
+s3113
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_types.h
+c000000004B6893E4000000000000135F
+t1265144804
+s4959
+i<Types.h>
+i<Quickdraw.h>
+i<MacTypes.h>
+i<Quickdraw.h>
+i<Controls.h>
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/c74support/max-includes/ext_wind.h
+c000000004B6893E40000000000000683
+t1265144804
+s1667
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes/JitterAPI.framework/JitterAPI
+c000000004B6893E4000000000035E210
+t1265144804
+s3531280
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes/MaxAPI.framework/MaxAPI
+c000000004B6893E600000000000FB534
+t1265144806
+s1029428
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch
+c000000004B6893E400000000000000A4
+t1265144804
+s164
+i<Carbon/Carbon.h>
+i<QuickTime/QuickTime.h>
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+t1293569838
+s102
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist
+t1293569826
+s841
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz
+t1293569838
+s67692
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/PkgInfo
+t1293569826
+s8
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../Info.plist
+c000000004B6893E000000000000003CB
+t1265144800
+s971
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development/jit.vertexshareplz.mxo
+t3
+s101
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.LinkFileList
+c000000004C9E34C10000000000000150
+t1285436609
+s336
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o
+t1293569832
+s136596
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o
+t1285436630
+s7132
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp
+c000000004D1A4F21000000000000585B
+t1293569825
+s22619
+i"jit.common.h"
+i<boost/interprocess/managed_shared_memory.hpp>
+i<boost/interprocess/ipc/message_queue.hpp>
+i<iostream>
+i<string>
+i<fstream>
+i<cstddef>
+
+N/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/max.jit.vertexshareplz.c
+c000000004C9E34D5000000000000097E
+t1285436629
+s2430
+i"jit.common.h"
+i"max.jit.mop.h"
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies340332786#340332787#0(0"0(0#1#0"8608309696#0"0#
+
+CCompileC build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp normal i386 c++ com.apple.compilers.gcc.4_0
+s340332787.399405
+e340332797.830073
+r1
+xCompileC
+xbuild/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_0
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+lSLF07#2@91"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp340332787#340332797#0(5768"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'24(23@22"Instantiated from here340332797#296#114#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#723#0#723#0#0"0(22@19"Unused variable 'j'340332797#410#118#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here340332797#827#114#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#725#0#725#0#0"0(22@19"Unused variable 'j'340332797#941#118#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here340332797#1355#114#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#727#0#727#0#0"0(22@19"Unused variable 'j'340332797#1469#118#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here340332797#1884#114#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#729#0#729#0#0"0(22@19"Unused variable 'j'340332797#1998#118#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#644#0#644#0#19"unused variable '*'0(23@215"Instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'340332797#2365#307#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#672#0#672#0#0"0(23@22"Instantiated from here340332797#2672#114#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#723#0#723#0#0"0(22@22"Unused variable 'gain'340332797#2786#121#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'340332797#2907#120#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#541#0#541#0#19"unused variable '*'0(23@218"Instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'340332797#3279#310#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#672#0#672#0#0"0(23@22"Instantiated from here340332797#3589#114#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#725#0#725#0#0"0(22@22"Unused variable 'gain'340332797#3703#121#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'340332797#3824#120#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#541#0#541#0#19"unused variable '*'0(23@215"Instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'340332797#4193#307#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#672#0#672#0#0"0(23@22"Instantiated from here340332797#4500#114#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#727#0#727#0#0"0(22@22"Unused variable 'gain'340332797#4614#121#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'340332797#4735#120#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#541#0#541#0#19"unused variable '*'0(23@216"Instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'340332797#5105#308#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#672#0#672#0#0"0(23@22"Instantiated from here340332797#5413#114#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#729#0#729#0#0"0(22@22"Unused variable 'gain'340332797#5527#121#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'340332797#5648#120#0(6@83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#541#0#541#0#19"unused variable '*'0(0#0#83"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp8608284544#2579"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/jit.vertexshareplz.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o0#
+
+CCompileC build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp normal i386 c++ com.apple.compilers.gcc.4_0
+s315262626.341202
+e315262632.229809
+r1
+xCompileC
+xbuild/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o
+x/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_0
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]':
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]':
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]':
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]':
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+o/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+lSLF07#2@93"Compile /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262626#315262632#0(5832"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]':/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]':/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]':/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]':/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_vertexshareplz_vector(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'24(23@22"Instantiated from here315262631#298#116#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#723#0#723#0#0"0(22@19"Unused variable 'j'315262631#414#120#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here315262631#835#116#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#725#0#725#0#0"0(22@19"Unused variable 'j'315262631#951#120#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here315262631#1369#116#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#727#0#727#0#0"0(22@19"Unused variable 'j'315262631#1485#120#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here315262631#1904#116#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#729#0#729#0#0"0(22@19"Unused variable 'j'315262631#2020#120#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#644#0#644#0#19"unused variable '*'0(23@215"Instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'315262631#2391#309#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#672#0#672#0#0"0(23@22"Instantiated from here315262631#2700#116#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#723#0#723#0#0"0(22@22"Unused variable 'gain'315262631#2816#123#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'315262631#2939#122#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#541#0#541#0#19"unused variable '*'0(23@218"Instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'315262631#3315#312#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#672#0#672#0#0"0(23@22"Instantiated from here315262631#3627#116#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#725#0#725#0#0"0(22@22"Unused variable 'gain'315262631#3743#123#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'315262631#3866#122#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#541#0#541#0#19"unused variable '*'0(23@215"Instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'315262631#4239#309#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#672#0#672#0#0"0(23@22"Instantiated from here315262631#4548#116#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#727#0#727#0#0"0(22@22"Unused variable 'gain'315262631#4664#123#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'315262631#4787#122#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#541#0#541#0#19"unused variable '*'0(23@216"Instantiated from 'void jit_vertexshareplz_loop(t_jit_vertexshareplz*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'315262631#5161#310#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#672#0#672#0#0"0(23@22"Instantiated from here315262631#5471#116#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#729#0#729#0#0"0(22@22"Unused variable 'gain'315262631#5587#123#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'315262631#5710#122#0(6@85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp315262625#541#0#541#0#19"unused variable '*'0(0#0#85"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp8604915744#2893"    cd /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/jit.vertexshareplz.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -I/Developer/Headers/boost_1_44 -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/msp-includes -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/openFrameworks/app -I../../ofx/libs/openFrameworks/communication -I../../ofx/libs/openFrameworks/events -I../../ofx/libs/openFrameworks/graphics -I../../ofx/libs/openFrameworks/sound -I../../ofx/libs/openFrameworks/utils -I../../ofx/libs/openFrameworks/video -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/DerivedSources/i386 -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/DerivedSources -include /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch -c /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/jit.vertexshareplz.cpp -o /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.o0#
+
+CCompileC build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c normal i386 c com.apple.compilers.gcc.4_0
+s340332787.410946
+e340332793.683065
+r1
+xCompileC
+xbuild/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@93"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c340332787#340332793#0(0"0(0#0#85"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c8608016800#2555"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/jit.vertexshareplz.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o0#
+
+CCompileC build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/max.jit.vertexshareplz.c normal i386 c com.apple.compilers.gcc.4_0
+s307129429.347425
+e307129430.153000
+r1
+xCompileC
+xbuild/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o
+x/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/max.jit.vertexshareplz.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@95"Compile /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/max.jit.vertexshareplz.c307129429#307129430#0(0"0(0#0#87"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/max.jit.vertexshareplz.c8611652960#2869"    cd /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/jit.vertexshareplz.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -I/Developer/Headers/boost_1_44 -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/msp-includes -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/openFrameworks/app -I../../ofx/libs/openFrameworks/communication -I../../ofx/libs/openFrameworks/events -I../../ofx/libs/openFrameworks/graphics -I../../ofx/libs/openFrameworks/sound -I../../ofx/libs/openFrameworks/utils -I../../ofx/libs/openFrameworks/video -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/DerivedSources/i386 -I/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/DerivedSources -include /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch -c /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/max.jit.vertexshareplz.c -o /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o0#
+
+CLd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz normal i386
+s340332797.830229
+e340332799.647497
+r1
+xLd
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz
+xnormal
+xi386
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx' following -F not found
+lSLF07#2@138"Link /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz340332797#340332799#0(3858"ld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx' following -F not found25(22@180"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not found340332799#0#194#0(6@0"340332799#0#0#0#0#0"0(22@183"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not found340332799#194#197#0(6@0"340332799#0#0#0#0#0"0(22@180"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not found340332799#391#194#0(6@0"340332799#0#0#0#0#0"0(22@184"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not found340332799#585#198#0(6@0"340332799#0#0#0#0#0"0(22@182"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not found340332799#783#196#0(6@0"340332799#0#0#0#0#0"0(22@185"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not found340332799#979#199#0(6@0"340332799#0#0#0#0#0"0(22@115"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not found340332799#1178#129#0(6@0"340332799#0#0#0#0#0"0(22@118"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not found340332799#1307#132#0(6@0"340332799#0#0#0#0#0"0(22@117"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not found340332799#1439#131#0(6@0"340332799#0#0#0#0#0"0(22@113"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not found340332799#1570#127#0(6@0"340332799#0#0#0#0#0"0(22@131"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not found340332799#1697#145#0(6@0"340332799#0#0#0#0#0"0(22@113"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not found340332799#1842#127#0(6@0"340332799#0#0#0#0#0"0(22@116"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not found340332799#1969#130#0(6@0"340332799#0#0#0#0#0"0(22@142"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not found340332799#2099#156#0(6@0"340332799#0#0#0#0#0"0(22@140"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not found340332799#2255#154#0(6@0"340332799#0#0#0#0#0"0(22@125"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx' following -L not found340332799#2409#139#0(6@0"340332799#0#0#0#0#0"0(22@128"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx' following -L not found340332799#2548#142#0(6@0"340332799#0#0#0#0#0"0(22@127"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx' following -L not found340332799#2690#141#0(6@0"340332799#0#0#0#0#0"0(22@123"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx' following -L not found340332799#2831#137#0(6@0"340332799#0#0#0#0#0"0(22@141"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not found340332799#2968#155#0(6@0"340332799#0#0#0#0#0"0(22@123"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx' following -L not found340332799#3123#137#0(6@0"340332799#0#0#0#0#0"0(22@126"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx' following -L not found340332799#3260#140#0(6@0"340332799#0#0#0#0#0"0(22@180"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not found340332799#3400#194#0(6@0"340332799#0#0#0#0#0"0(22@113"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not found340332799#3594#127#0(6@0"340332799#0#0#0#0#0"0(22@123"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx' following -F not found340332799#3721#137#0(6@0"340332799#0#0#0#0#0"0(0#0#0"8609213120#4079"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    setenv MACOSX_DEPLOYMENT_TARGET 10.4    /Developer/usr/bin/g++-4.0 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/rtAudio/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -filelist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.LinkFileList -mmacosx-version-min=10.4 -framework MaxAPI -framework JitterAPI -framework AppKit -framework Cocoa -framework IOKit -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz0#
+
+CLd /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz normal i386
+s315262632.229992
+e315262638.036141
+r1
+xLd
+x/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz
+xnormal
+xi386
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not found
+old: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not found
+lSLF07#2@140"Link /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz315262632#315262638#0(2450"ld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not foundld: warning: directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not found15(22@182"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not found315262638#0#196#0(6@0"315262638#0#0#0#0#0"0(22@185"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not found315262638#196#199#0(6@0"315262638#0#0#0#0#0"0(22@182"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not found315262638#395#196#0(6@0"315262638#0#0#0#0#0"0(22@186"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not found315262638#591#200#0(6@0"315262638#0#0#0#0#0"0(22@184"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not found315262638#791#198#0(6@0"315262638#0#0#0#0#0"0(22@187"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not found315262638#989#201#0(6@0"315262638#0#0#0#0#0"0(22@117"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not found315262638#1190#131#0(6@0"315262638#0#0#0#0#0"0(22@120"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not found315262638#1321#134#0(6@0"315262638#0#0#0#0#0"0(22@119"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not found315262638#1455#133#0(6@0"315262638#0#0#0#0#0"0(22@115"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not found315262638#1588#129#0(6@0"315262638#0#0#0#0#0"0(22@133"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not found315262638#1717#147#0(6@0"315262638#0#0#0#0#0"0(22@115"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not found315262638#1864#129#0(6@0"315262638#0#0#0#0#0"0(22@118"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not found315262638#1993#132#0(6@0"315262638#0#0#0#0#0"0(22@182"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not found315262638#2125#196#0(6@0"315262638#0#0#0#0#0"0(22@115"Directory '/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not found315262638#2321#129#0(6@0"315262638#0#0#0#0#0"0(0#0#0"8617114048#4147"    cd /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.0 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/fmodex/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/FreeImage/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/freetype/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glee/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/poco/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/rtAudio/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx -L/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -filelist /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/jit.vertexshareplz.build/Development/max-external.build/Objects-normal/i386/jit.vertexshareplz.LinkFileList -mmacosx-version-min=10.6 -framework MaxAPI -framework JitterAPI -framework AppKit -framework Cocoa -framework IOKit -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -o /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/MacOS/jit.vertexshareplz0#
+
+CProcessInfoPlistFile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist
+s340332787.357715
+e340332787.399331
+r1
+xProcessInfoPlistFile
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist
+lSLF07#2@82"Process /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist340332787#340332787#0(0"0(0#0#74"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist33777431004577904#462"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    builtin-infoPlistUtility /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist -genpkginfo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist0#
+
+CProcessInfoPlistFile /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../Info.plist
+s315262626.315230
+e315262626.341104
+r1
+xProcessInfoPlistFile
+x/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist
+x/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../Info.plist
+lSLF07#2@84"Process /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../Info.plist315262626#315262626#0(0"0(0#0#76"/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../Info.plist8612120576#470"    cd /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz    builtin-infoPlistUtility /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../Info.plist -genpkginfo /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo/Contents/Info.plist0#
+
+CSymLink /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Development/jit.vertexshareplz.mxo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+r0
+
+CSymLink /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development/jit.vertexshareplz.mxo /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+s307129409.928640
+e307129409.934879
+r1
+xSymLink
+x/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development/jit.vertexshareplz.mxo
+x/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+lSLF07#2@111"Process /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development/jit.vertexshareplz.mxo307129409#307129409#0(0"0(0#0#0"8602855136#292"    cd /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz    /bin/ln -sf /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/build/Development/jit.vertexshareplz.mxo0#
+
+CTouch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+s340332799.647605
+e340332799.696752
+r1
+xTouch
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+lSLF07#2@105"Touch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo340332799#340332799#0(0"0(0#0#0"8608405792#190"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    /usr/bin/touch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo0#
+
+CTouch /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+s315262638.036293
+e315262638.093846
+r1
+xTouch
+x/Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo
+lSLF07#2@107"Touch /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo315262638#315262638#0(0"0(0#0#0"8613933760#194"    cd /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz    /usr/bin/touch -c /Users/bc/IVY-macport/MaxSDK-5.1.1/examples/jit.vertexshareplz/../../sdk-build/jit.vertexshareplz.mxo0#
+

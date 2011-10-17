@@ -1,0 +1,4 @@
+LIBRARY jit.vertexshareplz.mxo
+
+EXPORTS
+	main

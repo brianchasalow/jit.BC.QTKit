@@ -1,0 +1,1279 @@
+Tmax-external
+v7
+r0
+t340535584.905649
+cCheck dependencies
+cProcessInfoPlistFile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist
+cSymLink /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/jit.BC.QTKit.mxo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo
+cCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm normal i386 objective-c++ com.apple.compilers.gcc.4_0
+cCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c normal i386 c com.apple.compilers.gcc.4_0
+cCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitMovieRenderer.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm normal i386 objective-c++ com.apple.compilers.gcc.4_0
+cCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitVideoPlayer.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.mm normal i386 objective-c++ com.apple.compilers.gcc.4_0
+cLd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit normal i386
+cPhaseScriptExecution "Run Script" /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Script-417B7E7614493959008DDCCE.sh
+cTouch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004E31DFB700000000000000EE
+t1311891383
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Aliases.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Controls.h
+c000000004A119632000000000000001B
+t1242666546
+s27
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Devices.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Files.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/MacTypes.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/MacWindows.h
+c000000004A119632000000000000001B
+t1242666546
+s27
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/QDOffscreen.h
+c000000004A1196320000000000000035
+t1242666546
+s53
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/QTML.h
+c000000004A119632000000000000002D
+t1242666546
+s45
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Quickdraw.h
+c000000004A1196320000000000000035
+t1242666546
+s53
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Types.h
+c000000004A1196320000000000000027
+t1242666546
+s39
+
+N/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon/Windows.h
+c000000004A119632000000000000001B
+t1242666546
+s27
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h
+c000000004C23C7EF0000000000005074
+t1277413359
+s20596
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004C23BF2D00000000000005FF
+t1277411117
+s1535
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004CAA7404000000000001C4E4
+t1286239236
+s115940
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGL.h
+c000000004BD2501F0000000000001659
+t1272074271
+s5721
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glext.h
+c000000004BD2501F0000000000042ACF
+t1272074271
+s273103
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004BD2501F0000000000003F84
+t1272074271
+s16260
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QTKit.framework/Headers/QTKit.h
+c000000004C23CA8F000000000000044A
+t1277414031
+s1098
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QTKit.framework/QTKit
+c000000004CAA74050000000000084B90
+t1286239237
+s543632
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework/Headers/Quartz.h
+c000000004AD870D50000000000000124
+t1255698645
+s292
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework/Quartz
+c000000004CAA740500000000000036E0
+t1286239237
+s14048
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QuickTime.framework/Headers/QuickTime.h
+c000000004C23C4D00000000000000659
+t1277412560
+s1625
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004CAA7405000000000009BE04
+t1286239237
+s638468
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/assert.h
+c000000004BBD2CE90000000000000DCB
+t1270689001
+s3531
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/ctype.h
+c000000004BBD2CE90000000000002C18
+t1270689001
+s11288
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/setjmp.h
+c000000004BBD2CE90000000000000438
+t1270689001
+s1080
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/types.h
+c000000004C2399480000000000002905
+t1277401416
+s10501
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.0.1/include/stdarg.h
+c000000004C2394FB00000000000010D9
+t1277400315
+s4313
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.0.1/include/stddef.h
+c000000004C2394FB0000000000003193
+t1277400315
+s12691
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004CE74D380000000000043820
+t1290227000
+s276512
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c000000004E288F980000000002B5C7A0
+t1311281048
+s45467552
+
+N/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000004A12050E0000000000022140
+t1242694926
+s139584
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004DD5EC60000000000051BA20
+t1305865312
+s5356064
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004D22B148000000000000A5F0
+t1294119240
+s42480
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004DEEB6D200000000002181A0
+t1307490002
+s2195872
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000004E2890120000000000781330
+t1311281170
+s7869232
+
+N/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000004C23F49F0000000000021710
+t1277424799
+s136976
+
+N/System/Library/Frameworks/IOKit.framework/IOKit
+c000000004E289034000000000017B260
+t1311281204
+s1552992
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004E288FAA0000000000043360
+t1311281066
+s275296
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004E28906D0000000000785970
+t1311281261
+s7887216
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.agl.h
+c000000004D3F27820000000000000103
+t1295984514
+s259
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.byteorder.h
+c000000004D3F27820000000000000E2C
+t1295984514
+s3628
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.common.h
+c000000004D3F2782000000000000338B
+t1295984514
+s13195
+i"jit.platform.h"
+i"jit.error.h"
+i"jit.file.h"
+i"jit.math.h"
+i"jit.symbols.h"
+i"jit.gworld.h"
+i"jit.qt.codec.h"
+i"jit.critical.h"
+i"jit.op.h"
+i"jit.linklist.h"
+i"jit.parallel.utils.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.critical.h
+c000000004D3F27820000000000000134
+t1295984514
+s308
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.error.h
+c000000004D3F27820000000000000521
+t1295984514
+s1313
+i"jit.byteorder.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.file.h
+c000000004D3F27820000000000000304
+t1295984514
+s772
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gl.chunk.h
+c000000004D3F278200000000000009E4
+t1295984514
+s2532
+i"jit.gl.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gl.context.h
+c000000004D3F27820000000000000DFE
+t1295984514
+s3582
+i"jit.gl.h"
+i"jit.gl.procs.h"
+i"jit.gl.support.h"
+i"jit.gl.pixelformat.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gl.drawinfo.h
+c000000004D3F2782000000000000088D
+t1295984514
+s2189
+i"jit.gl.context.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gl.h
+c000000004D3F27820000000000000F6F
+t1295984514
+s3951
+i"jit.common.h"
+i<AGL/agl.h>
+i<OpenGL/glu.h>
+i"agl.h"
+i"glu.h"
+i"jit.agl.h"
+i"jit.glext.h"
+i<windows.h>
+i"gl\gl.h"
+i"gl\glu.h"
+i"jit.wglext.h"
+i"jit.glext.h"
+i"jit.gl.chunk.h"
+i"jit.gl.ob3d.h"
+i"jit.gl.procs.h"
+i"jit.gl.support.h"
+i"jit.gl.context.h"
+i"jit.gl.drawinfo.h"
+i"jit.gl.pixelformat.h"
+i<math.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gl.ob3d.h
+c000000004D3F27820000000000000E50
+t1295984514
+s3664
+i"jit.gl.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gl.pixelformat.h
+c000000004D3F278200000000000020A5
+t1295984514
+s8357
+i"jit.gl.h"
+i"jit.common.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gl.procs.h
+c000000004D3F2782000000000002E13F
+t1295984514
+s188735
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gl.support.h
+c000000004D3F27820000000000003975
+t1295984514
+s14709
+i"jit.common.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.glext.h
+c000000004D3F2782000000000004A591
+t1295984514
+s304529
+i<windows.h>
+i<stddef.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.gworld.h
+c000000004D3F2782000000000000034C
+t1295984514
+s844
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.linklist.h
+c000000004D3F27820000000000000CDE
+t1295984514
+s3294
+i"ext_linklist.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.mac.h
+c000000004D3F27820000000000000390
+t1295984514
+s912
+i<Carbon/Carbon.h>
+i<QuickTime/QuickTime.h>
+i<MacTypes.h>
+i<devices.h>
+i<MacWindows.h>
+i<controls.h>
+i<Quickdraw.h>
+i<QDOffscreen.h>
+i<Aliases.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.math.h
+c000000004D3F27820000000000001D02
+t1295984514
+s7426
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.max.h
+c000000004D3F27820000000000000BAF
+t1295984514
+s2991
+i"ext.h"
+i"ext_proto.h"
+i"ext_strings.h"
+i"ext_critical.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.op.h
+c000000004D3F278200000000000076D3
+t1295984514
+s30419
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.parallel.utils.h
+c000000004D3F278200000000000007F5
+t1295984514
+s2037
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.platform.h
+c000000004D3F27820000000000000A2A
+t1295984514
+s2602
+i"jit.mac.h"
+i"QTML.h"
+i"jit.mac.h"
+i"jit.max.h"
+i"jit.byteorder.h"
+i"jit.critical.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.qt.codec.h
+c000000004D3F27820000000000003275
+t1295984514
+s12917
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.symbols.h
+c000000004D3F27820000000000003777
+t1295984514
+s14199
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/jit.wglext.h
+c000000004D3F278200000000000069D7
+t1295984514
+s27095
+i<windows.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/jit-includes/max.jit.mop.h
+c000000004D3F27820000000000001366
+t1295984514
+s4966
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/commonsyms.h
+c000000004D3F2782000000000001CD3A
+t1295984514
+s118074
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext.h
+c000000004D3F278200000000000003FC
+t1295984514
+s1020
+i"ext_prefix.h"
+i"ext_mess.h"
+i"ext_types.h"
+i"ext_maxtypes.h"
+i"ext_byteorder.h"
+i"ext_proto.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_atomarray.h
+c000000004D3F27820000000000001DD8
+t1295984514
+s7640
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_byteorder.h
+c000000004D3F278200000000000022DD
+t1295984514
+s8925
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_critical.h
+c000000004D3F27820000000000000AB1
+t1295984514
+s2737
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_dictionary.h
+c000000004D3F278200000000000070CC
+t1295984514
+s28876
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_expr.h
+c000000004D3F278200000000000012CA
+t1295984514
+s4810
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_hashtab.h
+c000000004D3F2782000000000000311E
+t1295984514
+s12574
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_linklist.h
+c000000004D3F278200000000000050B4
+t1295984514
+s20660
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_maxtypes.h
+c000000004D3F278200000000000009C0
+t1295984514
+s2496
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_mess.h
+c000000004D3F27820000000000002991
+t1295984514
+s10641
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_obex.h
+c000000004D3F27820000000000014F96
+t1295984514
+s85910
+i"commonsyms.h"
+i"ext_linklist.h"
+i"ext_hashtab.h"
+i"ext_atomarray.h"
+i"ext_obex_util.h"
+i"ext_dictionary.h"
+i"ext_obstring.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_obex_util.h
+c000000004D3F27820000000000019853
+t1295984514
+s104531
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_obstring.h
+c000000004D3F278200000000000004F4
+t1295984514
+s1268
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_path.h
+c000000004D3F278200000000000063C7
+t1295984514
+s25543
+i<Files.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_prefix.h
+c000000004D3F27820000000000001655
+t1295984514
+s5717
+i<MacTypes.h>
+i<sys/types.h>
+i<stdio.h>
+i<stdlib.h>
+i<stdarg.h>
+i<ctype.h>
+i<math.h>
+i<string.h>
+i<setjmp.h>
+i<assert.h>
+i<windows.h>
+i<richedit.h>
+i<commctrl.h>
+i"ext_prefix_win.h"
+i"qtml.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_proto.h
+c000000004D3F27820000000000012613
+t1295984514
+s75283
+i"ext_types.h"
+i"ext_maxtypes.h"
+i"ext_sysmem.h"
+i"ext_sysfile.h"
+i"ext_systime.h"
+i"ext_expr.h"
+i"ext_path.h"
+i"ext_qtimage.h"
+i"ext_wind.h"
+i"ext_proto_win.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_proto_win.h
+c000000004D3F27820000000000000247
+t1295984514
+s583
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_qtimage.h
+c000000004D3F278200000000000005E7
+t1295984514
+s1511
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_strings.h
+c000000004D3F27820000000000000822
+t1295984514
+s2082
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_sysfile.h
+c000000004D3F27820000000000002277
+t1295984514
+s8823
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_sysmem.h
+c000000004D3F278200000000000016E4
+t1295984514
+s5860
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_systime.h
+c000000004D3F27820000000000000C29
+t1295984514
+s3113
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_types.h
+c000000004D3F2782000000000000135F
+t1295984514
+s4959
+i<Types.h>
+i<Quickdraw.h>
+i<MacTypes.h>
+i<Quickdraw.h>
+i<Controls.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/c74support/max-includes/ext_wind.h
+c000000004D3F27820000000000000683
+t1295984514
+s1667
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/JitterAPI.framework/JitterAPI
+c000000004D3F2782000000000035E3F4
+t1295984514
+s3531764
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/MaxAPI.framework/MaxAPI
+c000000004D3F278200000000000FEE48
+t1295984514
+s1044040
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch
+c000000004D3F27820000000000000545
+t1295984514
+s1349
+i<Carbon/Carbon.h>
+i<QuickTime/QuickTime.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-prefix.pch
+c000000004D3F278200000000000000A4
+t1295984514
+s164
+i<Carbon/Carbon.h>
+i<QuickTime/QuickTime.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo
+t1318842784
+s102
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist
+t1318661022
+s823
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit
+t1318842784
+s64816
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/PkgInfo
+t1318661022
+s8
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist
+c000000004D3F278000000000000003CB
+t1295984512
+s971
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/Info.plist
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.h
+c000000004E9948230000000000001179
+t1318668323
+s4473
+i<Cocoa/Cocoa.h>
+i<Quartz/Quartz.h>
+i<QTKit/QTKit.h>
+i<OpenGL/OpenGL.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm
+c000000004E994821000000000000520C
+t1318668321
+s21004
+i"MaxQTKitMovieRenderer.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h
+c000000004E9947A500000000000013E7
+t1318668197
+s5095
+i"MaxQTKitMovieRenderer.h"
+i<Cocoa/Cocoa.h>
+i<Quartz/Quartz.h>
+i<QTKit/QTKit.h>
+i<OpenGL/OpenGL.h>
+i<string>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.mm
+c000000004E9947990000000000002DC4
+t1318668185
+s11716
+i"MaxQTKitVideoPlayer.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/jit.BC.QTKit.mxo
+t3
+s93
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitMovieRenderer.o
+t1318700424
+s49300
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitVideoPlayer.o
+t1318700425
+s64504
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.LinkFileList
+c000000004E98DE6D0000000000000258
+t1318641261
+s600
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o
+t1318842760
+s104324
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o
+t1318842784
+s55700
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Script-417B7E7614493959008DDCCE.sh
+c000000004E99074800000000000000A4
+t1318651720
+s164
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp
+c000000004E992B4A0000000000001A9D
+t1318660938
+s6813
+i"jit.common.h"
+i"jit.gl.h"
+i"jit.gl.ob3d.h"
+i"ext_obex.h"
+i<iostream>
+i<string>
+i<sstream>
+i<cstddef>
+i"MaxQTKitVideoPlayer.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m
+c000000004E992CC60000000000001AA5
+t1318661318
+s6821
+i"jit.common.h"
+i"jit.gl.h"
+i"jit.gl.ob3d.h"
+i"ext_obex.h"
+i"MaxQTKitVideoPlayer.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm
+c000000004E9BF1850000000000004386
+t1318842757
+s17286
+i"jit.common.h"
+i"jit.gl.h"
+i"jit.gl.ob3d.h"
+i"ext_obex.h"
+i"MaxQTKitVideoPlayer.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c
+c000000004E9BF1930000000000001B90
+t1318842771
+s7056
+i"jit.common.h"
+i"jit.gl.h"
+i"ext_obex.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp
+c000000004E9BC2EE0000000000001E78
+t1318830830
+s7800
+i"jit.common.h"
+i"jit.gl.h"
+i"ext_obex.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes/JitterAPI.framework/JitterAPI
+c000000004D3F2782000000000035E3F4
+t1295984514
+s3531764
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes/MaxAPI.framework/MaxAPI
+c000000004D3F278200000000000FEE48
+t1295984514
+s1044040
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch
+c000000004D3F278200000000000000A4
+t1295984514
+s164
+i<Carbon/Carbon.h>
+i<QuickTime/QuickTime.h>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo
+t1318640215
+s102
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist
+t1318640211
+s823
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit
+t1318640215
+s45248
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/PkgInfo
+t1318640211
+s8
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.bc.qtkit.mxo
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.bc.qtkit.mxo/Contents/Info.plist
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.bc.qtkit.mxo/Contents/MacOS/jit.bc.qtkit
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.bc.qtkit.mxo/Contents/PkgInfo
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist
+c000000004D3F278000000000000003CB
+t1295984512
+s971
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/jit.BC.QTKit.mxo
+t3
+s93
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/jit.bc.qtkit.mxo
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.LinkFileList
+c000000004E98DA530000000000000132
+t1318640211
+s306
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o
+t1318640215
+s131872
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.bc.qtkit.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.vertexshareplz.o
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o
+t1318640213
+s7096
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o
+t2
+s0
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp
+c000000004E98DA0C00000000000056D0
+t1318640140
+s22224
+i"jit.common.h"
+i<boost/interprocess/managed_shared_memory.hpp>
+i<boost/interprocess/ipc/message_queue.hpp>
+i<iostream>
+i<string>
+i<fstream>
+i<cstddef>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp
+c000000004E98DA0C00000000000056D0
+t1318640140
+s22224
+i"jit.common.h"
+i<boost/interprocess/managed_shared_memory.hpp>
+i<boost/interprocess/ipc/message_queue.hpp>
+i<iostream>
+i<string>
+i<fstream>
+i<cstddef>
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.BC.QTKit.c
+c000000004E98DA6B00000000000008EB
+t1318640235
+s2283
+i"jit.common.h"
+i"max.jit.mop.h"
+
+N/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c
+c000000004E98D9D6000000000000096F
+t1318640086
+s2415
+i"jit.common.h"
+i"max.jit.mop.h"
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies340535582#340535582#0(0"0(0#1#0"8668722336#0"0#
+
+CCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitMovieRenderer.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm normal i386 objective-c++ com.apple.compilers.gcc.4_0
+s340393221.150072
+e340393224.064347
+r1
+xCompileC
+xbuild/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitMovieRenderer.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_0
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm:250:10: warning: "/*" within comment
+lSLF07#2@87"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm340393221#340393224#0(117"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm:250:10: warning: "/*" within comment1(22@19""/*" within comment340393222#0#117#0(6@79"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm340361121#250#0#250#0#0"0(0#0#79"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm8616065472#2557"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -fobjc-call-cxx-cdtors -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitMovieRenderer.mm -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitMovieRenderer.o0#
+
+CCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitVideoPlayer.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.mm normal i386 objective-c++ com.apple.compilers.gcc.4_0
+s340393223.111051
+e340393225.219250
+r1
+xCompileC
+xbuild/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitVideoPlayer.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@85"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.mm340393223#340393225#0(0"0(0#0#77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.mm8649592544#2553"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -fobjc-call-cxx-cdtors -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.mm -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/MaxQTKitVideoPlayer.o0#
+
+CCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp normal i386 c++ com.apple.compilers.gcc.4_0
+s340353994.720910
+e340353996.510737
+r0
+xCompileC
+xbuild/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_0
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:52: error: 'NSRect' does not name a type
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:54: error: 'BOOL' does not name a type
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp: In function 't_jit_err jit_BC_QTKit_init()':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:154: error: invalid conversion from 'void*' to 't_jit_object*'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp: In function 't_jit_BC_QTKit* jit_BC_QTKit_new(t_symbol*)':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:191: error: invalid conversion from 'void*' to 't_jit_object*'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:192: error: 'struct _jit_BC_QTKit' has no member named 'latestBounds'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:192: error: 'NSMakeRect' was not declared in this scope
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:193: error: 'struct _jit_BC_QTKit' has no member named 'needsRedraw'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:193: error: 'YES' was not declared in this scope
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_read(t_jit_BC_QTKit*, t_symbol*, long int, t_atom*)':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:229: warning: unused variable 'fh_read'
+lSLF07#2@79"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353994#340353996#0(1791"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:52: error: 'NSRect' does not name a type/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:54: error: 'BOOL' does not name a type/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp: In function 't_jit_err jit_BC_QTKit_init()':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:154: error: invalid conversion from 'void*' to 't_jit_object*'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp: In function 't_jit_BC_QTKit* jit_BC_QTKit_new(t_symbol*)':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:191: error: invalid conversion from 'void*' to 't_jit_object*'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:192: error: 'struct _jit_BC_QTKit' has no member named 'latestBounds'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:192: error: 'NSMakeRect' was not declared in this scope/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:193: error: 'struct _jit_BC_QTKit' has no member named 'needsRedraw'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:193: error: 'YES' was not declared in this scope/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_read(t_jit_BC_QTKit*, t_symbol*, long int, t_atom*)':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp:229: warning: unused variable 'fh_read'10(22@129"'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)340353996#0#245#0(6@101"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h317677314#26#0#26#0#33"'*' is deprecated (declared at *)0(4@29"'NSRect' does not name a type340353996#245#113#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#52#0#52#0#24"'*' does not name a type0(4@27"'BOOL' does not name a type340353996#358#111#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#54#0#54#0#24"'*' does not name a type0(4@50"Invalid conversion from 'void*' to 't_jit_object*'340353996#587#135#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#154#0#154#0#34"invalid conversion from '*' to '*'0(4@50"Invalid conversion from 'void*' to 't_jit_object*'340353996#854#135#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#191#0#191#0#34"invalid conversion from '*' to '*'0(4@57"'struct _jit_BC_QTKit' has no member named 'latestBounds'340353996#989#142#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#192#0#192#0#27"'*' has no member named '*'0(4@43"'NSMakeRect' was not declared in this scope340353996#1131#128#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#192#0#192#0#34"'*' was not declared in this scope0(4@56"'struct _jit_BC_QTKit' has no member named 'needsRedraw'340353996#1259#141#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#193#0#193#0#27"'*' has no member named '*'0(4@36"'YES' was not declared in this scope340353996#1400#121#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#193#0#193#0#34"'*' was not declared in this scope0(22@25"Unused variable 'fh_read'340353996#1679#112#0(6@71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp340353738#229#0#229#0#19"unused variable '*'0(0#0#71"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp8628924544#2507"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.cpp -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o1#
+
+CCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m normal i386 objective-c com.apple.compilers.gcc.4_0
+s340354118.744410
+e340354120.450556
+r0
+xCompileC
+xbuild/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_0
+oIn file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.h:48,
+o                 from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:14:
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated
+oIn file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:24:
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:60:18: error: string: No such file or directory
+oIn file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:24:
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:73: error: syntax error before 'MaxQTKitVideoPlayer'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:74: error: syntax error before '{' token
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:80: error: syntax error before ':' token
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:83: error: conflicting types for 'close'
+o/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h:422: error: previous declaration of 'close' was here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:88: error: conflicting types for 'pause'
+o/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h:473: error: previous declaration of 'pause' was here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:112: error: conflicting types for 'setLoopState'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:111: error: previous declaration of 'setLoopState' was here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:117: error: conflicting types for 'draw'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:116: error: previous declaration of 'draw' was here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:130: error: syntax error before ':' token
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:149: error: syntax error before ':' token
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:157: error: syntax error before '}' token
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:92: error: syntax error before '*' token
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:92: warning: type defaults to 'int' in declaration of 'videoPlayer'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:92: warning: data definition has no type or storage class
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m: In function 'jit_BC_QTKit_new':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:187: error: 'new' undeclared (first use in this function)
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:187: error: (Each undeclared identifier is reported only once
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:187: error: for each function it appears in.)
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:187: error: syntax error before 'MaxQTKitVideoPlayer'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m: In function 'jit_BC_QTKit_free':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:206: error: request for member 'close' in something not a structure or union
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:209: error: 'delete' undeclared (first use in this function)
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:209: error: syntax error before 'videoPlayer'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m: In function 'jit_BC_QTKit_read':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:255: error: request for member 'loadMovie' in something not a structure or union
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:229: warning: unused variable 'fh_read'
+lSLF07#2@77"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#340354120#0(4198"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.h:48,                 from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:14:/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecatedIn file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:24:/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:60:18: error: string: No such file or directoryIn file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:24:/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:73: error: syntax error before 'MaxQTKitVideoPlayer'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:74: error: syntax error before '{' token/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:80: error: syntax error before ':' token/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:83: error: conflicting types for 'close'/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h:422: error: previous declaration of 'close' was here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:88: error: conflicting types for 'pause'/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h:473: error: previous declaration of 'pause' was here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:112: error: conflicting types for 'setLoopState'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:111: error: previous declaration of 'setLoopState' was here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:117: error: conflicting types for 'draw'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:116: error: previous declaration of 'draw' was here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:130: error: syntax error before ':' token/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:149: error: syntax error before ':' token/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:157: error: syntax error before '}' token/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:92: error: syntax error before '*' token/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:92: warning: type defaults to 'int' in declaration of 'videoPlayer'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:92: warning: data definition has no type or storage class/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m: In function 'jit_BC_QTKit_new':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:187: error: 'new' undeclared (first use in this function)/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:187: error: (Each undeclared identifier is reported only once/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:187: error: for each function it appears in.)/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:187: error: syntax error before 'MaxQTKitVideoPlayer'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m: In function 'jit_BC_QTKit_free':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:206: error: request for member 'close' in something not a structure or union/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:209: error: 'delete' undeclared (first use in this function)/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:209: error: syntax error before 'videoPlayer'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m: In function 'jit_BC_QTKit_read':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:255: error: request for member 'loadMovie' in something not a structure or union/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m:229: warning: unused variable 'fh_read'26(22@27"'AGLDrawable' is deprecated340354120#216#143#3(7@91"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354120#18446744073709551615#0#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#14#0#14#0#0"0(7@115"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.h340354120#18446744073709551615#0#0(6@93"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.h317677314#48#0#48#0#0"0(13@132"'AGLDrawable' is deprecated in /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h340354120#18446744073709551615#0#0(6@101"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h317677314#26#0#26#0#0"0(6@101"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h317677314#26#0#26#0#0"0(4@33"String: No such file or directory340354120#455#125#2(7@91"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354120#18446744073709551615#0#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#24#0#24#0#0"0(13@113"String: No such file or directory in /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340354120#18446744073709551615#0#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#60#0#60#0#0"0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#60#0#60#0#28"*: No such file or directory0(4@41"Syntax error before 'MaxQTKitVideoPlayer'340354120#676#130#2(7@91"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354120#18446744073709551615#0#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#24#0#24#0#0"0(13@121"Syntax error before 'MaxQTKitVideoPlayer' in /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340354120#18446744073709551615#0#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#73#0#73#0#0"0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#73#0#73#0#23"syntax error before '*'0(4@29"Syntax error before '{' token340354120#806#118#2(7@91"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354120#18446744073709551615#0#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#24#0#24#0#0"0(13@109"Syntax error before '{' token in /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340354120#18446744073709551615#0#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#74#0#74#0#0"0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#74#0#74#0#29"syntax error before '*' token0(4@29"Syntax error before ':' token340354120#924#118#2(7@91"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354120#18446744073709551615#0#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#24#0#24#0#0"0(13@109"Syntax error before ':' token in /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340354120#18446744073709551615#0#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#80#0#80#0#0"0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#80#0#80#0#29"syntax error before '*' token0(4@29"Conflicting types for 'close'340354120#1042#118#2(7@91"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354120#18446744073709551615#0#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#24#0#24#0#0"0(13@109"Conflicting types for 'close' in /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340354120#18446744073709551615#0#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#83#0#83#0#0"0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#83#0#83#0#25"conflicting types for '*'0(13@40"Previous declaration of 'close' was here340354120#1160#105#0(6@51"/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h292381801#422#0#422#0#0"0(4@29"Conflicting types for 'pause'340354120#1265#118#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#88#0#88#0#25"conflicting types for '*'0(13@40"Previous declaration of 'pause' was here340354120#1383#105#0(6@51"/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h292381801#473#0#473#0#0"0(4@36"Conflicting types for 'setLoopState'340354120#1488#126#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#112#0#112#0#25"conflicting types for '*'0(13@47"Previous declaration of 'setLoopState' was here340354120#1614#137#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#111#0#111#0#0"0(4@28"Conflicting types for 'draw'340354120#1751#118#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#117#0#117#0#25"conflicting types for '*'0(13@39"Previous declaration of 'draw' was here340354120#1869#129#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#116#0#116#0#0"0(4@29"Syntax error before ':' token340354120#1998#119#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#130#0#130#0#29"syntax error before '*' token0(4@29"Syntax error before ':' token340354120#2117#119#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#149#0#149#0#29"syntax error before '*' token0(4@29"Syntax error before '}' token340354120#2236#119#0(6@76"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h340348205#157#0#157#0#29"syntax error before '*' token0(4@29"Syntax error before '*' token340354120#2355#111#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#92#0#92#0#29"syntax error before '*' token0(22@54"Type defaults to 'int' in declaration of 'videoPlayer'340354120#2466#138#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#92#0#92#0#42"type defaults to '*' in declaration of '*'0(22@44"Data definition has no type or storage class340354120#2604#128#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#92#0#92#0#44"data definition has no type or storage class0(4@45"'new' undeclared (first use in this function)340354120#2835#128#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#187#0#187#0#43"'*' undeclared (first use in this function)0(4@41"Syntax error before 'MaxQTKitVideoPlayer'340354120#3211#124#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#187#0#187#0#23"syntax error before '*'0(4@64"Request for member 'close' in something not a structure or union340354120#3439#147#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#206#0#206#0#0"0(4@48"'delete' undeclared (first use in this function)340354120#3586#131#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#209#0#209#0#43"'*' undeclared (first use in this function)0(4@33"Syntax error before 'videoPlayer'340354120#3717#116#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#209#0#209#0#23"syntax error before '*'0(4@68"Request for member 'loadMovie' in something not a structure or union340354120#3937#151#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#255#0#255#0#0"0(22@25"Unused variable 'fh_read'340354120#4088#110#0(6@69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m340354118#229#0#229#0#19"unused variable '*'0(0#0#69"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m8639825824#2485"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.m -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o1#
+
+CCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm normal i386 objective-c++ com.apple.compilers.gcc.4_0
+s340535557.769083
+e340535560.752097
+r1
+xCompileC
+xbuild/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_0
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm: In function 'void jit_BC_QTKit_read(t_jit_BC_QTKit*, t_symbol*, long int, t_atom*)':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm:593: warning: unused variable 'fh_read'
+lSLF07#2@78"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm340535557#340535560#0(513"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm: In function 'void jit_BC_QTKit_read(t_jit_BC_QTKit*, t_symbol*, long int, t_atom*)':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm:593: warning: unused variable 'fh_read'2(22@129"'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)340535560#0#245#0(6@101"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h317677314#26#0#26#0#33"'*' is deprecated (declared at *)0(22@25"Unused variable 'fh_read'340535560#402#111#0(6@70"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm340535557#593#0#593#0#19"unused variable '*'0(0#0#70"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm8631112960#2539"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -fobjc-call-cxx-cdtors -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o0#
+
+CCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c normal i386 c com.apple.compilers.gcc.4_0
+s340535582.502801
+e340535584.764451
+r1
+xCompileC
+xbuild/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_0
+oIn file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.h:48,
+o                 from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c:17:
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c:53: warning: 'cachedContextObj' defined but not used
+lSLF07#2@81"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c340535582#340535584#0(490"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.h:48,                 from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c:17:/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c:53: warning: 'cachedContextObj' defined but not used2(22@27"'AGLDrawable' is deprecated340535584#220#143#3(7@95"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c340535584#18446744073709551615#0#0(6@73"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c340535571#17#0#17#0#0"0(7@115"In file included from /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.h340535584#18446744073709551615#0#0(6@93"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.h317677314#48#0#48#0#0"0(13@132"'AGLDrawable' is deprecated in /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h340535584#18446744073709551615#0#0(6@101"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h317677314#26#0#26#0#0"0(6@101"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h317677314#26#0#26#0#0"0(22@39"'cachedContextObj' defined but not used340535584#363#127#0(6@73"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c340535571#53#0#53#0#24"'*' defined but not used0(0#0#73"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c8664989280#2483"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.c -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o0#
+
+CCompileC build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp normal i386 c++ com.apple.compilers.gcc.4_0
+s340523664.596288
+e340523666.442311
+r1
+xCompileC
+xbuild/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_0
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp: In function 'void max_jit_BC_QTKit_draw(t_max_jit_BC_QTKit*, t_symbol*, long int, t_atom*)':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp:82: warning: unused variable 'myclass'
+lSLF07#2@83"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp340523664#340523666#0(530"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp: In function 'void max_jit_BC_QTKit_draw(t_max_jit_BC_QTKit*, t_symbol*, long int, t_atom*)':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp:82: warning: unused variable 'myclass'2(22@129"'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)340523666#0#245#0(6@101"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h317677314#26#0#26#0#33"'*' is deprecated (declared at *)0(22@25"Unused variable 'myclass'340523666#415#115#0(6@75"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp340523630#82#0#82#0#19"unused variable '*'0(0#0#75"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp8652315680#2515"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/max.jit.BC.QTKit.cpp -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o0#
+
+CCompileC build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp normal i386 c++ com.apple.compilers.gcc.4_0
+s340333011.949203
+e340333015.064012
+r1
+xCompileC
+xbuild/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_0
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:723:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:644: warning: unused variable 'j'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:725:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:644: warning: unused variable 'j'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:727:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:644: warning: unused variable 'j'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:729:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:644: warning: unused variable 'j'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:723:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:536: warning: unused variable 'gain'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:725:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:536: warning: unused variable 'gain'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:727:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:536: warning: unused variable 'gain'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:729:   instantiated from here
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:536: warning: unused variable 'gain'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:541: warning: unused variable 'tmp'
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:540: warning: 'maxcount' may be used uninitialized in this function
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:540: warning: 'maxcount' may be used uninitialized in this function
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:540: warning: 'maxcount' may be used uninitialized in this function
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':
+o/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:540: warning: 'maxcount' may be used uninitialized in this function
+lSLF07#2@85"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340333011#340333015#0(6944"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:723:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:644: warning: unused variable 'j'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:725:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:644: warning: unused variable 'j'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:727:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:644: warning: unused variable 'j'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:729:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:644: warning: unused variable 'j'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:723:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:536: warning: unused variable 'gain'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:541: warning: unused variable 'tmp'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:725:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:536: warning: unused variable 'gain'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:541: warning: unused variable 'tmp'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:727:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:536: warning: unused variable 'gain'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:541: warning: unused variable 'tmp'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:729:   instantiated from here/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:536: warning: unused variable 'gain'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:541: warning: unused variable 'tmp'/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:540: warning: 'maxcount' may be used uninitialized in this function/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:540: warning: 'maxcount' may be used uninitialized in this function/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:540: warning: 'maxcount' may be used uninitialized in this function/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp:540: warning: 'maxcount' may be used uninitialized in this function28(23@22"Instantiated from here340333014#278#108#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#723#0#723#0#0"0(22@19"Unused variable 'j'340333014#386#112#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here340333014#779#108#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#725#0#725#0#0"0(22@19"Unused variable 'j'340333014#887#112#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here340333014#1277#108#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#727#0#727#0#0"0(22@19"Unused variable 'j'340333014#1385#112#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#644#0#644#0#19"unused variable '*'0(23@22"Instantiated from here340333014#1776#108#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#729#0#729#0#0"0(22@19"Unused variable 'j'340333014#1884#112#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#644#0#644#0#19"unused variable '*'0(23@203"Instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'340333014#2227#289#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#672#0#672#0#0"0(23@22"Instantiated from here340333014#2516#108#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#723#0#723#0#0"0(22@22"Unused variable 'gain'340333014#2624#115#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'340333014#2739#114#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#541#0#541#0#19"unused variable '*'0(23@206"Instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'340333014#3087#292#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#672#0#672#0#0"0(23@22"Instantiated from here340333014#3379#108#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#725#0#725#0#0"0(22@22"Unused variable 'gain'340333014#3487#115#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'340333014#3602#114#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#541#0#541#0#19"unused variable '*'0(23@203"Instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'340333014#3947#289#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#672#0#672#0#0"0(23@22"Instantiated from here340333014#4236#108#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#727#0#727#0#0"0(22@22"Unused variable 'gain'340333014#4344#115#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'340333014#4459#114#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#541#0#541#0#19"unused variable '*'0(23@204"Instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'340333014#4805#290#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#672#0#672#0#0"0(23@22"Instantiated from here340333014#5095#108#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#729#0#729#0#0"0(22@22"Unused variable 'gain'340333014#5203#115#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#536#0#536#0#19"unused variable '*'0(22@21"Unused variable 'tmp'340333014#5318#114#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#541#0#541#0#19"unused variable '*'0(22@53"'maxcount' may be used uninitialized in this function340333014#5663#146#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#540#0#540#0#46"'*' may be used uninitialized in this function0(22@53"'maxcount' may be used uninitialized in this function340333014#6043#146#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#540#0#540#0#46"'*' may be used uninitialized in this function0(22@53"'maxcount' may be used uninitialized in this function340333014#6420#146#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#540#0#540#0#46"'*' may be used uninitialized in this function0(22@53"'maxcount' may be used uninitialized in this function340333014#6798#146#0(6@77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp340332940#540#0#540#0#46"'*' may be used uninitialized in this function0(0#0#77"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp8609199392#2531"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.BC.QTKit.cpp -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.o0#
+
+CCompileC build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.vertexshareplz.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp normal i386 c++ com.apple.compilers.gcc.4_0
+r0
+
+CCompileC build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.BC.QTKit.c normal i386 c com.apple.compilers.gcc.4_0
+s340333011.950556
+e340333013.302694
+r1
+xCompileC
+xbuild/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.BC.QTKit.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@87"Compile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.BC.QTKit.c340333011#340333013#0(0"0(0#0#79"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.BC.QTKit.c8608931456#2507"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/jit.BC.QTKit.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -I/Developer/Headers/boost_1_44 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/include -I/Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -I../../ofx/libs/openFrameworks -I../../ofx/libs/freetype/include -I../../ofx/libs/freetype/include/freetype2 -I../../ofx/libs/poco/include -I../../ofx/addons -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/DerivedSources/i386 -I/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/DerivedSources -include /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes/macho-prefix.pch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.BC.QTKit.c -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.BC.QTKit.o0#
+
+CCompileC build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/max.jit.vertexshareplz.o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/max.jit.vertexshareplz.c normal i386 c com.apple.compilers.gcc.4_0
+r0
+
+CLd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit normal i386
+s340535584.764682
+e340535584.877623
+r1
+xLd
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit
+xnormal
+xi386
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/openFrameworksCompiled/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx' following -F not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx' following -F not found
+lSLF07#2@120"Link /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit340535584#340535584#0(3708"ld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/openFrameworksCompiled/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx' following -F not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx' following -F not found25(22@174"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not found340535584#0#188#0(6@0"340535584#0#0#0#0#0"0(22@177"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not found340535584#188#191#0(6@0"340535584#0#0#0#0#0"0(22@174"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not found340535584#379#188#0(6@0"340535584#0#0#0#0#0"0(22@178"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not found340535584#567#192#0(6@0"340535584#0#0#0#0#0"0(22@176"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not found340535584#759#190#0(6@0"340535584#0#0#0#0#0"0(22@179"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not found340535584#949#193#0(6@0"340535584#0#0#0#0#0"0(22@109"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/fmodex/lib/osx' following -L not found340535584#1142#123#0(6@0"340535584#0#0#0#0#0"0(22@112"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/FreeImage/lib/osx' following -L not found340535584#1265#126#0(6@0"340535584#0#0#0#0#0"0(22@111"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/freetype/lib/osx' following -L not found340535584#1391#125#0(6@0"340535584#0#0#0#0#0"0(22@107"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glee/lib/osx' following -L not found340535584#1516#121#0(6@0"340535584#0#0#0#0#0"0(22@125"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/openFrameworksCompiled/lib/osx' following -L not found340535584#1637#139#0(6@0"340535584#0#0#0#0#0"0(22@107"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/poco/lib/osx' following -L not found340535584#1776#121#0(6@0"340535584#0#0#0#0#0"0(22@110"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/rtAudio/lib/osx' following -L not found340535584#1897#124#0(6@0"340535584#0#0#0#0#0"0(22@136"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not found340535584#2021#150#0(6@0"340535584#0#0#0#0#0"0(22@134"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not found340535584#2171#148#0(6@0"340535584#0#0#0#0#0"0(22@119"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/fmodex/lib/osx' following -L not found340535584#2319#133#0(6@0"340535584#0#0#0#0#0"0(22@122"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/FreeImage/lib/osx' following -L not found340535584#2452#136#0(6@0"340535584#0#0#0#0#0"0(22@121"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/freetype/lib/osx' following -L not found340535584#2588#135#0(6@0"340535584#0#0#0#0#0"0(22@117"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glee/lib/osx' following -L not found340535584#2723#131#0(6@0"340535584#0#0#0#0#0"0(22@135"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not found340535584#2854#149#0(6@0"340535584#0#0#0#0#0"0(22@117"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/poco/lib/osx' following -L not found340535584#3003#131#0(6@0"340535584#0#0#0#0#0"0(22@120"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/rtAudio/lib/osx' following -L not found340535584#3134#134#0(6@0"340535584#0#0#0#0#0"0(22@174"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not found340535584#3268#188#0(6@0"340535584#0#0#0#0#0"0(22@107"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx' following -F not found340535584#3456#121#0(6@0"340535584#0#0#0#0#0"0(22@117"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx' following -F not found340535584#3577#131#0(6@0"340535584#0#0#0#0#0"0(0#0#0"8668280256#3794"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.0 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/openFrameworksCompiled/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/rtAudio/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/openFrameworksCompiled/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/rtAudio/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes -filelist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.LinkFileList -mmacosx-version-min=10.6 -framework OpenGL -framework MaxAPI -framework JitterAPI -framework Cocoa -framework AGL -framework QTKit -framework CoreVideo -framework QuickTime -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit0#
+
+CLd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit normal i386
+s340333015.064158
+e340333015.172529
+r1
+xLd
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit
+xnormal
+xi386
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx' following -L not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not found
+old: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx' following -F not found
+lSLF07#2@126"Link /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit340333015#340333015#0(3858"ld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx' following -L not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not foundld: warning: directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx' following -F not found25(22@180"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx' following -L not found340333015#0#194#0(6@0"340333015#0#0#0#0#0"0(22@183"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx' following -L not found340333015#194#197#0(6@0"340333015#0#0#0#0#0"0(22@180"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx' following -L not found340333015#391#194#0(6@0"340333015#0#0#0#0#0"0(22@184"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx' following -L not found340333015#585#198#0(6@0"340333015#0#0#0#0#0"0(22@182"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx' following -L not found340333015#783#196#0(6@0"340333015#0#0#0#0#0"0(22@185"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx' following -L not found340333015#979#199#0(6@0"340333015#0#0#0#0#0"0(22@115"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/fmodex/lib/osx' following -L not found340333015#1178#129#0(6@0"340333015#0#0#0#0#0"0(22@118"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/FreeImage/lib/osx' following -L not found340333015#1307#132#0(6@0"340333015#0#0#0#0#0"0(22@117"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/freetype/lib/osx' following -L not found340333015#1439#131#0(6@0"340333015#0#0#0#0#0"0(22@113"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glee/lib/osx' following -L not found340333015#1570#127#0(6@0"340333015#0#0#0#0#0"0(22@131"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx' following -L not found340333015#1697#145#0(6@0"340333015#0#0#0#0#0"0(22@113"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/poco/lib/osx' following -L not found340333015#1842#127#0(6@0"340333015#0#0#0#0#0"0(22@116"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/rtAudio/lib/osx' following -L not found340333015#1969#130#0(6@0"340333015#0#0#0#0#0"0(22@142"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx' following -L not found340333015#2099#156#0(6@0"340333015#0#0#0#0#0"0(22@140"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx' following -L not found340333015#2255#154#0(6@0"340333015#0#0#0#0#0"0(22@125"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx' following -L not found340333015#2409#139#0(6@0"340333015#0#0#0#0#0"0(22@128"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx' following -L not found340333015#2548#142#0(6@0"340333015#0#0#0#0#0"0(22@127"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx' following -L not found340333015#2690#141#0(6@0"340333015#0#0#0#0#0"0(22@123"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx' following -L not found340333015#2831#137#0(6@0"340333015#0#0#0#0#0"0(22@141"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx' following -L not found340333015#2968#155#0(6@0"340333015#0#0#0#0#0"0(22@123"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx' following -L not found340333015#3123#137#0(6@0"340333015#0#0#0#0#0"0(22@126"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx' following -L not found340333015#3260#140#0(6@0"340333015#0#0#0#0#0"0(22@180"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx' following -F not found340333015#3400#194#0(6@0"340333015#0#0#0#0#0"0(22@113"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx' following -F not found340333015#3594#127#0(6@0"340333015#0#0#0#0#0"0(22@123"Directory '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx' following -F not found340333015#3721#137#0(6@0"340333015#0#0#0#0#0"0(0#0#0"8609532192#4052"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    setenv MACOSX_DEPLOYMENT_TARGET 10.4    /Developer/usr/bin/g++-4.0 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/openFrameworksCompiled/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/rtAudio/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/fmodex/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/FreeImage/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/freetype/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glee/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/openFrameworksCompiled/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/poco/lib/osx -L/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/rtAudio/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/max-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/msp-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../c74support/jit-includes -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/libs/glut/lib/osx -F/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../ofx/libs/glut/lib/osx -filelist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/jit.bc.qtkit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.LinkFileList -mmacosx-version-min=10.4 -framework MaxAPI -framework JitterAPI -framework AppKit -framework Cocoa -framework IOKit -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit0#
+
+CLd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.bc.qtkit.mxo/Contents/MacOS/jit.bc.qtkit normal i386
+r0
+
+CPhaseScriptExecution "Run Script" /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Script-417B7E7614493959008DDCCE.sh
+s340535584.877717
+e340535584.898338
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Script-417B7E7614493959008DDCCE.sh
+lSLF07#2@36"Run custom shell script 'Run Script'340535584#340535584#0(0"0(0#0#0"8666742816#20994"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER bc    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build    setenv BUILD_ROOT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build    setenv BUILD_STYLE Deployment    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment    setenv C74SUPPORT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support    setenv CACHE_ROOT /var/folders/rU/rUh6rwDlGa8QO5+5et8Al++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/rU/rUh6rwDlGa8QO5+5et8Al++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/rU/rUh6rwDlGa8QO5+5et8Al++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Deployment    setenv CONFIGURATION_BUILD_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment    setenv CONFIGURATION_TEMP_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment    setenv CONTENTS_FOLDER_PATH jit.BC.QTKit.mxo/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION YES    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH jit.BC.QTKit.mxo/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build    setenv DWARF_DSYM_FILE_NAME jit.BC.QTKit.mxo.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH jit.BC.QTKit.mxo/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH jit.BC.QTKit.mxo/Contents/MacOS    setenv EXECUTABLE_NAME jit.BC.QTKit    setenv EXECUTABLE_PATH jit.BC.QTKit.mxo/Contents/MacOS/jit.BC.QTKit    setenv FILE_LIST /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH jit.BC.QTKit.mxo/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glut/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glut/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME jit.BC.QTKit.mxo    setenv GCC3_VERSION 3.3    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PREFIX_HEADER /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes/macho-gl-prefix.pch    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.0    setenv GCC_VERSION_IDENTIFIER __0    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/include /Developer/SDKs/MacOSX10.6.sdk/Developer/Headers/FlatCarbon /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/max-includes /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/msp-includes /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes \"../../ofx/libs/openFrameworks/**\" ../../ofx/libs/freetype/include/ ../../ofx/libs/freetype/include/freetype2 ../../ofx/libs/poco/include ../../ofx/addons/"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH jit.BC.QTKit.mxo/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH jit.BC.QTKit.mxo/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER bc    setenv INSTALL_PATH /    setenv INSTALL_ROOT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH jit.BC.QTKit.mxo/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/jit.BC.QTKit-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment\"  \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/poco/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/GLee/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/freetype/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/fmodex/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../../Stored/class/OPENFRAMEWORKS/of_preRelease_v0061_osxSL_FAT/libs/FreeImage/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/fmodex/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/FreeImage/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/freetype/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/glee/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/openFrameworksCompiled/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/poco/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/libs/rtAudio/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOpenCv/libs/opencv/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/addons/ofxOsc/libs/oscpack/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/fmodex/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/FreeImage/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/freetype/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/glee/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/openFrameworksCompiled/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/poco/lib/osx\" \"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../ofx/libs/rtAudio/lib/osx\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal/i386/jit.BC.QTKit.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH jit.BC.QTKit.mxo/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1068    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0608    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Objects-normal    setenv OBJROOT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH jit.BC.QTKit.mxo/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "c objective-c++"    setenv PKGINFO_FILE_PATH /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/PkgInfo    setenv PKGINFO_PATH jit.BC.QTKit.mxo/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLATFORM_PRODUCT_BUILD_VERSION 10M2423    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH jit.BC.QTKit.mxo/Contents/PlugIns    setenv PREBINDING YES    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH jit.BC.QTKit.mxo/Contents/PrivateHeaders    setenv PRODUCT_NAME jit.BC.QTKit    setenv PRODUCT_SETTINGS_PATH /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PRODUCT_VERSION 5.1.6    setenv PROFILING_CODE NO    setenv PROJECT jit.BC.QTKit    setenv PROJECT_DERIVED_FILE_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/DerivedSources    setenv PROJECT_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv PROJECT_FILE_PATH /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.xcodeproj    setenv PROJECT_NAME jit.BC.QTKit    setenv PROJECT_TEMP_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build    setenv PUBLIC_HEADERS_FOLDER_PATH jit.BC.QTKit.mxo/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH jit.BC.QTKit.mxo/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_NAME macosx10.6    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH jit.BC.QTKit.mxo/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/rU/rUh6rwDlGa8QO5+5et8Al++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH jit.BC.QTKit.mxo/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv SRCROOT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SYMBOL_REPOSITORY_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/SymbolRepositories    setenv SYMROOT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME max-external    setenv TARGET_BUILD_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build    setenv TARGET_NAME max-external    setenv TARGET_TEMP_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build    setenv TEMP_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build    setenv TEMP_FILES_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build    setenv TEMP_FILE_DIR /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build    setenv TEMP_ROOT /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH jit.BC.QTKit.mxo/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER bc    setenv USER_APPS_DIR /Users/bc/Applications    setenv USER_HEADER_SEARCH_PATHS /Developer/Headers/boost_1_44    setenv USER_LIBRARY_DIR /Users/bc/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH jit.BC.QTKit.mxo/Contents/version.plist    setenv VERSION_INFO_BUILDER bc    setenv VERSION_INFO_FILE jit.BC.QTKit_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:jit.BC.QTKit  PROJECT:jit.BC.QTKit-\""    setenv WARNING_CFLAGS "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas"    setenv WRAPPER_EXTENSION mxo    setenv WRAPPER_NAME jit.BC.QTKit.mxo    setenv WRAPPER_SUFFIX .mxo    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv _REAL_SDKROOT macosx    /bin/sh -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/jit.BC.QTKit.build/Deployment/max-external.build/Script-417B7E7614493959008DDCCE.sh0#
+
+CProcessInfoPlistFile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist
+s340353822.881964
+e340353822.889674
+r1
+xProcessInfoPlistFile
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist
+lSLF07#2@76"Process /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist340353822#340353822#0(0"0(0#0#68"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist8632003168#426"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    builtin-infoPlistUtility /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../Info.plist -genpkginfo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist0#
+
+CProcessInfoPlistFile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/Info.plist
+s340353809.105880
+e340353809.202864
+r0
+xProcessInfoPlistFile
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/Info.plist
+lSLF07#2@73"Process /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/Info.plist340353809#340353809#0(179"error: could not read data from '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/Info.plist': The file “Info.plist” couldn’t be opened because there is no such file.1(4@171"could not read data from '/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/Info.plist': The file “Info.plist” couldn’t be opened because there is no such file.340353809#18446744073709551615#0#0(6@0"340353809#0#0#0#0#0"0(0#0#65"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/Info.plist8625415680#423"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    builtin-infoPlistUtility /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/Info.plist -genpkginfo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist1#
+
+CProcessInfoPlistFile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist
+s340333011.915437
+e340333011.949112
+r1
+xProcessInfoPlistFile
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist
+lSLF07#2@82"Process /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist340333011#340333011#0(0"0(0#0#74"/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist8609625216#450"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    builtin-infoPlistUtility /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist -genpkginfo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo/Contents/Info.plist0#
+
+CProcessInfoPlistFile /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.bc.qtkit.mxo/Contents/Info.plist /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../Info.plist
+r0
+
+CSymLink /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/build/Deployment/jit.BC.QTKit.mxo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo
+r0
+
+CSymLink /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/jit.BC.QTKit.mxo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo
+s340333011.916124
+e340333011.924373
+r1
+xSymLink
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/jit.BC.QTKit.mxo
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo
+lSLF07#2@102"Process /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/jit.BC.QTKit.mxo340333011#340333011#0(0"0(0#0#0"8609614432#273"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    /bin/ln -sf /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/jit.BC.QTKit.mxo0#
+
+CSymLink /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/build/Deployment/jit.bc.qtkit.mxo /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.bc.qtkit.mxo
+r0
+
+CTouch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo
+s340535584.898417
+e340535584.905614
+r1
+xTouch
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo
+lSLF07#2@93"Touch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo340535584#340535584#0(0"0(0#0#0"8665494080#172"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit    /usr/bin/touch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../sdk-build/jit.BC.QTKit.mxo0#
+
+CTouch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo
+s340333015.172610
+e340333015.175758
+r1
+xTouch
+x/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo
+lSLF07#2@99"Touch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo340333015#340333015#0(0"0(0#0#0"8606560128#184"    cd /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz    /usr/bin/touch -c /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.BC.QTKit.mxo0#
+
+CTouch /Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/../../sdk-build/jit.bc.qtkit.mxo
+r0
+

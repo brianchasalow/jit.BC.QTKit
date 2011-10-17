@@ -1,0 +1,40 @@
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:644: warning: unused variable 'j'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = uchar]'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:723:   instantiated from here
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = long int]'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:725:   instantiated from here
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = float]'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:727:   instantiated from here
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:672:   instantiated from 'void jit_BC_QTKit_loop(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, t_jit_matrix_info*, char*, char*, long int*, long int, long int) [with T = double]'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:729:   instantiated from here
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:536: warning: unused variable 'gain'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:541: warning: unused variable 'tmp'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = uchar]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:540: warning: 'maxcount' may be used uninitialized in this function
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = long int]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:540: warning: 'maxcount' may be used uninitialized in this function
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = float]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:540: warning: 'maxcount' may be used uninitialized in this function
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp: In function 'void jit_BC_QTKit_vector(t_jit_BC_QTKit*, long int, t_jit_op_info*, t_jit_op_info*, t_jit_matrix_info*, char*, Record*) [with T = double]':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.vertexshareplz/jit.vertexshareplz.cpp:540: warning: 'maxcount' may be used uninitialized in this function
