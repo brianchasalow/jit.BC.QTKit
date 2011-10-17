@@ -149,7 +149,10 @@ void max_jit_BC_QTKit_notify(t_max_jit_BC_QTKit *x, t_symbol *s, t_symbol *msg, 
 			error("frameIsNew message NULL pointer");
 			return;
 		}
+		//send frameIsNew 0 or 1 msg out
 		max_jit_obex_dumpout(x,msg,1,(t_atom *)data);		
+		
+		//send texture out if the frameIsNew (unique 1 is forced. should override/implement this attribute)
 		if(jit_atom_getlong(data) == 1){
 			t_jit_object *jitob = (t_jit_object*)max_jit_obex_jitob_get(x);
 			t_atom a;
