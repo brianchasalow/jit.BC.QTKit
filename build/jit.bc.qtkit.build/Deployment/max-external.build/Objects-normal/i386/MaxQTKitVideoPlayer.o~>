@@ -1,3 +1,0 @@
-/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)
-/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.mm:454: error: prototype for 'void MaxQTKitVideoPlayer::setVolume(float)' does not match any in class 'MaxQTKitVideoPlayer'
-/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/MaxQTKitVideoPlayer.h:113: error: candidate is: void MaxQTKitVideoPlayer::setVolume(int)

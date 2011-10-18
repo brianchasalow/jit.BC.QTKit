@@ -49,9 +49,9 @@
 #include "MaxQTKitVideoPlayer.h"
 //#include "MonoCallbacks.h"
 enum ofLoopType{
-	OF_LOOP_NONE=0x01,
-	OF_LOOP_PALINDROME=0x02,
-	OF_LOOP_NORMAL=0x03
+	OF_LOOP_NONE=0,
+//	OF_LOOP_PALINDROME=0x02,
+	OF_LOOP_NORMAL=1
 };
 
 MaxQTKitVideoPlayer::MaxQTKitVideoPlayer()
@@ -64,7 +64,7 @@ MaxQTKitVideoPlayer::MaxQTKitVideoPlayer()
     storedMovieFileName = "";
     loopState = OF_LOOP_NONE;
     videoHasEnded = false;
-    speed = 0;
+    speed = 1;
     volume = 0;
     iAmLoading = false;
     iAmLoaded = false;
@@ -228,11 +228,12 @@ void MaxQTKitVideoPlayer::setPaused(bool myPause){
 
 void MaxQTKitVideoPlayer::setSpeed(float rate)
 {
+	speed = rate;
+
 	if(moviePlayer == NULL) return;
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	
-    speed = rate;
 	[moviePlayer setRate:rate];
 	
 	[pool drain];	
@@ -243,8 +244,8 @@ void MaxQTKitVideoPlayer::play()
 	if(moviePlayer == NULL) return;
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-	videoHasEnded = false;
-	[moviePlayer setRate: 1.0];
+	//videoHasEnded = false;
+//	[moviePlayer setRate: 1.0];
 	
 	[pool drain];
 }
@@ -295,8 +296,9 @@ bool MaxQTKitVideoPlayer::update()
             iAmLoading = false;
             iAmLoaded = true;
             videoHasEnded = false;
-            speed = 1;
-            setLoopState(OF_LOOP_NONE);
+            //speed = 1;
+			setSpeed(speed);
+            setLoopState(loopState);
             setPaused(isPaused);
             setVolume(volume);
             duration = moviePlayer.duration;
@@ -314,6 +316,11 @@ bool MaxQTKitVideoPlayer::update()
     
 	if(moviePlayer == NULL) return false;
 	
+	if(getPosition() != duration){
+		
+		videoHasEnded = false;	
+	}
+	
 	bNewFrame = [moviePlayer update];
 	if (bNewFrame) {
 		bHavePixelsChanged = true;
@@ -325,7 +332,7 @@ bool MaxQTKitVideoPlayer::update()
 void MaxQTKitVideoPlayer::resetToZeroIfDone(){
 	if(getIsMovieDone()){
 		//   NSLog(@"MOVIE ENDED");
-		if(!isPaused && !iAmLoading){
+		if(!iAmLoading){
 			// NSLog(@"MOVIE NOT PAUSED, NOT LOADING");            
             if(!videoHasEnded){
 				//       NSLog(@"MOVIE NOT ENDED");
@@ -340,11 +347,10 @@ void MaxQTKitVideoPlayer::resetToZeroIfDone(){
 				//CALLBACK HERE FOR VIDEO ENDED - IMPLEMENT IN MAX
                 handleVideoEnded(this);
                 //reset to zero if you're set to loop normal mode.
-                if(loopState == OF_LOOP_NORMAL){
-                    setPosition(0.0);
-                    setPaused(isPaused);
-                    
-                }
+//                if(!isPaused && loopState == OF_LOOP_NORMAL){
+//                    setPosition(0.0);
+//                    setPaused(isPaused);
+//                }
 				
             }
 		}

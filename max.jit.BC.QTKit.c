@@ -211,6 +211,14 @@ void max_jit_BC_QTKit_notify(t_max_jit_BC_QTKit *x, t_symbol *s, t_symbol *msg, 
 		}
 		max_jit_obex_dumpout(x, msg, 1, (t_atom *)data);
 	}
+	if(msg==gensym("loopstate")){
+		if (!data) {
+			error("loopstate message NULL pointer");
+			return;
+		}
+		max_jit_obex_dumpout(x, msg, 1, (t_atom *)data);
+	}
+	
 }
 
 /************************************************************************************/

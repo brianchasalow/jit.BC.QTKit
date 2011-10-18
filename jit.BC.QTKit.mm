@@ -55,6 +55,7 @@ typedef struct _jit_BC_QTKit {
 	t_symbol			*texturename;
 	long			autostart;
 	long spew_position_values;
+	long loopstate;
 	long dim[2];			// output dim
 	BOOL needsRedraw;
 	float volume;
@@ -82,7 +83,10 @@ t_jit_err jit_BC_QTKit_spew_position_values(t_jit_BC_QTKit *x, void *attr, long 
 t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 t_jit_err jit_BC_QTKit_setspeed(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 t_jit_err jit_BC_QTKit_getspeed(t_jit_BC_QTKit *x, void *attr, long *ac, t_atom **av);
+t_jit_err jit_BC_QTKit_setloopstate(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
+
 t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *jit_BC_QTKit_instance);
+
 // dim
 t_jit_err jit_BC_QTKit_setattr_dim(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 // @texturename to read a named texture.
@@ -202,6 +206,12 @@ t_jit_err jit_BC_QTKit_init(void)
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"volume",_jit_sym_float32,attrflags,
 										 (method)0L,(method)jit_BC_QTKit_setvolume,calcoffset(t_jit_BC_QTKit, volume));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+	
+	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"loopstate",_jit_sym_long,attrflags,
+										 (method)0L,(method)jit_BC_QTKit_setloopstate,calcoffset(t_jit_BC_QTKit, loopstate));
+	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+	
+	
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"speed",_jit_sym_float32,attrflags,
 										 (method)0L,(method)jit_BC_QTKit_setspeed,calcoffset(t_jit_BC_QTKit, speed));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
@@ -261,6 +271,22 @@ t_jit_err jit_BC_QTKit_setspeed(t_jit_BC_QTKit *x, void *attr, long argc, t_atom
 	
 	return JIT_ERR_NONE;
 }
+
+t_jit_err jit_BC_QTKit_setloopstate(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
+{
+	if(argc && argv){
+		long state = jit_atom_getlong(argv);
+		x->loopstate = state;
+		videoPlayer->loopState = (int)state;
+		videoPlayer->setLoopState((int)state);
+		t_atom stateatom[1];
+		jit_atom_setlong(&stateatom[0],state);
+		jit_object_notify(x,gensym("loopstate"), stateatom); //the last pointer argument could be anything.
+	}
+	
+	return JIT_ERR_NONE;
+}
+
 
 t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
 {
@@ -469,6 +495,7 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 			x->dim[0] = 640;
 			x->dim[1] = 480;
 			x->spew_position_values = 1;
+			x->loopstate = 0;
 			x->speed = 1;
 			jit_attr_setlong_array(x->output, _jit_sym_dim, 2, x->dim);			
 		}
