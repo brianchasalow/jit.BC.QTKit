@@ -796,6 +796,7 @@
 			41F4284B144D46F0002EC059 /* PBXTextBookmark */ = 41F4284B144D46F0002EC059 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 41D2CFAC1220BD7100E34F85 /* Source Control */;
+		userBookmarkGroup = 41F4275B144D0DE0002EC059 /* PBXBookmarkGroup */;
 		userBuildSettings = {
 		};
 	};
@@ -6782,6 +6783,13 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	41F4275B144D0DE0002EC059 /* PBXBookmarkGroup */ = {
+		isa = PBXBookmarkGroup;
+		children = (
+			41F4284C144D47D6002EC059 /* PBXBookmark */,
+		);
+		name = Root;
+	};
 	41F42764144D0E32002EC059 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 417B7D2A144915EC008DDCCE /* MaxQTKitMovieRenderer.mm */;
@@ -7571,5 +7579,9 @@
 		rType = 0;
 		vrLen = 817;
 		vrLoc = 10001;
+	};
+	41F4284C144D47D6002EC059 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2FBBEAE508F335360078DB84 /* jit.BC.QTKit.mxo */;
 	};
 }

@@ -7,7 +7,7 @@
 			"revision" : 0
 		}
 ,
-		"rect" : [ 114.0, 44.0, 1330.0, 777.0 ],
+		"rect" : [ 312.0, 44.0, 1330.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -111,12 +111,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-76",
-					"linecount" : 3,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 717.0, 268.0, 49.0 ],
-					"text" : "TODO: take a look at speed attribute use\ninternal: cache FBO, or don't use FBO's at all in draw method"
+					"patching_rect" : [ 9.0, 694.0, 282.0, 76.0 ],
+					"text" : "TODO: take a look at speed attribute use\ninternal: cache FBO, or don't use FBO's at all in draw method\ninternal: check why callbacks on video ended dont always fire"
 				}
 
 			}
@@ -512,7 +512,7 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 900.0, 450.25, 149.0, 26.5 ],
-					"size" : 0.971667
+					"size" : 4.533333
 				}
 
 			}
@@ -1249,16 +1249,16 @@
 ,
 					"patching_rect" : [ 182.0, 418.0, 42.0, 21.0 ],
 					"saved_object_attributes" : 					{
-						"fontname" : "Arial",
 						"default_fontface" : 0,
 						"digest" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontname" : "Arial",
-						"globalpatchername" : "",
+						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0
 					}
 ,
 					"text" : "p esc"
