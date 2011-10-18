@@ -273,14 +273,16 @@
 								<string>089C1671FE841209C02AAC07</string>
 								<string>19C28FB4FE9D528D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>41F4275F144D0DE0002EC059</string>
+								<string>41F428C9144E1A65002EC059</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
-									<integer>11</integer>
-									<integer>0</integer>
+									<integer>30</integer>
+									<integer>24</integer>
+									<integer>23</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -319,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>max.jit.BC.QTKit.c</string>
+								<string>MaxQTKitVideoPlayer.mm</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>max.jit.BC.QTKit.c</string>
+										<string>MaxQTKitVideoPlayer.mm</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>41F42898144DB98B002EC059</string>
+										<string>41F428CD144E1A7C002EC059</string>
 										<key>history</key>
 										<array>
 											<string>411CC6B3124E6B0000C2E63D</string>
@@ -358,12 +360,12 @@
 											<string>41F42797144D248A002EC059</string>
 											<string>41F42798144D248A002EC059</string>
 											<string>41F42805144D35A7002EC059</string>
-											<string>41F42870144DB447002EC059</string>
-											<string>41F42872144DB447002EC059</string>
 											<string>41F4288B144DB804002EC059</string>
-											<string>41F42895144DB98B002EC059</string>
-											<string>41F42896144DB98B002EC059</string>
-											<string>41F42897144DB98B002EC059</string>
+											<string>41F428B7144E1979002EC059</string>
+											<string>41F428B8144E1979002EC059</string>
+											<string>41F428B9144E1979002EC059</string>
+											<string>41F428BA144E1979002EC059</string>
+											<string>41F428BB144E1979002EC059</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

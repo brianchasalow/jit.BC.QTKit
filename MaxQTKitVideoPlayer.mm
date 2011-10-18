@@ -195,8 +195,16 @@ void MaxQTKitVideoPlayer::close()
 
 void MaxQTKitVideoPlayer::pause()
 {
-    speed = getSpeed();
-	setSpeed(0);
+	//if you're already stopped, don't pause it a second time, or you'll lose your cached value.
+	if(getSpeed() != 0.0){
+		//cache the value of speed so that when you unpause, it will return it
+		speed = getSpeed();
+	//	post("paused: speed: %f, getspeed: %f", speed, getSpeed());
+
+		setSpeed(0);
+	//	post("paused: speed: %f, getspeed: %f", speed, getSpeed());
+
+	}
 }
 
 //bool MaxQTKitVideoPlayer::isPaused()
@@ -205,19 +213,21 @@ void MaxQTKitVideoPlayer::pause()
 //}
 
 void MaxQTKitVideoPlayer::setPaused(bool myPause){
-    if(myPause){
+    //set it to paused
+	if(myPause){
         isPaused = true;
 		
         if(iAmLoaded)
 			pause();
     }
+	//set it to unpaused
     else{
         isPaused = false;
 		
         
         if(iAmLoaded){
 			
-			if(speed != 0)
+			if(speed != 0.0)
 				setSpeed(speed);
 			else 
 				setSpeed(1);
@@ -228,6 +238,8 @@ void MaxQTKitVideoPlayer::setPaused(bool myPause){
 
 void MaxQTKitVideoPlayer::setSpeed(float rate)
 {
+	//only cache a non-zero value
+	if(rate != 0.0)
 	speed = rate;
 
 	if(moviePlayer == NULL) return;
@@ -244,9 +256,11 @@ void MaxQTKitVideoPlayer::play()
 	if(moviePlayer == NULL) return;
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-	//videoHasEnded = false;
-//	[moviePlayer setRate: 1.0];
-	
+
+//	post("play: speed: %f, getspeed: %f", speed, getSpeed());
+	[moviePlayer setRate: speed];
+//	post("play: speed: %f, getspeed: %f", speed, getSpeed());
+
 	[pool drain];
 }
 
@@ -526,15 +540,13 @@ void MaxQTKitVideoPlayer::setLoopState(int ofLoopState)
 
 float MaxQTKitVideoPlayer::getSpeed()
 {
-	//	if(moviePlayer == NULL) return 0;
-	//	
-	//	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-	//	
-	//	float rate = moviePlayer.rate;
-	//	
-	//	[pool drain];
-	//	
-	return speed;
+	if(moviePlayer == NULL) return 0;
+	
+	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+	float rate = moviePlayer.rate;
+	[pool drain];
+
+	return rate;
 }
 
 float MaxQTKitVideoPlayer::getDuration()
