@@ -59,6 +59,9 @@
 #import <OpenGL/OpenGL.h>
 #include <string>
 #endif
+#include "jit.common.h"
+#include "jit.gl.h"
+#include "ext_obex.h"
 
 //different modes for the video player to run in
 //this mode just uses the quicktime texture and is really fast, but offers no pixels-level access
@@ -136,8 +139,10 @@ public:
     void setPaused(bool myPause);
 	CVPixelBufferRef getPixelsRef();
 	void repairContext();
+	void handleVideoLoaded(MaxQTKitVideoPlayer* ptr);
+	void handleVideoEnded(MaxQTKitVideoPlayer* ptr);
+	void* jitterObj;
 
-    
     //This #ifdef is so you can include this .h file in .cpp files
 	//and avoid ugly casts in the .m file
 #ifdef __OBJC__

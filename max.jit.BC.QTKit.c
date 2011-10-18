@@ -159,7 +159,44 @@ void max_jit_BC_QTKit_notify(t_max_jit_BC_QTKit *x, t_symbol *s, t_symbol *msg, 
 		//send texture out if the frameIsNew (unique 1 is forced. should override/implement this attribute)
 //		if(jit_atom_getlong(data) == 1){
 //		}
-	}		
+	}
+	if(msg==gensym("videoLoaded")){
+		if (!data) {
+			error("videoLoaded message NULL pointer");
+			return;
+		}
+		max_jit_obex_dumpout(x, msg, 1, (t_atom *)data);
+	}
+	if(msg==gensym("videoEnded")){
+		if (!data) {
+			error("videoEnded message NULL pointer");
+			return;
+		}
+		max_jit_obex_dumpout(x, msg, 1, (t_atom *)data);
+	}
+	
+	if(msg==gensym("volume")){
+		if (!data) {
+			error("volume message NULL pointer");
+			return;
+		}
+		max_jit_obex_dumpout(x, msg, 1, (t_atom *)data);
+	}
+	if(msg==gensym("dim")){
+		if (!data) {
+			error("dim message NULL pointer");
+			return;
+		}
+		max_jit_obex_dumpout(x, msg, 2, (t_atom *)data);
+	}
+	
+	if(msg==gensym("duration")){
+		if (!data) {
+			error("duration message NULL pointer");
+			return;
+		}
+		max_jit_obex_dumpout(x, msg, 1, (t_atom *)data);
+	}
 }
 
 /************************************************************************************/

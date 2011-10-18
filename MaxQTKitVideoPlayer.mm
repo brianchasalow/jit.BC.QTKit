@@ -243,7 +243,7 @@ void MaxQTKitVideoPlayer::play()
 	if(moviePlayer == NULL) return;
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-	
+	videoHasEnded = false;
 	[moviePlayer setRate: 1.0];
 	
 	[pool drain];
@@ -254,12 +254,40 @@ void MaxQTKitVideoPlayer::idleMovie()
 	update();
 }
 
+void MaxQTKitVideoPlayer::handleVideoLoaded(MaxQTKitVideoPlayer* ptr){
+	t_atom foo[1];
+	jit_atom_setlong(&foo[0],!(ptr == NULL));
+	jit_object_notify(jitterObj,gensym("videoLoaded"), foo); //the last pointer argument could be anything.	
+	
+	if(ptr != NULL){
+		t_atom vol[1];
+		jit_atom_setfloat(&vol[0],volume);
+		jit_object_notify(jitterObj,gensym("volume"), vol); //the last pointer argument could be anything.
+
+		t_atom dimz[2];
+		jit_atom_setfloat(&dimz[0],width);
+		jit_atom_setfloat(&dimz[1],height);
+		jit_object_notify(jitterObj,gensym("dim"), dimz); //the last pointer argument could be anything.
+		
+		t_atom durationz[1];
+		jit_atom_setfloat(&durationz[0],duration);
+		jit_object_notify(jitterObj,gensym("duration"), durationz); //the last pointer argument could be anything.		
+		//jit_object_post((t_object*)jitterObj, "duration: %f", duration);
+	}
+}
+
+void MaxQTKitVideoPlayer::handleVideoEnded(MaxQTKitVideoPlayer* ptr){
+	t_atom foo[1];
+	jit_atom_setlong(&foo[0],!(ptr == NULL));
+	jit_object_notify(jitterObj,gensym("videoEnded"), foo); //the last pointer argument could be anything.
+}
+
 bool MaxQTKitVideoPlayer::update()
 {
     if(iAmLoading){
 		if(moviePlayer.loadState == -1000){
 			//CALLBACK HERE FOR VIDEO ENDED - IMPLEMENT IN MAX
-			//handleVideoLoaded(NULL);
+			handleVideoLoaded(NULL);
 			moviePlayer.loadState = -999;
 		}
 		
@@ -276,7 +304,7 @@ bool MaxQTKitVideoPlayer::update()
             width = moviePlayer.movieSize.width;
             height = moviePlayer.movieSize.height;
 			//CALLBACK HERE FOR VIDEO ENDED - IMPLEMENT IN MAX
-            //handleVideoLoaded(this);
+            handleVideoLoaded(this);
             firstLoad = false;
         }
         return false;
@@ -310,7 +338,7 @@ void MaxQTKitVideoPlayer::resetToZeroIfDone(){
 				
 				
 				//CALLBACK HERE FOR VIDEO ENDED - IMPLEMENT IN MAX
-                //handleVideoEnded(this);
+                handleVideoEnded(this);
                 //reset to zero if you're set to loop normal mode.
                 if(loopState == OF_LOOP_NORMAL){
                     setPosition(0.0);

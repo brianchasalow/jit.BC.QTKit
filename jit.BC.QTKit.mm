@@ -52,8 +52,8 @@ typedef struct _jit_BC_QTKit {
 	void				*ob3d;
 
 	NSRect latestBounds;
-	t_symbol			*texturename;	
-
+	t_symbol			*texturename;
+	long			autostart;
 	long dim[2];			// output dim
 	BOOL needsRedraw;
 
@@ -72,7 +72,10 @@ t_jit_BC_QTKit	*jit_BC_QTKit_new				(t_symbol * dest_name);
 void			jit_BC_QTKit_free				(t_jit_BC_QTKit *x);
 
 void jit_BC_QTKit_read(t_jit_BC_QTKit *x, t_symbol *s, long ac, t_atom *av);
+t_jit_err jit_BC_QTKit_autostart(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 t_jit_err jit_BC_QTKit_play(t_jit_BC_QTKit *x);
+t_jit_err jit_BC_QTKit_pause(t_jit_BC_QTKit *x);
+t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 
 t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *jit_BC_QTKit_instance);
 // dim
@@ -99,6 +102,7 @@ t_symbol *ps_flip;
 t_symbol *ps_automatic;
 t_symbol *ps_drawto;
 t_symbol *ps_draw;
+t_symbol *ps_name;
 
 // for our internal texture
 extern t_symbol *ps_jit_gl_texture;
@@ -177,8 +181,13 @@ t_jit_err jit_BC_QTKit_init(void)
                           (method)0L,(method)jit_BC_QTKit_setattr_dim,0/*fix*/,calcoffset(t_jit_BC_QTKit,dim));
 
     jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"texturename",_jit_sym_symbol,attrflags,
 						  (method)0L,(method)jit_BC_QTKit_texturename,calcoffset(t_jit_BC_QTKit, texturename));		
+	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+	
+	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"autostart",_jit_sym_long,attrflags,
+										 (method)0L,(method)jit_BC_QTKit_autostart,calcoffset(t_jit_BC_QTKit, autostart));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
 	
 	attrflags = JIT_ATTR_GET_DEFER_LOW | JIT_ATTR_SET_OPAQUE_USER;
@@ -196,13 +205,55 @@ t_jit_err jit_BC_QTKit_init(void)
 	ps_automatic = gensym("automatic");
 	ps_drawto = gensym("drawto");
 	ps_draw = gensym("draw");
-	
+	ps_name = gensym("name");
 		
 		// add method(s)
 	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_read, "read", A_GIMME, 0);
+	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_pause, "pause", A_GIMME, 0);
+	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_setposition, "setposition", A_GIMME, 0);
 
+	
 	// finalize class
 	jit_class_register(s_jit_BC_QTKit_class);
+	
+	
+	return JIT_ERR_NONE;
+}
+
+t_jit_err jit_BC_QTKit_pause(t_jit_BC_QTKit *x)
+{	
+	if(videoPlayer && x){
+		videoPlayer->setPaused(true);	
+	}
+	return JIT_ERR_NONE;
+
+}
+
+t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
+{
+	if(argc && argv){
+	float percent = jit_atom_getfloat(argv);
+	
+	if(videoPlayer && x && !videoPlayer->iAmLoading){
+		videoPlayer->setPosition(percent);
+	}
+	
+	
+	}
+	
+	return JIT_ERR_NONE;
+}
+
+
+
+t_jit_err jit_BC_QTKit_autostart(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
+{
+	long autostartPlz = 1 - jit_atom_getlong(argv);
+	
+	x->autostart = autostartPlz;
+	if(videoPlayer){
+		videoPlayer->isPaused = (bool)autostartPlz;
+	}
 	
 	
 	return JIT_ERR_NONE;
@@ -231,12 +282,21 @@ t_jit_err jit_BC_QTKit_getattr_out_name(t_jit_BC_QTKit *x, void *attr, long *ac,
 // #texturename
 t_jit_err jit_BC_QTKit_texturename(t_jit_BC_QTKit *jit_BC_QTKit_instance, void *attr, long argc, t_atom *argv)
 {
+	
+	t_jit_gl_drawinfo drawInfo;
+	t_symbol *texName = jit_attr_getsym(jit_BC_QTKit_instance->output, ps_name);
+//	jit_object_post((t_object*)jit_BC_QTKit_instance, texName->s_name);
+	
+	jit_gl_unbindtexture(&drawInfo, texName, 0);
+
 	t_symbol *s=jit_atom_getsym(argv);
 	
 	jit_BC_QTKit_instance->texturename = s;
 	if (jit_BC_QTKit_instance->output)
 		jit_attr_setsym(jit_BC_QTKit_instance->output,_jit_sym_name,s);
-	jit_attr_setsym(jit_BC_QTKit_instance,ps_texture,s);
+	//jit_attr_setsym(jit_BC_QTKit_instance,ps_texture,s);
+
+//	jit_gl_bindtexture(&drawInfo, texName, 0);
 	
 	return JIT_ERR_NONE;
 }
@@ -301,10 +361,11 @@ t_jit_err jit_BC_QTKit_dest_changed(t_jit_BC_QTKit *x)
 		// our texture has to be bound in the new context before we can use it
 		// http://cycling74.com/forums/topic.php?id=29197
 		t_jit_gl_drawinfo drawInfo;
-		t_symbol *texName = jit_attr_getsym(x->output, gensym("name"));
+		t_symbol *texName = jit_attr_getsym(x->output, ps_name);
 		jit_gl_drawinfo_setup(x, &drawInfo);
 		jit_gl_bindtexture(&drawInfo, texName, 0);
 		jit_gl_unbindtexture(&drawInfo, texName, 0);
+		videoPlayer->jitterObj = x;
 	}
 	
 	x->needsRedraw = YES;
@@ -335,12 +396,10 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 			jit_attr_setsym(x->output,gensym("defaultimage"),gensym("black"));
 			jit_attr_setlong(x->output,gensym("rectangle"), 1);
 			jit_attr_setlong(x->output, gensym("flip"), 1);
-			
+			x->autostart = 0;
 			x->dim[0] = 640;
 			x->dim[1] = 480;
-			jit_attr_setlong_array(x->output, _jit_sym_dim, 2, x->dim);
-			
-			
+			jit_attr_setlong_array(x->output, _jit_sym_dim, 2, x->dim);			
 		}
 		else
 		{
@@ -373,7 +432,7 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	
-	
+
 	if(videoPlayer != NULL){
 		videoPlayer->update();
 	}
@@ -396,8 +455,10 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			
 			// add texture to OB3D list.
 			//COMMENTED BECAUSE THIS APPEARS TO CAUSE TEXTURE ERRORS? WTFZ VADE? Y THIS HERE? ~brian
-			//jit_attr_setsym(x,ps_texture, jit_attr_getsym(x->output, gensym("name")));
-			
+			//i dont understand whats going on at http://www.cycling74.com/forums/topic.php?id=27193
+			//jit_attr_setsym(x,ps_texture, jit_attr_getsym(x->output, ps_name));
+			//t_symbol* mysymb =  jit_attr_getsym(x->output, ps_name);
+			//jit_post_sym(x, mysymb);
                         
 			// we need to update our internal texture to the latest known size of our movie's image.
             long newdim[2];			// output dim
@@ -409,7 +470,50 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			jit_attr_setlong_array(x, _jit_sym_dim, 2, newdim);
 			
 			
-			// save some state
+			
+//			t_symbol * tex = jit_attr_getsym(x->output, gensym("name"));
+//			if(tex && tex != _jit_sym_nothing)
+//			{
+//				void * texture_ptr = jit_object_findregistered(tex);
+//				if(texture_ptr)
+//				{
+//					const long glid(jit_attr_getlong(texture_ptr, gensym("glid")));
+//					const long gltarget(jit_attr_getlong(texture_ptr, gensym("gltarget")));
+//					
+//					[videoPlayer->moviePlayer bindTexture];
+//					[videoPlayer->moviePlayer unbindTexture];
+//
+//					CVOpenGLTextureRef myTex = [videoPlayer->moviePlayer _latestTextureFrame];
+//					GLuint texID = 0;
+//					texID = CVOpenGLTextureGetName(myTex);
+//					
+//					jit_attr_setlong(texture_ptr,gensym("glid"), texID);
+//					
+//					GLenum target = GL_TEXTURE_RECTANGLE_ARB;
+//					target = CVOpenGLTextureGetTarget(myTex);
+//
+//					jit_attr_setlong(texture_ptr,gensym("gltarget"), target);
+//					
+//					
+//					
+//				}
+//				
+//			}
+//			//bind,
+//			//[videoPlayer->moviePlayer bindTexture];
+//			//draw,
+//			//[...]
+//			//unbind,
+//			//[videoPlayer->moviePlayer unbindTexture];
+//			//task,
+//			QTVisualContextTask(videoPlayer->moviePlayer._visualContext);
+//			
+			
+			
+			
+			
+			
+		// save some state
 			GLint previousFBO;	// make sure we pop out to the right FBO
 			GLint previousReadFBO;
 			GLint previousDrawFBO;
@@ -475,7 +579,7 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
                     
 					// do not need blending if we use black border for alpha and replace env mode, saves a buffer wipe
 					// we can do this since our image draws over the complete surface of the FBO, no pixel goes untouched.
-//                    glEnable(GL_TEXTURE_RECTANGLE_EXT);
+                    glEnable(GL_TEXTURE_RECTANGLE_EXT);
   //                  glBindTexture(GL_TEXTURE_RECTANGLE_EXT, [frame textureName]);
 					[videoPlayer->moviePlayer bindTexture];
 
@@ -543,9 +647,11 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			glBindFramebufferEXT(GL_READ_FRAMEBUFFER_EXT, previousReadFBO);
 			glBindFramebufferEXT(GL_DRAW_FRAMEBUFFER_EXT, previousDrawFBO);
 			
-			
-//			[frame release];
 			jit_gl_set_context(ctx);
+			
+				
+			
+
 		}
 		
 		
@@ -623,8 +729,13 @@ void jit_BC_QTKit_read(t_jit_BC_QTKit *x, t_symbol *s, long ac, t_atom *av)
 //	
 	path_topathname(path, filename, cpath);
 	path_nameconform(cpath,filename,JIT_BC_QTKIT_PATH_STYLE,JIT_BC_QTKIT_PATH_TYPE);
-	strcpy(cpath,filename);			
-	videoPlayer->loadMovie(filename, 0);
+	strcpy(cpath,filename);	
+	
+	if(videoPlayer != NULL && !videoPlayer->iAmLoading){
+		videoPlayer->isPaused = x->autostart;
+		videoPlayer->loadMovie(filename, 0);
+		videoPlayer->setPaused(x->autostart);
+	}
 
 }
 
