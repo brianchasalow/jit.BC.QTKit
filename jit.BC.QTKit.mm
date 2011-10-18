@@ -58,6 +58,7 @@ typedef struct _jit_BC_QTKit {
 	long dim[2];			// output dim
 	BOOL needsRedraw;
 	float volume;
+	float speed;
 	// internal jit.gl.texture object
 	t_jit_object *output;
 	
@@ -79,7 +80,8 @@ t_jit_err jit_BC_QTKit_pause(t_jit_BC_QTKit *x);
 t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 t_jit_err jit_BC_QTKit_spew_position_values(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
-
+t_jit_err jit_BC_QTKit_setspeed(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
+t_jit_err jit_BC_QTKit_getspeed(t_jit_BC_QTKit *x, void *attr, long *ac, t_atom **av);
 t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *jit_BC_QTKit_instance);
 // dim
 t_jit_err jit_BC_QTKit_setattr_dim(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
@@ -200,6 +202,12 @@ t_jit_err jit_BC_QTKit_init(void)
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"volume",_jit_sym_float32,attrflags,
 										 (method)0L,(method)jit_BC_QTKit_setvolume,calcoffset(t_jit_BC_QTKit, volume));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"speed",_jit_sym_float32,attrflags,
+										 (method)0L,(method)jit_BC_QTKit_setspeed,calcoffset(t_jit_BC_QTKit, speed));
+	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"getspeed",_jit_sym_float32,attrflags,
+										 (method)0L,(method)jit_BC_QTKit_getspeed,calcoffset(t_jit_BC_QTKit, speed));
+	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
 	
 	
 	attrflags = JIT_ATTR_GET_DEFER_LOW | JIT_ATTR_SET_OPAQUE_USER;
@@ -240,7 +248,19 @@ t_jit_err jit_BC_QTKit_pause(t_jit_BC_QTKit *x)
 	return JIT_ERR_NONE;
 
 }
-
+t_jit_err jit_BC_QTKit_setspeed(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
+{
+	if(argc && argv){
+		float speedz = jit_atom_getfloat(argv);
+		x->speed = speedz;
+		videoPlayer->setSpeed(speedz);
+		t_atom speedatom[1];
+		jit_atom_setfloat(&speedatom[0],x->speed);
+		jit_object_notify(x,gensym("speed"), speedatom); //the last pointer argument could be anything.
+	}
+	
+	return JIT_ERR_NONE;
+}
 
 t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
 {
@@ -252,9 +272,6 @@ t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_ato
 		t_atom vol[1];
 		jit_atom_setfloat(&vol[0],x->volume);
 		jit_object_notify(x,gensym("volume"), vol); //the last pointer argument could be anything.
-		
-		
-		
 	}
 	
 	return JIT_ERR_NONE;
@@ -285,6 +302,17 @@ t_jit_err jit_BC_QTKit_spew_position_values(t_jit_BC_QTKit *x, void *attr, long 
 	
 	return JIT_ERR_NONE;
 }
+
+
+t_jit_err jit_BC_QTKit_getspeed(t_jit_BC_QTKit *x, void *attr, long *ac, t_atom **av)
+{
+
+		t_atom speedatom[1];
+		jit_atom_setfloat(&speedatom[0],videoPlayer->getSpeed());
+		jit_object_notify(x,gensym("speed"), speedatom); //the last pointer argument could be anything.		
+		
+	return JIT_ERR_NONE;
+}	
 
 
 t_jit_err jit_BC_QTKit_autostart(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
@@ -441,6 +469,7 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 			x->dim[0] = 640;
 			x->dim[1] = 480;
 			x->spew_position_values = 1;
+			x->speed = 1;
 			jit_attr_setlong_array(x->output, _jit_sym_dim, 2, x->dim);			
 		}
 		else

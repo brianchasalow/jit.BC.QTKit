@@ -133,7 +133,7 @@ public:
 	std::string getCurrentlyPlaying();
 	std::string storedMovieFileName;
     int loopState;
-    int speed;
+    float speed;
 	float volume;
     bool videoHasEnded, isPaused, iAmLoading, iAmLoaded, firstLoad;
     void resetToZeroIfDone();

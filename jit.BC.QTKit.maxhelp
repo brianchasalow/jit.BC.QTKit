@@ -7,7 +7,7 @@
 			"revision" : 0
 		}
 ,
-		"rect" : [ 67.0, 44.0, 1330.0, 777.0 ],
+		"rect" : [ 114.0, 44.0, 1330.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,75 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-87",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1267.0, 354.5, 54.0, 20.0 ],
+					"text" : "speed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-85",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1259.0, 372.0, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-83",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 194.0, 174.0, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-77",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 194.0, 199.5, 60.0, 18.0 ],
+					"text" : "speed $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-79",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1005.0, 184.5, 70.0, 18.0 ],
+					"text" : "getspeed 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-81",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -47,7 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.0, 717.0, 268.0, 49.0 ],
-					"text" : "TODO: add speed controls\ninternal: cache FBO, or don't use FBO's at all in draw method"
+					"text" : "TODO: take a look at speed attribute use\ninternal: cache FBO, or don't use FBO's at all in draw method"
 				}
 
 			}
@@ -117,7 +186,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 205.0, 230.0, 50.0, 20.0 ]
+					"patching_rect" : [ 223.0, 244.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -130,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 194.0, 261.0, 66.0, 18.0 ],
+					"patching_rect" : [ 223.0, 269.0, 66.0, 18.0 ],
 					"text" : "volume $1"
 				}
 
@@ -212,7 +281,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 110.0, 230.0, 57.0, 32.0 ],
+					"patching_rect" : [ 69.0, 230.0, 57.0, 32.0 ],
 					"text" : "play"
 				}
 
@@ -226,7 +295,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.0, 192.5, 78.0, 32.0 ],
+					"patching_rect" : [ 52.0, 192.5, 78.0, 32.0 ],
 					"text" : "pause"
 				}
 
@@ -756,7 +825,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 536.0, 325.0, 89.5, 62.0 ],
+					"patching_rect" : [ 536.0, 325.0, 91.0, 62.0 ],
 					"text" : "CALLBACK: video loaded successfully or not"
 				}
 
@@ -877,11 +946,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 8,
-					"numoutlets" : 8,
-					"outlettype" : [ "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 536.0, 280.0, 400.0, 20.0 ],
-					"text" : "route frameIsNew videoLoaded videoEnded dim duration volume position"
+					"numinlets" : 9,
+					"numoutlets" : 9,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 536.0, 280.0, 747.0, 20.0 ],
+					"text" : "route frameIsNew videoLoaded videoEnded dim duration volume position speed"
 				}
 
 			}
@@ -1180,16 +1249,16 @@
 ,
 					"patching_rect" : [ 182.0, 418.0, 42.0, 21.0 ],
 					"saved_object_attributes" : 					{
-						"tags" : "",
+						"fontname" : "Arial",
 						"default_fontface" : 0,
 						"digest" : "",
-						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"default_fontsize" : 12.0,
-						"description" : "",
-						"globalpatchername" : "",
 						"fontface" : 0,
-						"fontsize" : 12.0
+						"fontsize" : 12.0,
+						"default_fontname" : "Arial",
+						"globalpatchername" : "",
+						"tags" : "",
+						"default_fontsize" : 12.0,
+						"description" : ""
 					}
 ,
 					"text" : "p esc"
@@ -1783,6 +1852,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1796,6 +1874,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-79", 0 ]
 				}
 
 			}
@@ -1822,7 +1909,7 @@
 					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 599.928589, 337.5, 588.5, 337.5 ],
+					"midpoints" : [ 636.5, 337.5, 588.5, 337.5 ],
 					"source" : [ "obj-8", 1 ]
 				}
 
@@ -1832,7 +1919,7 @@
 					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 654.357117, 312.0, 632.0, 312.0, 632.0, 360.0, 640.833313, 360.0 ],
+					"midpoints" : [ 727.5, 312.0, 632.0, 312.0, 632.0, 360.0, 640.833313, 360.0 ],
 					"source" : [ "obj-8", 2 ]
 				}
 
@@ -1866,6 +1953,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-85", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1888,6 +1984,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-83", 0 ]
 				}
 
 			}
