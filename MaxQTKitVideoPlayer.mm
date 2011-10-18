@@ -451,7 +451,7 @@ void MaxQTKitVideoPlayer::setPosition(float pct)
 	[pool drain];
 }
 
-void MaxQTKitVideoPlayer::setVolume(int myVolume)
+void MaxQTKitVideoPlayer::setVolume(float myVolume)
 {
 	if(moviePlayer == NULL) return;
 	

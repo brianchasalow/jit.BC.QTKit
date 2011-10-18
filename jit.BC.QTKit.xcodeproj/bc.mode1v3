@@ -276,7 +276,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
+									<integer>13</integer>
 									<integer>11</integer>
 									<integer>0</integer>
 								</array>
@@ -301,7 +301,7 @@
 							<real>334</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>5 59 1316 819 0 0 1440 878 </string>
+						<string>-21 59 1316 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -312,14 +312,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>jit.BC.QTKit.mm</string>
+								<string>MaxQTKitVideoPlayer.mm</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>jit.BC.QTKit.mm</string>
+										<string>MaxQTKitVideoPlayer.mm</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>41F427B4144D29BE002EC059</string>
+										<string>41F42830144D3CDC002EC059</string>
 										<key>history</key>
 										<array>
 											<string>411CC6B3124E6B0000C2E63D</string>
@@ -353,17 +351,17 @@
 											<string>417B8731144C0B13008DDCCE</string>
 											<string>417B8749144C0D20008DDCCE</string>
 											<string>417B8772144C172B008DDCCE</string>
-											<string>417B87EC144CD1C3008DDCCE</string>
 											<string>417B87ED144CD1C3008DDCCE</string>
 											<string>41F42783144D23A4002EC059</string>
 											<string>41F42797144D248A002EC059</string>
 											<string>41F42798144D248A002EC059</string>
-											<string>41F427AE144D29BE002EC059</string>
-											<string>41F427AF144D29BE002EC059</string>
-											<string>41F427B0144D29BE002EC059</string>
-											<string>41F427B1144D29BE002EC059</string>
-											<string>41F427B2144D29BE002EC059</string>
-											<string>41F427B3144D29BE002EC059</string>
+											<string>41F42805144D35A7002EC059</string>
+											<string>41F42814144D3A05002EC059</string>
+											<string>41F42815144D3A05002EC059</string>
+											<string>41F42822144D3C3C002EC059</string>
+											<string>41F4282D144D3CDC002EC059</string>
+											<string>41F4282E144D3CDC002EC059</string>
+											<string>41F4282F144D3CDC002EC059</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -377,7 +375,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {960, 519}}</string>
 								<key>RubberWindowFrame</key>
-								<string>5 59 1316 819 0 0 1440 878 </string>
+								<string>-21 59 1316 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -397,7 +395,7 @@
 								<key>Frame</key>
 								<string>{{0, 524}, {960, 254}}</string>
 								<key>RubberWindowFrame</key>
-								<string>5 59 1316 819 0 0 1440 878 </string>
+								<string>-21 59 1316 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -565,7 +563,7 @@
 		<string>/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>5 59 1316 819 0 0 1440 878 </string>
+	<string>-21 59 1316 819 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

@@ -110,7 +110,7 @@ public:
 	
 	
 	void 				setPosition(float pct);
-	void 				setVolume(int volume);
+	void 				setVolume(float volume);
 	void 				setLoopState(bool loops);
 	void 				setLoopState(int ofLoopState);
 	void   				setSpeed(float speed);
@@ -133,7 +133,8 @@ public:
 	std::string getCurrentlyPlaying();
 	std::string storedMovieFileName;
     int loopState;
-    int speed, volume;
+    int speed;
+	float volume;
     bool videoHasEnded, isPaused, iAmLoading, iAmLoaded, firstLoad;
     void resetToZeroIfDone();
     void setPaused(bool myPause);

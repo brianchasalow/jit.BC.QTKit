@@ -54,9 +54,10 @@ typedef struct _jit_BC_QTKit {
 	NSRect latestBounds;
 	t_symbol			*texturename;
 	long			autostart;
+	long spew_position_values;
 	long dim[2];			// output dim
 	BOOL needsRedraw;
-
+	float volume;
 	// internal jit.gl.texture object
 	t_jit_object *output;
 	
@@ -76,6 +77,8 @@ t_jit_err jit_BC_QTKit_autostart(t_jit_BC_QTKit *x, void *attr, long argc, t_ato
 t_jit_err jit_BC_QTKit_play(t_jit_BC_QTKit *x);
 t_jit_err jit_BC_QTKit_pause(t_jit_BC_QTKit *x);
 t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
+t_jit_err jit_BC_QTKit_spew_position_values(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
+t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 
 t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *jit_BC_QTKit_instance);
 // dim
@@ -190,6 +193,15 @@ t_jit_err jit_BC_QTKit_init(void)
 										 (method)0L,(method)jit_BC_QTKit_autostart,calcoffset(t_jit_BC_QTKit, autostart));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
 	
+	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"spew_position_values",_jit_sym_long,attrflags,
+										 (method)0L,(method)jit_BC_QTKit_spew_position_values,calcoffset(t_jit_BC_QTKit, spew_position_values));
+	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+
+	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"volume",_jit_sym_float32,attrflags,
+										 (method)0L,(method)jit_BC_QTKit_setvolume,calcoffset(t_jit_BC_QTKit, volume));
+	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+	
+	
 	attrflags = JIT_ATTR_GET_DEFER_LOW | JIT_ATTR_SET_OPAQUE_USER;
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"out_name",_jit_sym_symbol, attrflags,
 						  (method)jit_BC_QTKit_getattr_out_name,(method)0L,0);	
@@ -229,6 +241,25 @@ t_jit_err jit_BC_QTKit_pause(t_jit_BC_QTKit *x)
 
 }
 
+
+t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
+{
+	if(argc && argv){
+		float percent = jit_atom_getfloat(argv);
+		x->volume = percent;
+		videoPlayer->volume = percent;
+		videoPlayer->setVolume(percent);
+		t_atom vol[1];
+		jit_atom_setfloat(&vol[0],x->volume);
+		jit_object_notify(x,gensym("volume"), vol); //the last pointer argument could be anything.
+		
+		
+		
+	}
+	
+	return JIT_ERR_NONE;
+}
+
 t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
 {
 	if(argc && argv){
@@ -246,14 +277,24 @@ t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_a
 
 
 
+t_jit_err jit_BC_QTKit_spew_position_values(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
+{
+	long spew_position_valuesplz = jit_atom_getlong(argv);
+	
+	x->spew_position_values = spew_position_valuesplz;	
+	
+	return JIT_ERR_NONE;
+}
+
+
 t_jit_err jit_BC_QTKit_autostart(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
 {
 	long autostartPlz = 1 - jit_atom_getlong(argv);
 	
 	x->autostart = autostartPlz;
-	if(videoPlayer){
+//	if(videoPlayer){
 		videoPlayer->isPaused = (bool)autostartPlz;
-	}
+//	}
 	
 	
 	return JIT_ERR_NONE;
@@ -346,7 +387,7 @@ t_jit_err jit_BC_QTKit_dest_closing(t_jit_BC_QTKit *x)
 
 t_jit_err jit_BC_QTKit_dest_changed(t_jit_BC_QTKit *x)
 {	
-	post("dest changed!!!");
+	//post("dest changed!!!");
 	if (x->output)
 	{
 	
@@ -399,6 +440,7 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 			x->autostart = 0;
 			x->dim[0] = 640;
 			x->dim[1] = 480;
+			x->spew_position_values = 1;
 			jit_attr_setlong_array(x->output, _jit_sym_dim, 2, x->dim);			
 		}
 		else
@@ -454,8 +496,8 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			jit_ob3d_set_context(x);
 			
 			// add texture to OB3D list.
-			//COMMENTED BECAUSE THIS APPEARS TO CAUSE TEXTURE ERRORS? WTFZ VADE? Y THIS HERE? ~brian
-			//i dont understand whats going on at http://www.cycling74.com/forums/topic.php?id=27193
+			//COMMENTED BECAUSE THIS APPEARS TO CAUSE TEXTURE ERRORS?
+			//i dont understand whats going on, see http://www.cycling74.com/forums/topic.php?id=27193
 			//jit_attr_setsym(x,ps_texture, jit_attr_getsym(x->output, ps_name));
 			//t_symbol* mysymb =  jit_attr_getsym(x->output, ps_name);
 			//jit_post_sym(x, mysymb);
@@ -660,6 +702,11 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 	t_atom foo[1];
 	jit_atom_setlong(&foo[0],videoPlayer->isFrameNew());			
 	jit_object_notify(x,gensym("frameIsNew"), foo); //the last pointer argument could be anything.	
+	if(x->spew_position_values == 1){
+	t_atom pos[1];
+	jit_atom_setfloat(&pos[0],videoPlayer->getPosition());			
+	jit_object_notify(x,gensym("position"), pos); //the last pointer argument could be anything.	
+	}
 	
 	
 	[pool drain];
