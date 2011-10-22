@@ -246,6 +246,7 @@ void MaxQTKitVideoPlayer::setSpeed(float rate)
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	
+
 	[moviePlayer setRate:rate];
 	
 	[pool drain];	

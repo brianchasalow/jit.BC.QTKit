@@ -9,7 +9,7 @@
  * Brian Chasalow, brian@chasalow.com 2011 
  * Thanks to Anton Marini for FBO draw code! www.v002.info
  * Also, this would have been impossible without Rob Ramirez, for help with Jitter and file loading!
-
+ 
  */
 //
 #include "jit.common.h"
@@ -47,10 +47,10 @@
 // Our Jitter object instance data
 typedef struct _jit_BC_QTKit {
 	t_object	ob;
-
+	
 	//uh, what/why? "3d object extension.  This is what all objects in the GL group have in common."
 	void				*ob3d;
-
+	
 	NSRect latestBounds;
 	t_symbol			*texturename;
 	long			autostart;
@@ -62,6 +62,7 @@ typedef struct _jit_BC_QTKit {
 	float speed;
 	// internal jit.gl.texture object
 	t_jit_object *output;
+	MaxQTKitVideoPlayer* videoPlayer;
 	
 } t_jit_BC_QTKit;
 
@@ -117,7 +118,7 @@ t_symbol *ps_name;
 extern t_symbol *ps_jit_gl_texture;
 
 // globals
-static MaxQTKitVideoPlayer* videoPlayer = NULL;
+//static 
 static void *s_jit_BC_QTKit_class = NULL;
 int numbiter = 0;
 #define CELL_PTR_1D (info,data,x) (((uchar *)(data))+(info)->dimstride[0]*(x))
@@ -166,33 +167,33 @@ t_jit_err jit_BC_QTKit_init(void)
 	//also, 	//NOTIFY EXAMPLE: WE NEED A "REGISTER" METHOD SO THAT CLIENTS CAN ATTACH TO US
 	jit_class_addmethod(s_jit_BC_QTKit_class, 
 						(method)jit_object_register, "register", A_CANT, 0L);
-
+	
 	// must register for ob3d use
 	jit_class_addmethod(s_jit_BC_QTKit_class, 
 						(method)jit_BC_QTKit_play, "play", A_GIMME, 0L);
-//	
-//	// define our dest_closing and dest_changed methods. 
-//	// these methods are called by jit.gl.render when the 
-//	// destination context closes or changes: for example, when 
-//	// the user moves the window from one monitor to another. Any 
-//	// resources your object keeps in the OpenGL machine 
-//	// (e.g. textures, display lists, vertex shaders, etc.) 
-//	// will need to be freed when closing, and rebuilt when it has 
-//	// changed. In this object, these functions do nothing, and 
-//	// could be omitted.
-//	
-
-//	// add attributes
+	//	
+	//	// define our dest_closing and dest_changed methods. 
+	//	// these methods are called by jit.gl.render when the 
+	//	// destination context closes or changes: for example, when 
+	//	// the user moves the window from one monitor to another. Any 
+	//	// resources your object keeps in the OpenGL machine 
+	//	// (e.g. textures, display lists, vertex shaders, etc.) 
+	//	// will need to be freed when closing, and rebuilt when it has 
+	//	// changed. In this object, these functions do nothing, and 
+	//	// could be omitted.
+	//	
+	
+	//	// add attributes
 	long attrflags = JIT_ATTR_GET_DEFER_LOW | JIT_ATTR_SET_USURP_LOW;
-//	
+	//	
 	t_jit_object *attr;
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset_array,"dim",_jit_sym_long,2,attrflags,
-                          (method)0L,(method)jit_BC_QTKit_setattr_dim,0/*fix*/,calcoffset(t_jit_BC_QTKit,dim));
-
+										 (method)0L,(method)jit_BC_QTKit_setattr_dim,0/*fix*/,calcoffset(t_jit_BC_QTKit,dim));
+	
     jit_class_addattr(s_jit_BC_QTKit_class,attr);	
-
+	
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"texturename",_jit_sym_symbol,attrflags,
-						  (method)0L,(method)jit_BC_QTKit_texturename,calcoffset(t_jit_BC_QTKit, texturename));		
+										 (method)0L,(method)jit_BC_QTKit_texturename,calcoffset(t_jit_BC_QTKit, texturename));		
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
 	
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"autostart",_jit_sym_long,attrflags,
@@ -202,7 +203,7 @@ t_jit_err jit_BC_QTKit_init(void)
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"spew_position_values",_jit_sym_long,attrflags,
 										 (method)0L,(method)jit_BC_QTKit_spew_position_values,calcoffset(t_jit_BC_QTKit, spew_position_values));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
-
+	
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"volume",_jit_sym_float32,attrflags,
 										 (method)0L,(method)jit_BC_QTKit_setvolume,calcoffset(t_jit_BC_QTKit, volume));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
@@ -222,7 +223,7 @@ t_jit_err jit_BC_QTKit_init(void)
 	
 	attrflags = JIT_ATTR_GET_DEFER_LOW | JIT_ATTR_SET_OPAQUE_USER;
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"out_name",_jit_sym_symbol, attrflags,
-						  (method)jit_BC_QTKit_getattr_out_name,(method)0L,0);	
+										 (method)jit_BC_QTKit_getattr_out_name,(method)0L,0);	
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);
 	
 	
@@ -236,12 +237,12 @@ t_jit_err jit_BC_QTKit_init(void)
 	ps_drawto = gensym("drawto");
 	ps_draw = gensym("draw");
 	ps_name = gensym("name");
-		
-		// add method(s)
+	
+	// add method(s)
 	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_read, "read", A_GIMME, 0);
 	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_pause, "pause", A_GIMME, 0);
 	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_setposition, "setposition", A_GIMME, 0);
-
+	
 	
 	// finalize class
 	jit_class_register(s_jit_BC_QTKit_class);
@@ -252,18 +253,18 @@ t_jit_err jit_BC_QTKit_init(void)
 
 t_jit_err jit_BC_QTKit_pause(t_jit_BC_QTKit *x)
 {	
-	if(videoPlayer && x){
-		videoPlayer->setPaused(true);	
+	if(x && x->videoPlayer ){
+		x->videoPlayer->setPaused(true);	
 	}
 	return JIT_ERR_NONE;
-
+	
 }
 t_jit_err jit_BC_QTKit_setspeed(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
 {
 	if(argc && argv){
 		float speedz = jit_atom_getfloat(argv);
 		x->speed = speedz;
-		videoPlayer->setSpeed(speedz);
+		x->videoPlayer->setSpeed(speedz);
 		t_atom speedatom[1];
 		jit_atom_setfloat(&speedatom[0],x->speed);
 		jit_object_notify(x,gensym("speed"), speedatom); //the last pointer argument could be anything.
@@ -277,8 +278,8 @@ t_jit_err jit_BC_QTKit_setloopstate(t_jit_BC_QTKit *x, void *attr, long argc, t_
 	if(argc && argv){
 		long state = jit_atom_getlong(argv);
 		x->loopstate = state;
-		videoPlayer->loopState = (int)state;
-		videoPlayer->setLoopState((int)state);
+		x->videoPlayer->loopState = (int)state;
+		x->videoPlayer->setLoopState((int)state);
 		t_atom stateatom[1];
 		jit_atom_setlong(&stateatom[0],state);
 		jit_object_notify(x,gensym("loopstate"), stateatom); //the last pointer argument could be anything.
@@ -293,8 +294,8 @@ t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_ato
 	if(argc && argv){
 		float percent = jit_atom_getfloat(argv);
 		x->volume = percent;
-		videoPlayer->volume = percent;
-		videoPlayer->setVolume(percent);
+		x->videoPlayer->volume = percent;
+		x->videoPlayer->setVolume(percent);
 		t_atom vol[1];
 		jit_atom_setfloat(&vol[0],x->volume);
 		jit_object_notify(x,gensym("volume"), vol); //the last pointer argument could be anything.
@@ -306,13 +307,13 @@ t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_ato
 t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
 {
 	if(argc && argv){
-	float percent = jit_atom_getfloat(argv);
-	
-	if(videoPlayer && x && !videoPlayer->iAmLoading){
-		videoPlayer->setPosition(percent);
-	}
-	
-	
+		float percent = jit_atom_getfloat(argv);
+		
+		if(x && x->videoPlayer && !x->videoPlayer->iAmLoading){
+			x->videoPlayer->setPosition(percent);
+		}
+		
+		
 	}
 	
 	return JIT_ERR_NONE;
@@ -332,11 +333,11 @@ t_jit_err jit_BC_QTKit_spew_position_values(t_jit_BC_QTKit *x, void *attr, long 
 
 t_jit_err jit_BC_QTKit_getspeed(t_jit_BC_QTKit *x, void *attr, long *ac, t_atom **av)
 {
-
-		t_atom speedatom[1];
-		jit_atom_setfloat(&speedatom[0],videoPlayer->getSpeed());
-		jit_object_notify(x,gensym("speed"), speedatom); //the last pointer argument could be anything.		
-		
+	
+	t_atom speedatom[1];
+	jit_atom_setfloat(&speedatom[0],x->videoPlayer->getSpeed());
+	jit_object_notify(x,gensym("speed"), speedatom); //the last pointer argument could be anything.		
+	
 	return JIT_ERR_NONE;
 }	
 
@@ -346,9 +347,9 @@ t_jit_err jit_BC_QTKit_autostart(t_jit_BC_QTKit *x, void *attr, long argc, t_ato
 	long autostartPlz = 1 - jit_atom_getlong(argv);
 	
 	x->autostart = autostartPlz;
-//	if(videoPlayer){
-		videoPlayer->isPaused = (bool)autostartPlz;
-//	}
+	//	if(x->videoPlayer){
+	x->videoPlayer->isPaused = (bool)autostartPlz;
+	//	}
 	
 	
 	return JIT_ERR_NONE;
@@ -380,18 +381,18 @@ t_jit_err jit_BC_QTKit_texturename(t_jit_BC_QTKit *jit_BC_QTKit_instance, void *
 	
 	t_jit_gl_drawinfo drawInfo;
 	t_symbol *texName = jit_attr_getsym(jit_BC_QTKit_instance->output, ps_name);
-//	jit_object_post((t_object*)jit_BC_QTKit_instance, texName->s_name);
+	//	jit_object_post((t_object*)jit_BC_QTKit_instance, texName->s_name);
 	
 	jit_gl_unbindtexture(&drawInfo, texName, 0);
-
+	
 	t_symbol *s=jit_atom_getsym(argv);
 	
 	jit_BC_QTKit_instance->texturename = s;
 	if (jit_BC_QTKit_instance->output)
 		jit_attr_setsym(jit_BC_QTKit_instance->output,_jit_sym_name,s);
 	//jit_attr_setsym(jit_BC_QTKit_instance,ps_texture,s);
-
-//	jit_gl_bindtexture(&drawInfo, texName, 0);
+	
+	//	jit_gl_bindtexture(&drawInfo, texName, 0);
 	
 	return JIT_ERR_NONE;
 }
@@ -399,8 +400,8 @@ t_jit_err jit_BC_QTKit_texturename(t_jit_BC_QTKit *jit_BC_QTKit_instance, void *
 // #play
 t_jit_err jit_BC_QTKit_play(t_jit_BC_QTKit *x)
 {
-	if(videoPlayer && x){
-		videoPlayer->play();	
+	if( x &&  x->videoPlayer ){
+		x->videoPlayer->play();	
 	}
 	return JIT_ERR_NONE;
 }
@@ -444,10 +445,10 @@ t_jit_err jit_BC_QTKit_dest_changed(t_jit_BC_QTKit *x)
 	//post("dest changed!!!");
 	if (x->output)
 	{
-	
-		if(videoPlayer && videoPlayer->iAmLoaded &&  !videoPlayer->iAmLoading)
+		
+		if(x->videoPlayer && x->videoPlayer->iAmLoaded &&  !x->videoPlayer->iAmLoading)
 		{
-			videoPlayer->repairContext();
+			x->videoPlayer->repairContext();
 		}
 		
 		t_symbol *context = jit_attr_getsym(x,ps_drawto);		
@@ -460,12 +461,12 @@ t_jit_err jit_BC_QTKit_dest_changed(t_jit_BC_QTKit *x)
 		jit_gl_drawinfo_setup(x, &drawInfo);
 		jit_gl_bindtexture(&drawInfo, texName, 0);
 		jit_gl_unbindtexture(&drawInfo, texName, 0);
-		videoPlayer->jitterObj = x;
+		x->videoPlayer->jitterObj = x;
 	}
 	
 	x->needsRedraw = YES;
 	
-
+	
 	return JIT_ERR_NONE;
 }
 /************************************************************************************/
@@ -475,15 +476,13 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 {
 	t_jit_BC_QTKit	*x = NULL;
 	
-	if(videoPlayer == NULL){		
-		videoPlayer = new MaxQTKitVideoPlayer();
-	}
+
 	
 	if(x = (t_jit_BC_QTKit*)jit_object_alloc(s_jit_BC_QTKit_class)){
-	x->output = (t_jit_object*)jit_object_new(ps_jit_gl_texture,dest_name);
-	x->latestBounds = NSMakeRect(0, 0, 640, 480);
-	x->needsRedraw = YES;
-
+		x->output = (t_jit_object*)jit_object_new(ps_jit_gl_texture,dest_name);
+		x->latestBounds = NSMakeRect(0, 0, 640, 480);
+		x->needsRedraw = YES;
+		
 		if(x->output){
 			x->texturename = jit_symbol_unique();		
 			// set texture attributes.
@@ -506,13 +505,16 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 			x->texturename = _jit_sym_nothing;		
 		}
 		jit_ob3d_new(x, dest_name);
-
+		//	if(x->videoPlayer == NULL){		
+		x->videoPlayer = new MaxQTKitVideoPlayer();
+		//	}
+		
 	}
 	else 
 	{
 		x = NULL;
 	}
-
+	
 	return x;
 }
 
@@ -523,20 +525,20 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 		return JIT_ERR_INVALID_PTR;		
 	}
 	
-
+	
 	
 	
 	
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	
-
-	if(videoPlayer != NULL){
-		videoPlayer->update();
+	
+	if(x->videoPlayer != NULL){
+		x->videoPlayer->update();
 	}
     
-///	post("videoplayer: %i iamloaded %i iamloading %i isframenew %i needsredraw %i", (videoPlayer == NULL), videoPlayer->iAmLoaded, !videoPlayer->iAmLoading, videoPlayer->isFrameNew(), x->needsRedraw);
-	if((videoPlayer != NULL && videoPlayer->iAmLoaded &&  !videoPlayer->iAmLoading) && (videoPlayer->isFrameNew()|| x->needsRedraw))
+	///	post("videoplayer: %i iamloaded %i iamloading %i isframenew %i needsredraw %i", (x->videoPlayer == NULL), x->videoPlayer->iAmLoaded, !x->videoPlayer->iAmLoading, x->videoPlayer->isFrameNew(), x->needsRedraw);
+	if((x->videoPlayer != NULL && x->videoPlayer->iAmLoaded &&  !x->videoPlayer->iAmLoading) && (x->videoPlayer->isFrameNew()|| x->needsRedraw))
 	{
 		// this means we need to render into our internal texture, via an FBO.
 		// for now, we are going to do this all inline, in place.
@@ -557,61 +559,61 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			//jit_attr_setsym(x,ps_texture, jit_attr_getsym(x->output, ps_name));
 			//t_symbol* mysymb =  jit_attr_getsym(x->output, ps_name);
 			//jit_post_sym(x, mysymb);
-                        
+			
 			// we need to update our internal texture to the latest known size of our movie's image.
             long newdim[2];			// output dim
 			
-			newdim[0] = videoPlayer->getWidth();
-			newdim[1] = videoPlayer->getHeight();
+			newdim[0] = x->videoPlayer->getWidth();
+			newdim[1] = x->videoPlayer->getHeight();
 			
             // update our internal attribute so attr messages work
 			jit_attr_setlong_array(x, _jit_sym_dim, 2, newdim);
 			
 			
 			
-//			t_symbol * tex = jit_attr_getsym(x->output, gensym("name"));
-//			if(tex && tex != _jit_sym_nothing)
-//			{
-//				void * texture_ptr = jit_object_findregistered(tex);
-//				if(texture_ptr)
-//				{
-//					const long glid(jit_attr_getlong(texture_ptr, gensym("glid")));
-//					const long gltarget(jit_attr_getlong(texture_ptr, gensym("gltarget")));
-//					
-//					[videoPlayer->moviePlayer bindTexture];
-//					[videoPlayer->moviePlayer unbindTexture];
-//
-//					CVOpenGLTextureRef myTex = [videoPlayer->moviePlayer _latestTextureFrame];
-//					GLuint texID = 0;
-//					texID = CVOpenGLTextureGetName(myTex);
-//					
-//					jit_attr_setlong(texture_ptr,gensym("glid"), texID);
-//					
-//					GLenum target = GL_TEXTURE_RECTANGLE_ARB;
-//					target = CVOpenGLTextureGetTarget(myTex);
-//
-//					jit_attr_setlong(texture_ptr,gensym("gltarget"), target);
-//					
-//					
-//					
-//				}
-//				
-//			}
-//			//bind,
-//			//[videoPlayer->moviePlayer bindTexture];
-//			//draw,
-//			//[...]
-//			//unbind,
-//			//[videoPlayer->moviePlayer unbindTexture];
-//			//task,
-//			QTVisualContextTask(videoPlayer->moviePlayer._visualContext);
-//			
+			//			t_symbol * tex = jit_attr_getsym(x->output, gensym("name"));
+			//			if(tex && tex != _jit_sym_nothing)
+			//			{
+			//				void * texture_ptr = jit_object_findregistered(tex);
+			//				if(texture_ptr)
+			//				{
+			//					const long glid(jit_attr_getlong(texture_ptr, gensym("glid")));
+			//					const long gltarget(jit_attr_getlong(texture_ptr, gensym("gltarget")));
+			//					
+			//					[x->videoPlayer->moviePlayer bindTexture];
+			//					[x->videoPlayer->moviePlayer unbindTexture];
+			//
+			//					CVOpenGLTextureRef myTex = [x->videoPlayer->moviePlayer _latestTextureFrame];
+			//					GLuint texID = 0;
+			//					texID = CVOpenGLTextureGetName(myTex);
+			//					
+			//					jit_attr_setlong(texture_ptr,gensym("glid"), texID);
+			//					
+			//					GLenum target = GL_TEXTURE_RECTANGLE_ARB;
+			//					target = CVOpenGLTextureGetTarget(myTex);
+			//
+			//					jit_attr_setlong(texture_ptr,gensym("gltarget"), target);
+			//					
+			//					
+			//					
+			//				}
+			//				
+			//			}
+			//			//bind,
+			//			//[x->videoPlayer->moviePlayer bindTexture];
+			//			//draw,
+			//			//[...]
+			//			//unbind,
+			//			//[x->videoPlayer->moviePlayer unbindTexture];
+			//			//task,
+			//			QTVisualContextTask(x->videoPlayer->moviePlayer._visualContext);
+			//			
 			
 			
 			
 			
 			
-		// save some state
+			// save some state
 			GLint previousFBO;	// make sure we pop out to the right FBO
 			GLint previousReadFBO;
 			GLint previousDrawFBO;
@@ -678,9 +680,9 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 					// do not need blending if we use black border for alpha and replace env mode, saves a buffer wipe
 					// we can do this since our image draws over the complete surface of the FBO, no pixel goes untouched.
                     glEnable(GL_TEXTURE_RECTANGLE_EXT);
-  //                  glBindTexture(GL_TEXTURE_RECTANGLE_EXT, [frame textureName]);
-					[videoPlayer->moviePlayer bindTexture];
-
+					//                  glBindTexture(GL_TEXTURE_RECTANGLE_EXT, [frame textureName]);
+					[x->videoPlayer->moviePlayer bindTexture];
+					
 					
 					glDisable(GL_BLEND);
 					glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);	
@@ -719,11 +721,11 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				glMatrixMode(GL_TEXTURE);
 				glPopMatrix();
 				glMatrixMode(previousMatrixMode);
-
 				
 				
-				[videoPlayer->moviePlayer unbindTexture];
-				QTVisualContextTask(videoPlayer->moviePlayer._visualContext);
+				
+				[x->videoPlayer->moviePlayer unbindTexture];
+				QTVisualContextTask(x->videoPlayer->moviePlayer._visualContext);
 				
 				
 				
@@ -747,48 +749,48 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			
 			jit_gl_set_context(ctx);
 			
-				
 			
-
+			
+			
 		}
 		
 		
 	}
 	
 	t_atom foo[1];
-	jit_atom_setlong(&foo[0],videoPlayer->isFrameNew());			
+	jit_atom_setlong(&foo[0],x->videoPlayer->isFrameNew());			
 	jit_object_notify(x,gensym("frameIsNew"), foo); //the last pointer argument could be anything.	
 	if(x->spew_position_values == 1){
-	t_atom pos[1];
-	jit_atom_setfloat(&pos[0],videoPlayer->getPosition());			
-	jit_object_notify(x,gensym("position"), pos); //the last pointer argument could be anything.	
+		t_atom pos[1];
+		jit_atom_setfloat(&pos[0],x->videoPlayer->getPosition());			
+		jit_object_notify(x,gensym("position"), pos); //the last pointer argument could be anything.	
 	}
 	
 	
 	[pool drain];
 	
 	return JIT_ERR_NONE;
-
+	
 }
 
 void jit_BC_QTKit_free(t_jit_BC_QTKit *x)
 {
-	if(videoPlayer != NULL){		
-		videoPlayer->close();
-
-		if(videoPlayer)
-		delete videoPlayer;
-
-		videoPlayer = NULL;
+	if(x->videoPlayer != NULL){		
+		x->videoPlayer->close();
 		
-				
+		if(x->videoPlayer)
+			delete x->videoPlayer;
+		
+		x->videoPlayer = NULL;
+		
+		
 		// free ourselves
 		if(x)
-		jit_ob3d_free(x);
-
+			jit_ob3d_free(x);
+		
 		if(x->output)
 			jit_object_free(x->output);
-
+		
 		
 	}
 	
@@ -829,17 +831,17 @@ void jit_BC_QTKit_read(t_jit_BC_QTKit *x, t_symbol *s, long ac, t_atom *av)
 			return;
 		}
 	}
-//	
+	//	
 	path_topathname(path, filename, cpath);
 	path_nameconform(cpath,filename,JIT_BC_QTKIT_PATH_STYLE,JIT_BC_QTKIT_PATH_TYPE);
 	strcpy(cpath,filename);	
 	
-	if(videoPlayer != NULL && !videoPlayer->iAmLoading){
-		videoPlayer->isPaused = x->autostart;
-		videoPlayer->loadMovie(filename, 0);
-		videoPlayer->setPaused(x->autostart);
+	if(x->videoPlayer != NULL && !x->videoPlayer->iAmLoading){
+		x->videoPlayer->isPaused = x->autostart;
+		x->videoPlayer->loadMovie(filename, 0);
+		x->videoPlayer->setPaused(x->autostart);
 	}
-
+	
 }
 
 
