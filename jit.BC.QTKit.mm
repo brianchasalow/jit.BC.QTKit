@@ -628,11 +628,15 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			t_jit_gl_context ctx = jit_gl_get_context();
 			
 			jit_ob3d_set_context(x);
-			t_jit_gl_drawinfo drawInfo;
-			t_symbol *texName = jit_attr_getsym(x->output, ps_name);
-			jit_gl_drawinfo_setup(x, &drawInfo);
-			jit_gl_bindtexture(&drawInfo, texName, 0);
-			jit_gl_unbindtexture(&drawInfo, texName, 0);
+
+			//unsure if this is necessary...
+//			t_jit_gl_drawinfo drawInfo;
+//			t_symbol *texName = jit_attr_getsym(x->output, ps_name);
+//			jit_gl_drawinfo_setup(x, &drawInfo);
+//			jit_gl_bindtexture(&drawInfo, texName, 0);
+//			jit_gl_unbindtexture(&drawInfo, texName, 0);
+			//end unsure area
+			
 			// add texture to OB3D list.
 			//COMMENTED BECAUSE THIS APPEARS TO CAUSE TEXTURE ERRORS?
 			//i dont understand whats going on, see http://www.cycling74.com/forums/topic.php?id=27193
