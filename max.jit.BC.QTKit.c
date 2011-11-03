@@ -26,10 +26,10 @@ typedef struct _max_jit_BC_QTKit {
 	void		*obex;
 	t_symbol		*servername; //NOTIFY EXAMPLE
 	void			*texout;
+    void            *matrixout;
     void            *dumpout;
 	void			*renderer;
 } t_max_jit_BC_QTKit;
-
 
 // prototypes
 BEGIN_USING_C_LINKAGE
@@ -46,7 +46,7 @@ void max_jit_BC_QTKit_notify(t_max_jit_BC_QTKit *x, t_symbol *s, t_symbol *msg, 
 
 
 
-t_symbol *ps_jit_gl_texture,*ps_draw, *ps_out_name;
+t_symbol *ps_jit_gl_texture, *ps_jit_matrix, *ps_draw, *ps_out_name;
 
 // globals
 static void	*max_jit_BC_QTKit_class = NULL;
@@ -121,6 +121,7 @@ int main(void)
 	
 	// add methods for 3d drawing
     max_ob3d_setup();
+	ps_jit_matrix = gensym("jit_matrix");
 	ps_jit_gl_texture = gensym("jit_gl_texture");
 	ps_draw = gensym("draw");
 	ps_out_name = gensym("out_name");
@@ -218,7 +219,20 @@ void max_jit_BC_QTKit_notify(t_max_jit_BC_QTKit *x, t_symbol *s, t_symbol *msg, 
 		}
 		max_jit_obex_dumpout(x, msg, 1, (t_atom *)data);
 	}
-	
+	if(msg==gensym("frame")){
+		if (!data) {
+			error("frame message NULL pointer");
+			return;
+		}
+		max_jit_obex_dumpout(x, msg, 1, (t_atom *)data);
+	}
+	if(msg==_jit_sym_jit_matrix){
+		if (!data) {
+			error("jit_matrix message NULL pointer");
+			return;
+		}
+		outlet_anything(x->matrixout,ps_jit_matrix,1,(t_atom *)data);
+	}
 }
 
 /************************************************************************************/
@@ -260,8 +274,10 @@ void *max_jit_BC_QTKit_new(t_symbol *s, long argc, t_atom *argv)
 			max_jit_obex_dumpout_set(x, x->dumpout);
 			
 			// this outlet is used to shit out textures! yay!
+			x->matrixout = outlet_new(x, "jit_matrix");
+
 			x->texout = outlet_new(x, "jit_gl_texture");
-			
+
 			//NOTIFY EXAMPLE: GENERATING A UNIQUE NAME + ASSOCIATING WITH JIT OBJECT(SERVER)
 			x->servername = jit_symbol_unique(); 
 			jit_object_method(jit_ob,_jit_sym_register,x->servername); //this registers w/ the name

@@ -94,12 +94,14 @@ bool MaxQTKitVideoPlayer::loadMovie(std::string movieFilePath, int mode)
     if(movieFilePath == ""){
 		NSLog(@"Load BLOCKED by null name");
 		[pool drain];
+		pool = NULL;
         return false;
     }
     
 	if(mode < 0 || mode > 2){
 		NSLog(@"MaxQTKitVideoPlayer -- Error, invalid mode specified for");
 		[pool drain];
+		pool = NULL;
 		return false;
 	}
 	
@@ -116,7 +118,7 @@ bool MaxQTKitVideoPlayer::loadMovie(std::string movieFilePath, int mode)
 		
 		bool useTexture = (mode == OFXQTVIDEOPLAYER_MODE_TEXTURE_ONLY || mode == OFXQTVIDEOPLAYER_MODE_PIXELS_AND_TEXTURE);
 		bool usePixels  = (mode == OFXQTVIDEOPLAYER_MODE_PIXELS_ONLY  || mode == OFXQTVIDEOPLAYER_MODE_PIXELS_AND_TEXTURE);
-		//	         NSLog(@"inside: mode: %i, useTexture, usePixels. %@, %@",mode, (useTexture ? @"YES" : @"NO"),( usePixels? @"YES" : @"NO"));
+		//NSLog(@"inside: mode: %i, useTexture, usePixels. %@, %@",mode, (useTexture ? @"YES" : @"NO"),( usePixels? @"YES" : @"NO"));
 		moviePlayer = [[MaxQTKitMovieRenderer alloc] init];
 		
 		//movieFilePath = ofToDataPath(movieFilePath, false);
@@ -498,7 +500,7 @@ void MaxQTKitVideoPlayer::setFrame(int frame)
 
 int MaxQTKitVideoPlayer::getCurrentFrame()
 {
-	if(moviePlayer == NULL) return 0;
+	if(moviePlayer == NULL || iAmLoading || !iAmLoaded) return 0;
 	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	
@@ -586,19 +588,32 @@ bool MaxQTKitVideoPlayer::getIsMovieDone()
 	return isDone;
 }
 
+int MaxQTKitVideoPlayer::getTextureWidth()
+{
+	return moviePlayer.movieTextureSize.width;
+}
+
+
+
+
+int MaxQTKitVideoPlayer::getTextureHeight()
+{
+	return moviePlayer.movieTextureSize.height;
+}
+
 int MaxQTKitVideoPlayer::getWidth()
 {
 	return moviePlayer.movieSize.width;
 }
 
-void MaxQTKitVideoPlayer::repairContext()
-{
-	[moviePlayer repairContext];
-}
+
 
 
 int MaxQTKitVideoPlayer::getHeight()
 {
 	return moviePlayer.movieSize.height;
 }
-
+void MaxQTKitVideoPlayer::repairContext()
+{
+	[moviePlayer repairContext];
+}

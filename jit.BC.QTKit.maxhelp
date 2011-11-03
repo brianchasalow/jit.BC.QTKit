@@ -7,7 +7,7 @@
 			"revision" : 0
 		}
 ,
-		"rect" : [ 169.0, 348.0, 1294.0, 748.0 ],
+		"rect" : [ 458.0, 44.0, 1294.0, 748.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -27,6 +27,19 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-84",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 162.5, 397.5, 50.0, 18.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-90",
 					"maxclass" : "button",
@@ -602,7 +615,7 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 915.0, 465.25, 149.0, 26.5 ],
-					"size" : 1.0
+					"size" : 0.971667
 				}
 
 			}
@@ -1325,16 +1338,16 @@
 ,
 					"patching_rect" : [ 58.0, 527.349976, 42.0, 21.0 ],
 					"saved_object_attributes" : 					{
-						"globalpatchername" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
-						"tags" : "",
 						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0
 					}
 ,
 					"text" : "p esc"
@@ -1377,9 +1390,9 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 365.0, 214.5, 580.0, 48.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_gl_texture", "jit_matrix", "" ],
+					"patching_rect" : [ 365.0, 199.5, 580.0, 48.0 ],
 					"text" : "jit.BC.QTKit QTKit @autostart 1 @spew_position_values 1 @volume 0 @speed 1 @loopstate 1"
 				}
 
@@ -1401,6 +1414,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 935.5, 263.0, 945.0, 263.0, 945.0, 262.0, 546.0, 262.0, 546.0, 266.0, 531.0, 266.0, 531.0, 289.0, 560.5, 289.0 ],
+					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 

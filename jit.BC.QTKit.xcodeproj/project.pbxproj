@@ -223,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -r -f \"/Applications/Max6/externals/$PRODUCT_NAME.mxo\"\ncp -f -r \"$TARGET_BUILD_DIR/$PRODUCT_NAME.mxo\" \"/Applications/Max6/externals/$PRODUCT_NAME.mxo\"\n\nrm -r -f \"$TARGET_BUILD_DIR/../examples/$PRODUCT_NAME/$PRODUCT_NAME.mxo\"\ncp -f -r \"$TARGET_BUILD_DIR/$PRODUCT_NAME.mxo\" \"$TARGET_BUILD_DIR/../examples/$PRODUCT_NAME/$PRODUCT_NAME.mxo\"";
+			shellScript = "rm -r -f \"/Applications/Max6/externals/$PRODUCT_NAME.mxo\"\ncp -f -r \"$TARGET_BUILD_DIR/$PRODUCT_NAME.mxo\" \"/Applications/Max6/externals/$PRODUCT_NAME.mxo\"\n\nrm -r -f \"/Applications/Max5/externals/$PRODUCT_NAME.mxo\"\ncp -f -r \"$TARGET_BUILD_DIR/$PRODUCT_NAME.mxo\" \"/Applications/Max5/externals/$PRODUCT_NAME.mxo\"\n\nrm -r -f \"/Users/bc/Desktop/_HERECTRLv3/$PRODUCT_NAME.mxo\"\ncp -f -r \"$TARGET_BUILD_DIR/$PRODUCT_NAME.mxo\" \"/Users/bc/Desktop/_HERECTRLv3/$PRODUCT_NAME.mxo\"\n\n\n\nrm -r -f \"$TARGET_BUILD_DIR/../examples/$PRODUCT_NAME/$PRODUCT_NAME.mxo\"\ncp -f -r \"$TARGET_BUILD_DIR/$PRODUCT_NAME.mxo\" \"$TARGET_BUILD_DIR/../examples/$PRODUCT_NAME/$PRODUCT_NAME.mxo\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

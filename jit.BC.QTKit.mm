@@ -55,6 +55,8 @@ typedef struct _jit_BC_QTKit {
 	t_symbol			*texturename;
 	long			autostart;
 	long spew_position_values;
+	long spew_frame_values;
+
 	long loopstate;
 	long dim[2];			// output dim
 	BOOL needsRedraw;
@@ -62,9 +64,15 @@ typedef struct _jit_BC_QTKit {
 	float speed;
 	// internal jit.gl.texture object
 	t_jit_object *output;
+	//internal matrix object to spit out
+	t_jit_object *outmatrix;
+	t_symbol *matrixname;
+
 	MaxQTKitVideoPlayer* videoPlayer;
 	
 } t_jit_BC_QTKit;
+
+static GLuint tempFBO = 0;
 
 
 t_jit_err jit_ob3d_dest_name_set(t_jit_object *x, void *attr, long argc, t_atom *argv);
@@ -80,6 +88,10 @@ t_jit_err jit_BC_QTKit_autostart(t_jit_BC_QTKit *x, void *attr, long argc, t_ato
 t_jit_err jit_BC_QTKit_play(t_jit_BC_QTKit *x);
 t_jit_err jit_BC_QTKit_pause(t_jit_BC_QTKit *x);
 t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
+t_jit_err jit_BC_QTKit_setframe(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
+t_jit_err jit_BC_QTKit_spew_frame_values(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
+t_jit_err jit_BC_QTKit_output_matrix(t_jit_BC_QTKit *x);
+
 t_jit_err jit_BC_QTKit_spew_position_values(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
 t_jit_err jit_BC_QTKit_setspeed(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv);
@@ -204,6 +216,11 @@ t_jit_err jit_BC_QTKit_init(void)
 										 (method)0L,(method)jit_BC_QTKit_spew_position_values,calcoffset(t_jit_BC_QTKit, spew_position_values));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
 	
+	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"spew_frame_values",_jit_sym_long,attrflags,
+										 (method)0L,(method)jit_BC_QTKit_spew_frame_values,calcoffset(t_jit_BC_QTKit, spew_frame_values));
+	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
+	
+	
 	attr = (t_jit_object*)jit_object_new(_jit_sym_jit_attr_offset,"volume",_jit_sym_float32,attrflags,
 										 (method)0L,(method)jit_BC_QTKit_setvolume,calcoffset(t_jit_BC_QTKit, volume));
 	jit_class_addattr(s_jit_BC_QTKit_class,attr);	
@@ -242,6 +259,7 @@ t_jit_err jit_BC_QTKit_init(void)
 	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_read, "read", A_GIMME, 0);
 	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_pause, "pause", A_GIMME, 0);
 	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_setposition, "setposition", A_GIMME, 0);
+	jit_class_addmethod(s_jit_BC_QTKit_class, (method)jit_BC_QTKit_setframe, "setframe", A_GIMME, 0);
 	
 	
 	// finalize class
@@ -304,6 +322,24 @@ t_jit_err jit_BC_QTKit_setvolume(t_jit_BC_QTKit *x, void *attr, long argc, t_ato
 	return JIT_ERR_NONE;
 }
 
+t_jit_err jit_BC_QTKit_setframe(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
+{
+	if(argc && argv){
+		long loc = jit_atom_getlong(argv);
+		
+		if(x && x->videoPlayer && !x->videoPlayer->iAmLoading){
+			x->videoPlayer->setFrame((int)loc);
+		}
+		
+		
+	}
+	
+	return JIT_ERR_NONE;
+}
+
+
+
+
 t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
 {
 	if(argc && argv){
@@ -319,6 +355,15 @@ t_jit_err jit_BC_QTKit_setposition(t_jit_BC_QTKit *x, void *attr, long argc, t_a
 	return JIT_ERR_NONE;
 }
 
+
+t_jit_err jit_BC_QTKit_spew_frame_values(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
+{
+	long spew_frame_valuesplz = jit_atom_getlong(argv);
+	
+	x->spew_frame_values = spew_frame_valuesplz;	
+	
+	return JIT_ERR_NONE;
+}
 
 
 t_jit_err jit_BC_QTKit_spew_position_values(t_jit_BC_QTKit *x, void *attr, long argc, t_atom *argv)
@@ -447,8 +492,14 @@ t_jit_err jit_BC_QTKit_dest_changed(t_jit_BC_QTKit *x)
 	{
 		
 		if(x->videoPlayer && x->videoPlayer->iAmLoaded &&  !x->videoPlayer->iAmLoading)
-		{
+		{		
 			x->videoPlayer->repairContext();
+		}
+		
+		// clean up after ourselves
+		if(tempFBO != 0){
+		glDeleteFramebuffers(1, &tempFBO);
+		tempFBO = 0;
 		}
 		
 		t_symbol *context = jit_attr_getsym(x,ps_drawto);		
@@ -480,6 +531,18 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 	
 	if(x = (t_jit_BC_QTKit*)jit_object_alloc(s_jit_BC_QTKit_class)){
 		x->output = (t_jit_object*)jit_object_new(ps_jit_gl_texture,dest_name);
+
+		
+		t_jit_matrix_info info;
+		jit_matrix_info_default(&info);
+		info.type = _jit_sym_char;
+		info.planecount = 4;
+		info.dim[0] = 1;
+		info.dim[1] = 1;
+		x->matrixname = jit_symbol_unique();		
+		x->outmatrix = (t_jit_object*)jit_object_new(_jit_sym_jit_matrix, &info);
+		x->outmatrix = (t_jit_object*)jit_object_method(x->outmatrix, _jit_sym_register, x->matrixname);
+		
 		x->latestBounds = NSMakeRect(0, 0, 640, 480);
 		x->needsRedraw = YES;
 		
@@ -490,10 +553,12 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 			jit_attr_setsym(x->output,gensym("defaultimage"),gensym("black"));
 			jit_attr_setlong(x->output,gensym("rectangle"), 1);
 			jit_attr_setlong(x->output, gensym("flip"), 1);
+			
 			x->autostart = 0;
 			x->dim[0] = 640;
 			x->dim[1] = 480;
 			x->spew_position_values = 1;
+			x->spew_frame_values = 1;
 			x->loopstate = 0;
 			x->speed = 1;
 			jit_attr_setlong_array(x->output, _jit_sym_dim, 2, x->dim);			
@@ -505,6 +570,8 @@ t_jit_BC_QTKit *jit_BC_QTKit_new(t_symbol * dest_name)
 			x->texturename = _jit_sym_nothing;		
 		}
 		jit_ob3d_new(x, dest_name);
+		jit_attr_setlong(x, gensym("automatic"), 0);
+
 		//	if(x->videoPlayer == NULL){		
 		x->videoPlayer = new MaxQTKitVideoPlayer();
 		//	}
@@ -529,17 +596,26 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 	
 	
 	
-	
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+	
+
 	
 	
 	if(x->videoPlayer != NULL){
 		x->videoPlayer->update();
 	}
     
+	if(x->videoPlayer != NULL && x->videoPlayer->iAmLoaded &&  !x->videoPlayer->iAmLoading){
+		t_atom foo[1];
+		jit_atom_setlong(&foo[0],x->videoPlayer->isFrameNew());			
+		jit_object_notify(x,gensym("frameIsNew"), foo); //the last pointer argument could be anything.	
+	}
+	
 	///	post("videoplayer: %i iamloaded %i iamloading %i isframenew %i needsredraw %i", (x->videoPlayer == NULL), x->videoPlayer->iAmLoaded, !x->videoPlayer->iAmLoading, x->videoPlayer->isFrameNew(), x->needsRedraw);
 	if((x->videoPlayer != NULL && x->videoPlayer->iAmLoaded &&  !x->videoPlayer->iAmLoading) && (x->videoPlayer->isFrameNew()|| x->needsRedraw))
 	{
+
+		
 		// this means we need to render into our internal texture, via an FBO.
 		// for now, we are going to do this all inline, in place.
 		
@@ -552,7 +628,11 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			t_jit_gl_context ctx = jit_gl_get_context();
 			
 			jit_ob3d_set_context(x);
-			
+			t_jit_gl_drawinfo drawInfo;
+			t_symbol *texName = jit_attr_getsym(x->output, ps_name);
+			jit_gl_drawinfo_setup(x, &drawInfo);
+			jit_gl_bindtexture(&drawInfo, texName, 0);
+			jit_gl_unbindtexture(&drawInfo, texName, 0);
 			// add texture to OB3D list.
 			//COMMENTED BECAUSE THIS APPEARS TO CAUSE TEXTURE ERRORS?
 			//i dont understand whats going on, see http://www.cycling74.com/forums/topic.php?id=27193
@@ -561,57 +641,17 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			//jit_post_sym(x, mysymb);
 			
 			// we need to update our internal texture to the latest known size of our movie's image.
-            long newdim[2];			// output dim
-			
+            long newdim[2];			// output dim			
 			newdim[0] = x->videoPlayer->getWidth();
 			newdim[1] = x->videoPlayer->getHeight();
+            long newtexdim[2];			// output dim	
+			newtexdim[0] = (int)(newdim[0]/2); //get TEXTURE width - this should be something else due to packing
+			newtexdim[1] = newdim[1];//get TEXTURE height...this should be the same due to packing
+			//NSLog(@"texture width, height: %i, %i",newtexdim[0], newtexdim[1]);
 			
             // update our internal attribute so attr messages work
-			jit_attr_setlong_array(x, _jit_sym_dim, 2, newdim);
-			
-			
-			
-			//			t_symbol * tex = jit_attr_getsym(x->output, gensym("name"));
-			//			if(tex && tex != _jit_sym_nothing)
-			//			{
-			//				void * texture_ptr = jit_object_findregistered(tex);
-			//				if(texture_ptr)
-			//				{
-			//					const long glid(jit_attr_getlong(texture_ptr, gensym("glid")));
-			//					const long gltarget(jit_attr_getlong(texture_ptr, gensym("gltarget")));
-			//					
-			//					[x->videoPlayer->moviePlayer bindTexture];
-			//					[x->videoPlayer->moviePlayer unbindTexture];
-			//
-			//					CVOpenGLTextureRef myTex = [x->videoPlayer->moviePlayer _latestTextureFrame];
-			//					GLuint texID = 0;
-			//					texID = CVOpenGLTextureGetName(myTex);
-			//					
-			//					jit_attr_setlong(texture_ptr,gensym("glid"), texID);
-			//					
-			//					GLenum target = GL_TEXTURE_RECTANGLE_ARB;
-			//					target = CVOpenGLTextureGetTarget(myTex);
-			//
-			//					jit_attr_setlong(texture_ptr,gensym("gltarget"), target);
-			//					
-			//					
-			//					
-			//				}
-			//				
-			//			}
-			//			//bind,
-			//			//[x->videoPlayer->moviePlayer bindTexture];
-			//			//draw,
-			//			//[...]
-			//			//unbind,
-			//			//[x->videoPlayer->moviePlayer unbindTexture];
-			//			//task,
-			//			QTVisualContextTask(x->videoPlayer->moviePlayer._visualContext);
-			//			
-			
-			
-			
-			
+			jit_attr_setlong_array(x, _jit_sym_dim, 2, newdim);							
+			jit_attr_setlong_array(x->outmatrix, _jit_sym_dim, 2, newtexdim);							
 			
 			// save some state
 			GLint previousFBO;	// make sure we pop out to the right FBO
@@ -639,8 +679,9 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 			//post("texture id is %u width %u height %u", texname, width, height);
 			
 			// FBO generation/attachment to texture
-			GLuint tempFBO;
+			if(tempFBO == 0){
 			glGenFramebuffers(1, &tempFBO);
+			}
 			glBindFramebuffer(GL_FRAMEBUFFER, tempFBO);
 			glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_RECTANGLE_ARB, texname, 0);
 			
@@ -654,16 +695,15 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				glClearColor(0.0, 0.0, 0.0, 0.0);
 				glClear(GL_COLOR_BUFFER_BIT);				
 				
+
+				glViewport(0, 0,  width, height);
 				glMatrixMode(GL_TEXTURE);
 				glPushMatrix();
 				glLoadIdentity();
 				
-				
-				glViewport(0, 0,  width, height);
 				glMatrixMode(GL_PROJECTION);
 				glPushMatrix();
 				glLoadIdentity();
-				
 				glOrtho(0.0, width,  0.0,  height, -1, 1);		
 				
 				glMatrixMode(GL_MODELVIEW);
@@ -671,7 +711,7 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				glLoadIdentity();
 				
 				// render our qtkit texture to our jit.gl.texture's texture.
-				glColor4f(1.0, 1.0, 1.0, 1.0);
+				glColor4f(0.0, 0.0, 0.0, 1.0);
 				
 				//glActiveTexture(GL_TEXTURE0);
 				
@@ -685,8 +725,15 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 					
 					
 					glDisable(GL_BLEND);
+					glDisable(GL_LIGHTING);
+
 					glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);	
-					
+					glTexParameterf( GL_TEXTURE_RECTANGLE_EXT, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE );
+					glTexParameterf( GL_TEXTURE_RECTANGLE_EXT, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE );
+					glTexParameterf( GL_TEXTURE_RECTANGLE_EXT, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE );
+					glTexParameteri(GL_TEXTURE_RECTANGLE_ARB, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+					glTexParameteri(GL_TEXTURE_RECTANGLE_ARB, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
 					// move to VA for rendering
 					GLfloat tex_coords[] = 
 					{
@@ -715,12 +762,13 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				
 				glMatrixMode(GL_MODELVIEW);
 				glPopMatrix();
+				
 				glMatrixMode(GL_PROJECTION);
 				glPopMatrix();
 				
 				glMatrixMode(GL_TEXTURE);
 				glPopMatrix();
-				glMatrixMode(previousMatrixMode);
+				//				glMatrixMode(previousMatrixMode);
 				
 				
 				
@@ -729,26 +777,31 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 				
 				
 				
-				// clean up after ourselves
-				glDeleteFramebuffers(1, &tempFBO);
-				tempFBO = 0;
 				
 				//mmaybeeee....
-				//glFlushRenderAPPLE();	
+				glFlushRenderAPPLE();
+				
+				
 			}
 			else 
 			{
 				post("jit.BC.QTKit could not attach to FBO");
 			}
 			
-			glPopAttrib();
+			
+
 			glPopClientAttrib();
-			glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, previousFBO);	
-			glBindFramebufferEXT(GL_READ_FRAMEBUFFER_EXT, previousReadFBO);
-			glBindFramebufferEXT(GL_DRAW_FRAMEBUFFER_EXT, previousDrawFBO);
+			glPopAttrib();
+			
+			glBindFramebufferEXT(GL_FRAMEBUFFER, previousFBO);	
+			glBindFramebufferEXT(GL_READ_FRAMEBUFFER, previousReadFBO);
+			glBindFramebufferEXT(GL_DRAW_FRAMEBUFFER, previousDrawFBO);        
 			
 			jit_gl_set_context(ctx);
 			
+			//if flagged to output matrices (and it's a new frame), output the matrix
+			//TODO: check for output pixel buffer attribute flag
+			jit_BC_QTKit_output_matrix(x);
 			
 			
 			
@@ -757,24 +810,92 @@ t_jit_err jit_BC_QTKit_draw(t_jit_BC_QTKit *x)
 		
 	}
 	
-	t_atom foo[1];
-	jit_atom_setlong(&foo[0],x->videoPlayer->isFrameNew());			
-	jit_object_notify(x,gensym("frameIsNew"), foo); //the last pointer argument could be anything.	
 	if(x->spew_position_values == 1){
 		t_atom pos[1];
 		jit_atom_setfloat(&pos[0],x->videoPlayer->getPosition());			
 		jit_object_notify(x,gensym("position"), pos); //the last pointer argument could be anything.	
 	}
+	if(x->spew_frame_values == 1){
+		t_atom pos[1];
+		jit_atom_setlong(&pos[0],x->videoPlayer->getCurrentFrame());			
+		jit_object_notify(x,gensym("frame"), pos); //the last pointer argument could be anything.	
+	}
 	
-	
+
 	[pool drain];
 	
 	return JIT_ERR_NONE;
 	
 }
 
+t_jit_err jit_BC_QTKit_output_matrix(t_jit_BC_QTKit *x)
+{
+	t_jit_err err=JIT_ERR_NONE;
+	long out_savelock;
+	t_jit_matrix_info out_minfo;
+	char *out_bp;
+	int i, j, k, rowstride, width, height, planecount, dimcount;
+	char* op;
+
+	if (x&&x->outmatrix) {
+		out_savelock = (long) jit_object_method(x->outmatrix,_jit_sym_lock,1);
+//		
+		jit_object_method(x->outmatrix,_jit_sym_getinfo,&out_minfo);		
+		jit_object_method(x->outmatrix,_jit_sym_getdata,&out_bp);
+//		
+		if (!out_bp) { err=JIT_ERR_INVALID_OUTPUT; goto out;}
+//		
+//		//get dimensions/planecount
+		dimcount   = out_minfo.dimcount;		
+		planecount = out_minfo.planecount;
+		rowstride = out_minfo.dimstride[1];
+		height = out_minfo.dim[1];
+		width = out_minfo.dim[0];
+				
+		//PROCESS PIXELS HEREEEEE//////////////////
+		CVPixelBufferLockBaseAddress(x->videoPlayer->getPixelsRef(), 0);
+		// FLIP THE PIXELS
+		//we need to flip the image vertically
+		unsigned char* pix = (unsigned char*)CVPixelBufferGetBaseAddress(x->videoPlayer->getPixelsRef());
+		int numBytesPerLine = CVPixelBufferGetBytesPerRow(x->videoPlayer->getPixelsRef());
+
+//		memcpy(ptrToFlipped, pix,numBytesPerLine  * x->videoPlayer->getHeight()); 
+		//startFlip now has everything you need in it, starting at zero.
+		
+		//END PROCESS PIXELS HEREEEEE//////////////////
+						
+		for(i = 0; i < height; i++){
+			op =  out_bp + i*rowstride;
+			memcpy(op, pix,numBytesPerLine); 
+			pix += numBytesPerLine;
+		}
+		//CLEANUP!
+		CVPixelBufferUnlockBaseAddress(x->videoPlayer->getPixelsRef(), 0);
+	//	delete startFlip;
+
+	} else {
+		return JIT_ERR_INVALID_PTR;
+	}
+//	
+	out:
+	jit_object_method(x->outmatrix,_jit_sym_lock,out_savelock);
+
+	t_atom stateatom[1];
+	jit_atom_setsym(&stateatom[0], x->matrixname);
+	jit_object_notify(x,_jit_sym_jit_matrix, stateatom); //the last pointer argument could be anything.
+	
+	return err;
+	
+}
+
+
 void jit_BC_QTKit_free(t_jit_BC_QTKit *x)
 {
+	if(tempFBO != 0){
+		glDeleteFramebuffers(1, &tempFBO);
+		tempFBO = 0;
+	}
+	
 	if(x->videoPlayer != NULL){		
 		x->videoPlayer->close();
 		
@@ -787,6 +908,10 @@ void jit_BC_QTKit_free(t_jit_BC_QTKit *x)
 		// free ourselves
 		if(x)
 			jit_ob3d_free(x);
+		
+		if(x->outmatrix){
+			jit_object_free(x->outmatrix);	
+		}
 		
 		if(x->output)
 			jit_object_free(x->output);
@@ -838,7 +963,7 @@ void jit_BC_QTKit_read(t_jit_BC_QTKit *x, t_symbol *s, long ac, t_atom *av)
 	
 	if(x->videoPlayer != NULL && !x->videoPlayer->iAmLoading){
 		x->videoPlayer->isPaused = x->autostart;
-		x->videoPlayer->loadMovie(filename, 0);
+		x->videoPlayer->loadMovie(filename, 2);
 		x->videoPlayer->setPaused(x->autostart);
 	}
 	

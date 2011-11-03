@@ -1,0 +1,6 @@
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/../../c74support/jit-includes/jit.gl.context.h:26: warning: 'AGLDrawable' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AGL.framework/Headers/agl.h:48)
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm: In function 't_jit_err jit_BC_QTKit_output_matrix(t_jit_BC_QTKit*)':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm:837: warning: unused variable 'j'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm:837: warning: unused variable 'k'
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm: In function 'void jit_BC_QTKit_read(t_jit_BC_QTKit*, t_symbol*, long int, t_atom*)':
+/Users/bc/Downloads/MaxSDK-5.1.7/examples/jit.BC.QTKit/jit.BC.QTKit.mm:937: warning: unused variable 'fh_read'

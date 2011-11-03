@@ -120,7 +120,9 @@ public:
 	void 				draw(float x, float y);
 	void                pseudoUpdate();
     void                pseudoDraw(int x, int y);
-    
+
+	int					getTextureWidth();
+	int					getTextureHeight();
 	int					getWidth();
 	int					getHeight();
 	

@@ -64,6 +64,7 @@
 	CVPixelBufferRef _latestPixelFrame;
 
 	NSSize movieSize;
+	NSSize movieTextureSize;
 	QTTime movieDuration;
 	NSInteger frameCount;
 	NSInteger frameStep;
@@ -77,6 +78,8 @@
 }
 
 @property(nonatomic, readonly) NSSize movieSize;
+@property(nonatomic, readonly) NSSize movieTextureSize;
+
 @property(nonatomic, readonly) BOOL useTexture;
 @property(nonatomic, readonly) BOOL usePixels;
 @property(nonatomic, readonly) float duration; //duration in seconds

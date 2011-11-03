@@ -67,6 +67,7 @@ typedef struct OpenGLTextureCoordinates OpenGLTextureCoordinates;
 
 @implementation MaxQTKitMovieRenderer
 @synthesize movieSize;
+@synthesize movieTextureSize;
 @synthesize useTexture;
 @synthesize usePixels;
 @synthesize frameCount;
@@ -186,11 +187,11 @@ typedef struct OpenGLTextureCoordinates OpenGLTextureCoordinates;
                                                //if we have a texture, make the pixel buffer OpenGL compatible
                                                [NSNumber numberWithBool:self.useTexture], (NSString*)kCVPixelBufferOpenGLCompatibilityKey, 
                                                //in general this shouldn't be forced. but in order to ensure we get good pixels use this one
-                                               [NSNumber numberWithInt: k32ARGBPixelFormat], (NSString*)kCVPixelBufferPixelFormatTypeKey, 
+                                               [NSNumber numberWithInt: '2vuy'], (NSString*)kCVPixelBufferPixelFormatTypeKey, 
                                                //specifying width and height can't hurt since we know
-											   //trying k32ARGBPixelFormat for kicks! also use kCVPixelFormatType_32ARGB
-											   [NSNumber numberWithFloat:movieSize.height], (NSString*)kCVPixelBufferHeightKey,
-											   [NSNumber numberWithFloat:movieSize.width], (NSString*)kCVPixelBufferWidthKey,
+											   //trying k32ARGBPixelFormat cuz its better for glsubteximage2d copying!! also can use kCVPixelFormatType_32ARGB
+											  // [NSNumber numberWithFloat:movieSize.height], (NSString*)kCVPixelBufferHeightKey,
+											  // [NSNumber numberWithFloat:movieSize.width], (NSString*)kCVPixelBufferWidthKey,
 											 //  [NSNumber numberWithInt:kQTApertureMode_ProductionAperture], kQTVisualPropertyID_ApertureMode,
 											   
                                                nil];
@@ -267,8 +268,7 @@ typedef struct OpenGLTextureCoordinates OpenGLTextureCoordinates;
                 
         NSLog(@"movie loaded!");
         movieSize = [[_movie attributeForKey:QTMovieNaturalSizeAttribute] sizeValue];
-        //NSLog(@"movie size %f %f", movieSize.width, movieSize.height);
-        //	
+
         movieDuration = [_movie duration];
         //
         if ([_movie respondsToSelector: @selector(frameEndTime:)]) {
@@ -277,7 +277,7 @@ typedef struct OpenGLTextureCoordinates OpenGLTextureCoordinates;
             frameStep = qtStep.timeValue;
         }
 		
-        //frameCount = movieDuration.timeValue / frameStep;
+        frameCount = movieDuration.timeValue / frameStep;
       //  NSLog(@" movie has %d frames ", frameCount);
 
         
@@ -288,9 +288,9 @@ typedef struct OpenGLTextureCoordinates OpenGLTextureCoordinates;
     if ((loadState >= QTMovieLoadStatePlayable) ) {
         /* can start movie playing here */
         NSLog(@"movie playable!");
+
         
-        
-  
+
 
 
         
@@ -448,7 +448,13 @@ typedef struct OpenGLTextureCoordinates OpenGLTextureCoordinates;
 			_latestPixelFrame = NULL;
 		}
 		
-		OSStatus error = QTVisualContextCopyImageForTime(_visualContext, NULL, NULL, &_latestPixelFrame);	
+		OSStatus error = QTVisualContextCopyImageForTime(_visualContext, NULL, NULL, &_latestPixelFrame);
+		//movieTextureSize = NSMakeSize((int)CVPixelBufferGetBytesPerRowOfPlane(_latestPixelFrame, 0) / 4, CVPixelBufferGetHeight(_latestPixelFrame));
+		//size_t x, y, z, w;
+		//CVPixelBufferGetExtendedPixels(_latestPixelFrame, &x, &y, &z, &w);
+		//NSLog(@"x/y/z/w : %i, %i, %i, %i, %i, %i, %i", x, y, z, w, (int)CVPixelBufferGetDataSize(_latestPixelFrame)/(int)CVPixelBufferGetHeight(_latestPixelFrame), CVPixelBufferGetWidthOfPlane(_latestPixelFrame, 0), [_latestPixelFrame attributeForKey:(NSString*)kCVPixelBufferWidthKey]);
+		//NSLog(@"movietexture size %f, %f", movieTextureSize.width, movieTextureSize.height);
+
 		//In general this shouldn't happen, but just in case...
 		if (error != noErr) {
 			CVPixelBufferRelease(_latestPixelFrame);
@@ -464,6 +470,8 @@ typedef struct OpenGLTextureCoordinates OpenGLTextureCoordinates;
 			}
 			
 			OSErr err = CVOpenGLTextureCacheCreateTextureFromImage(NULL, _textureCache, _latestPixelFrame, NULL, &_latestTextureFrame);
+
+										  
 			if(err != noErr){
 				NSLog(@"Error creating OpenGL texture");
 				return NO;
